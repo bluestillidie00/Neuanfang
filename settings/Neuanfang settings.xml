@@ -21,7 +21,7 @@
 	<!-- Background colours - used for background, boxes etc -->	
 
 	<!-- TCS COLOURS -->
-	<colour name="tcs_accent"	value="rgb(100,30,170)"/>	
+	<colour name="tcs_accent"	value="rgb(50,120,244)"/>	
 
 	<colour name="bg lighter" 																	value="rgb(255,255,255)"/>
 	<colour name="bg" 																					value="rgb(235,235,235)"/>
@@ -400,8 +400,8 @@
 		<colour name="match accent" 							value="fg tertiary" />
 
 		<!-- Default FM purple colours -->
-		<colour name="FM purple dark" 							value="rgb(100,30,170)" />
-		<colour name="FM purple" 								value="rgb(105,51,189)" />
+		<colour name="FM purple dark" 							value="tcs_accent" />
+		<colour name="FM purple" 								value="tcs_accent" />
 		<colour name="FM purple light" 							value="rgb(115,92,228)" />
 		<colour name="FM purple ultra violet" 					value="rgb(120,113,247)" />
 		<colour name="FM orange"								value="rgb(255,80,30)" />
