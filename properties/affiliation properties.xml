@@ -1,0 +1,754 @@
+<record>
+	<list id="column_table_properties">
+
+		<!-- Yearly fee -->
+		<record>
+			<integer id="id" value="yfee" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293075" type="use" value="Yearly Fee" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="5" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<boolean id="check_text_changed_on_focus_loss" value="true" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="16" />
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293075" type="use" value="Yearly Fee" />
+			</record>
+		</record>
+
+		<!-- Chances of friendly -->
+		<record>
+			<integer id="id" value="fri%" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="394298" type="use" value="% Chance Of Friendly[COMMENT: In game editor; affiliation % friendly chance]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<integer id="default_value" value="100" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="check_text_changed_on_focus_loss" value="true" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="394298" type="use" value="% Chance Of Friendly[COMMENT: In game editor; affiliation % friendly chance]" />
+			</record>
+		</record>
+
+		<!-- Percentage wages paid for loans -->
+		<record>
+			<integer id="id" value="pwgp" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="419345" type="use" value="Percentage of loan player wage paid by parent club[COMMENT; FR 17081, editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<integer id="default_value" value="100" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="check_text_changed_on_focus_loss" value="true" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="smbo" equals="true" />
+			</list>
+		</record>
+
+		<!-- Reserve player showcase -->
+		<record>
+			<integer id="id" value="rsrv" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="419343" type="use" value="Link used to showcase reserve players[COMMENT; FR 17081, editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="smbo" equals="true" />
+			</list>
+
+		</record>
+
+		<!-- Send players to aid with promotion -->
+		<record>
+			<integer id="id" value="pfpr" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="419344" type="use" value="Sends first team players to aid affiliate club with promotion[COMMENT; FR 17081, editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="smbo" equals="true" />
+			</list>
+
+		</record>
+
+		<!-- Youth players sent to gain experience -->
+		<record>
+			<integer id="id" value="yout" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="419342" type="use" value="Sends youth players to gain experience[COMMENT; FR 17081, editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="smbo" equals="true" />
+			</list>
+
+		</record>
+
+
+		<!-- Is main club -->
+		<record>
+			<integer id="id" value="ismc" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293064" type="use" value="Is Main Club" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293064" type="use" value="Is Main Club" />
+			</record>
+		</record>
+
+		<!-- Players move freely -->
+		<record>
+			<integer id="id" value="frly" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293076" type="use" value="Players Move Freely" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="16" />
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293076" type="use" value="Players Move Freely" />
+			</record>
+		</record>
+
+		<!-- Players go on loan -->
+		<record>
+			<integer id="id" value="golo" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293077" type="use" value="Players Go On Loan" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="16" />
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293077" type="use" value="Players Go On Loan" />
+			</record>
+		</record>
+
+		<!-- First Option To Buy -->
+		<record>
+			<integer id="id" value="fotb" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293078" type="use" value="First Option To Buy" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293078" type="use" value="First Option To Buy" />
+			</record>
+		</record>
+
+		<!-- Plays friendlies -->
+		<record>
+			<integer id="id" value="plfr" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293079" type="use" value="Play Friendlies" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293079" type="use" value="Play Friendlies" />
+			</record>
+		</record>
+
+		<!-- Same Board -->
+		<record>
+			<integer id="id" value="smbo" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293080" type="use" value="Same Board" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293080" type="use" value="Same Board" />
+			</record>
+		</record>
+
+		<!-- Uses Same Kit -->
+		<record>
+			<integer id="id" value="UsSK" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="436937" type="use" value="Uses Same Kit[COMMENT: FR5178; editor; field in the affiliations table]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="436937" type="use" value="Uses Same Kit[COMMENT: FR5178; editor; field in the affiliations table]" />
+			</record>
+		</record>
+
+		<!-- Financial Help -->
+		<record>
+			<integer id="id" value="fnhl" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293081" type="use" value="Financial Help" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293081" type="use" value="Financial Help" />
+			</record>
+		</record>
+
+		<!-- Permanent -->
+		<record>
+			<integer id="id" value="perm" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="332256" type="use" value="Permanent Deal[COMMENT; editor; affiliated club field; is link renewable]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="332256" type="use" value="Permanent Deal[COMMENT; editor; affiliated club field; is link renewable]" />
+			</record>
+		</record>
+
+		<!-- Youth Players Training -->
+		<record>
+			<integer id="id" value="yutr" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="312826" type="use" value="Youth Players Training[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="ualf" equals="false" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312826" type="use" value="Youth Players Training[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Help with facilities -->
+		<record>
+			<integer id="id" value="hlwf" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="312827" type="use" value="Help With Facilities[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="yutr" equals="true" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312827" type="use" value="Help With Facilities[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Marketing Relations -->
+		<record>
+			<integer id="id" value="mrrl" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="312828" type="use" value="Marketing Relations[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312828" type="use" value="Marketing Relations[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Scouting Knowledge shared -->
+		<record>
+			<integer id="id" value="scks" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="312829" type="use" value="Scouting Knowledge Shared[COMMENT; editor; affiliated club field; is link renewable]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312829" type="use" value="Scouting Knowledge Shared[COMMENT; editor; affiliated club field; is link renewable]" />
+			</record>
+		</record>
+
+		<!-- Cannot play in same division -->
+		<record>
+			<integer id="id" value="cpsd" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="312830" type="use" value="Cannot Play In Same Division[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312830" type="use" value="Cannot Play In Same Division[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Uses all parent clubs facilities -->
+		<record>
+			<integer id="id" value="ualf" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="394657" type="use" value="Uses All Parent Club Facilities[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+				<record id="hlwf" equals="false" />
+				<record id="yutr" equals="false" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="394657" type="use" value="Uses All Parent Club Facilities[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Loans players from sub team -->
+		<record>
+			<integer id="id" value="lpfs" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="394468" type="use" value="Loan Players from Sub Team[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="394468" type="use" value="Loan Players from Sub Team[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Uses sub team training facilities -->
+		<record>
+			<integer id="id" value="ustf" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="394658" type="use" value="Uses Sub Team Training[COMMENT; editor; affiliated club field]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="394658" type="use" value="Uses Sub Team Training[COMMENT; editor; affiliated club field]" />
+			</record>
+		</record>
+
+		<!-- Maximum players on loan -->
+		<record>
+			<integer id="id" value="msls" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="394479" type="use" value="Maximum No. Players Loaned[COMMENT; editor; affiliated club field; number of loan players]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />"
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<integer id="default_value" value="1" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="30" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="check_text_changed_on_focus_loss" value="true" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="394479" type="use" value="Maximum No. Players Loaned[COMMENT; editor; affiliated club field; number of loan players]" />
+			</record>
+		</record>
+
+		<!-- Start date -->
+		<record>
+			<integer id="id" value="stdt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293013" type="use" value="Start Date" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_past" value="10" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293013" type="use" value="Start Date" />
+			</record>
+		</record>
+
+		<!-- End date -->
+		<record>
+			<integer id="id" value="endt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293014" type="use" value="End Date" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_future" value="10" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="type" not_equals="17" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293014" type="use" value="End Date" />
+			</record>
+		</record>
+
+
+		<!-- Affiliated Club -->
+		<record>
+			<integer id="id" value="affl" />
+			<integer id="width" value="150" />
+			<translation id="name" translation_id="293063" type="use" value="Affiliated Club" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!-- Affiliation type -->
+		<record>
+			<integer id="id" value="type" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="293065" type="use" value="Affiliation Type" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="293066" type="use" value="Normal Affiliated Club[COMMENT: club affiliation type]" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="293067" type="use" value="Sub Team[COMMENT: club affiliation type]" />
+					</record>
+					<record id="3">
+						<translation id="text" translation_id="293068" type="use" value="Feeder Team[COMMENT: club affiliation type]" />
+					</record>
+					<record id="16">
+						<translation id="text" translation_id="293074" type="use" value="Good Relations[COMMENT: club affiliation type]" />
+					</record>
+					<record id="17">
+						<translation id="text" translation_id="314574" type="use" value="Likely Friendly[COMMENT: club affiliation type]" />
+					</record>
+
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+
+	</list>
+</record>

@@ -1,0 +1,22 @@
+<record>
+	<list id="column_table_properties">
+
+		<!-- Language Name -->
+		<record>
+			<integer id="id" value="Lnam" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="229689" type="use" value="Name" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+	</list>
+
+</record>

@@ -1,0 +1,144 @@
+<!-- misc commands -->
+<record>
+	<string id="text" value="Stuff" />
+	<list id="items">
+		<record>
+			<string id="text" value="Training Advance" />
+			<list id="items">
+				<record event_id="DTAW" info="1">
+					<string id="text" value="1 Week" />
+				</record>
+				<record event_id="DTAW" info="2">
+					<string id="text" value="2 Weeks" />
+				</record>
+				<record event_id="DTAW" info="4">
+					<string id="text" value="1 Month" />
+				</record>
+				<record event_id="DTAW" info="8">
+					<string id="text" value="2 Months" />
+				</record>
+				<record event_id="DTAW" info="17">
+					<string id="text" value="4 Months" />
+				</record>
+				<record event_id="DTAW" info="26">
+					<string id="text" value="6 Months" />
+				</record>
+				<record event_id="DTAW" info="52">
+					<string id="text" value="1 Year" />
+				</record>
+				<record event_id="DTAW" info="104">
+					<string id="text" value="2 Years" />
+				</record>
+				<record id="----" />
+				<record event_id="DTAW" info="-52">
+					<string id="text" value="1 Year (Abilities Update)[COMMENT: ignore; debug]" />
+				</record>
+				<record event_id="DTAW" info="-104">
+					<string id="text" value="2 Years (Abilities Update)[COMMENT: ignore; debug]" />
+				</record>
+				<record event_id="DTAW" info="-260">
+					<string id="text" value="5 Years (Abilities Update)[COMMENT: ignore; debug]" />
+				</record>
+				<record event_id="DTAW" info="-520">
+					<string id="text" value="10 Years (Abilities Update)[COMMENT: ignore; debug]" />
+				</record>
+				<record event_id="DTAW" info="-1040">
+					<string id="text" value="20 Years (Abilities Update)[COMMENT: ignore; debug]" />
+				</record>
+			</list>
+		</record>
+		<record id="----" />
+		<record event_id="FRCB">
+			<string id="text" value="Force Refresh Client Object Panels" />
+		</record>
+		<record event_id="FRMD">
+			<string id="text" value="Force Refresh Meta Data Cache" />
+		</record>
+		<record event_id="FCCP">
+			<string id="text" value="Force Clear Client Property Cache" />
+		</record>
+		<record event_id="DdtA">
+			<string id="text" value="Client Object Data Analytics (may slow the game)" />
+		</record>
+		<record id="----" />
+
+		<record event_id="OSTo" >
+			<string id="text" value="Open Screenshot Tool" />
+		</record>
+		<record event_id="LCSS">
+			<string id="text" value="Take License Screenshots" />
+		</record>
+		<record event_id="RFCR">
+			<string id="text" value="Refresh Competition" />
+		</record>
+		<record event_id="TSLC">
+			<string id="text" value="Test Language Checksums" />
+		</record>
+		<record event_id="GXML">
+			<string id="text" value="Generate Comp XML" />
+		</record>
+		<record event_id="SVFX">
+			<string id="text" value="Export All Fixtures" />
+		</record>
+		<record event_id="GASK">
+			<string id="text" value="Generate Asking Prices" />
+		</record>
+		<record event_id="AARG">
+			<string id="text" value="Activate All Rule Groups At Update Day" />
+		</record>
+		<record event_id="ODCS">
+			<string id="text" value="Output Comp Stats" />
+		</record>
+		<record event_id="CLCS">
+			<string id="text" value="Clear Comp Stats" />
+		</record>
+		<record event_id="OPCT">
+			<string id="text" value="Output Player Counts" />
+		</record>
+		<record event_id="OBWP">
+			<string id="text" value="Output British Work Permit Scores" />
+		</record>
+		<record event_id="PHCO">
+			<string id="text" value="Output Players Who Have Come Out" />
+		</record>
+
+		<record event_id="RTDT">
+			<string id="text" value="Run To Date" />
+		</record>
+		<record event_id="CLSA">
+			<string id="text" value="Clear Achievements" />
+		</record>
+		<record event_id="SAcP">
+			<string id="text" value="Save Achievements Progress" />
+		</record>
+
+		<record event_id="DTSR">
+			<string id="text" value="Database Table Size Report" />
+		</record>
+
+		<record event_id="PPSR">
+			<string id="text" value="PERSON_PREFERENCES Report" />
+		</record>
+
+		<record id="----" />
+		<record event_id="GDES" event_target="glob">
+			<string id="text" value="Demo End Screen" />
+		</record>
+
+		<record id="----" />
+		<record event_id="FaSD">
+			<string id="text" value="Feature Auditing Stats Dump" />
+		</record>
+		<record event_id="dLbD">
+			<string id="text" value="Leader board Status Dump" />
+		</record>
+		<record id="----" />
+		<record event_id="Dver">
+			<string id="text" value="Copy version number to clipboard (Ctrl-F3)" />
+		</record>
+		<record id="----" />
+		<record event_id="DbgU">
+			<string id="text" value="Save and upload file to Test Server" />
+		</record>
+	</list>
+</record>

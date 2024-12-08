@@ -1,0 +1,5 @@
+﻿<class class="tactical_style_button" parent="button">
+  <flags id="appearance" value="buttons/custom/tactics/style bar/button"/>
+	<flags id="height" value="45"/>
+  <flags id="colour" value="white"/>
+</class>

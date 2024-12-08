@@ -1,0 +1,50 @@
+<!-- media debug menu -->
+<record>
+	<string id="text" value="Media" />
+	<list id="items">
+		<record>
+			<string id="text" value="All Clubs" />
+			<list id="items">
+				<record event_id="DNIS">
+					<string id="text" value="Generate News Item Stats" />
+				</record>
+				<record>
+					<string id="text" value="------------------------" />
+				</record>
+				<record event_id="RBAT">
+					<string id="text" value="Refresh Backroom Advice Templates" />
+				</record>
+				<record event_id="CABA">
+					<string id="text" value="Clear All Backroom Advice Meetings" />
+				</record>
+				<record event_id="CTBA">
+					<string id="text" value="Clear Todays Backroom Advice Meetings" />
+				</record>
+				<record>
+					<string id="text" value="------------------------" />
+				</record>
+				<record event_id="DPQF">
+					<string id="text" value="Output Press Conference Question Frequency" />
+				</record>
+			</list>
+		</record>
+
+		<!-- Press Conference Debug Dialog -->
+		<record event_id="TPCQ">
+			<string id="text" value="Press Conference Questions Debug"/>
+		</record>
+
+		<record event_id="DPCH">
+			<string id="text" value="Press Conference History Size Report" />
+		</record>
+
+		<record event_id="RNHS">
+			<string id="text" value="Narrative Report" />
+		</record>
+
+		<record event_id="PMSJ">
+			<string id="text" value="Media Sources &amp; Journalists Report" />
+		</record>
+
+	</list>
+</record>

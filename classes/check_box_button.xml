@@ -1,0 +1,5 @@
+<!-- an action button that will be used in the news response panels -->
+
+<!-- setting the 'icon' property on this should change the root folder for the appearance used to indicate checked states. icon="checkbox" would be the default -->
+<class class="check_box_button" parent="check_box" appearance="buttons/custom/match/standard/button">
+</class>

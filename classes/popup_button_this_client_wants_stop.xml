@@ -1,0 +1,6 @@
+<class class="popup_button_this_client_wants_stop" parent="popup_button">
+    <flags id="appearance" value="buttons/custom/interface/multiplayer"/>
+	<flags id="menu_appearance" value="menus/standard"/>
+	<flags id="alignment" value="left,centre_y"/>
+	<boolean id="multiline" value="false"/>
+</class>

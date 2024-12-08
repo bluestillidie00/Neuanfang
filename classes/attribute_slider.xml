@@ -1,0 +1,14 @@
+﻿<class class="attribute_slider" parent="attribute_slider_horizontal" height="32" inset ="20">
+	<integer id="notch_frequency" value="1" />
+	<integer id="interval" value="1" />
+	<integer id="page_interval" value="1" />
+	<flags id="alignment" value="centre" />
+	<integer id="min_value" value="1" />
+	<integer id="max_value" value="20" />
+	<integer id="final_changed_event" value="CDBd" />
+	<boolean id="draw_middle_notch" value="no" />
+	<boolean id="show_notch_text" value="true" />
+	<boolean id="show_current_notch_text_left" value="true" />
+	<integer id="text_width" value="90" />
+	<record id="notch_label_properties" font="title" size="10" colour="white"/>
+</class>

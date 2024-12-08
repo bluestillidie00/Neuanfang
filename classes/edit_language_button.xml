@@ -1,0 +1,6 @@
+<class class="edit_language_button" parent="language_button">
+  <boolean id="edit_mode" value="true"/>
+  <boolean id="dhot" value="true"/>
+  <flags id="auto_size" value="all"/>
+  <flags id="appearance" value="buttons/standard/normal/button"/>
+</class>

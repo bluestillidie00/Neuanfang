@@ -1,0 +1,5 @@
+<class class="object_explorer_panel_titlebar" parent="container">
+
+  <flags id="file" value="generic/object explorer panel"/>
+  
+</class>

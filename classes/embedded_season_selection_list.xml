@@ -1,0 +1,10 @@
+<class class="embedded_season_selection_list" parent="season_selection_list">
+  <flags id="appearance" value="buttons/subtle/split/left/button"/>
+  <boolean id="auto_tick_exclusive" value="true"/>
+  <flags id="minus_kind" value="embedded_selection_left"/>
+  <flags id="plus_kind" value="embedded_selection_right"/>
+  <flags id="height" value="30"/>
+  <flags id="spec" value="text"/>
+	<flags id="size" value="small"/>
+	
+</class>

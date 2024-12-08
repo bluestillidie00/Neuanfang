@@ -1,0 +1,5 @@
+﻿<class class="scouting_centre_advanced_filter_category_box" parent="inner_subtle_box">
+	<list id="attachments">
+		<record class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="2" horizontal_inset="2" />
+	</list>
+</class>

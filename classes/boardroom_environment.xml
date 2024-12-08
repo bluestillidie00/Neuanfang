@@ -1,0 +1,6 @@
+﻿
+  
+<class class="boardroom_environment" parent="character_widget" graphics_view="character_widget" scene_type="boardroom" room_type="boardroom" 
+        camera_id="boardroom" view_behind="true" view_camera="character_widget">
+</class>
+  

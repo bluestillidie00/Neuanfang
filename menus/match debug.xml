@@ -1,0 +1,12 @@
+<!-- media debug menu -->
+<record>
+	<string id="text" value="Match" />
+	<list id="items">
+		<record event_id="MERD">
+			<string id="text" value="Export Random Data" />
+		</record>
+		<record event_id="MIRD">
+			<string id="text" value="Import Random Data" />
+		</record>
+	</list>
+</record>

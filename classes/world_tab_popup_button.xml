@@ -1,0 +1,17 @@
+<class class="world_tab_popup_button" parent="tab_popup_button">
+  <flags id="appearance" value="tabs/subsection/normal/top/button"/>
+  <flags id="selected_appearance" value="tabs/subsection/selected/top/button"/>
+  <flags id="icon_enabled" value="true"/>
+  <flags id="icon_alignment" value="left,centre_y"/>
+  <flags id="secondary_icon_enabled" value="false"/>
+  <flags id="icon" value="icons/custom/interface/tab bar/down"/>
+  <flags id="icon_alignment" value="right,centre_y"/>
+  <flags id="draw_arrow" value="false"/>
+  <flags id="menu_appearance" value="menus/custom/interface/tab bar"/>
+  <flags id="alignment" value="left,centre_y"/>
+  <flags id="size" value="normal"/>
+  <flags id="font" value="fonts/text"/> 
+  <flags id="auto_size" value="all"/>
+  <boolean id="multiline" value="false"/>
+  <record id="primary_icon_properties" red_replacement="normal_icon"/>	
+</class>

@@ -1,0 +1,7 @@
+﻿<class class="title_embedded_panel_right" parent="title_embedded_panel_base">
+
+	<flags id="horizontal_alignment" value="right" />
+	<flags id="cs2s" value="top,right" />
+
+</class>
+

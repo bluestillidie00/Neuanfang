@@ -1,0 +1,109 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- player -->
+		<record>
+			<integer id="id" value="play" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="227966" type="use" value="Player" />
+
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_person_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227966" type="use" value="Player" />
+			</record>
+		</record>
+
+		<!-- club -->
+		<record>
+			<integer id="id" value="club" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="557935" type="use" value="Club Joined[COMMENT: AREA: Transfers; SUB-AREA: Wage contribution from selling club; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who player moved to when selling club wage contribution was introduced]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557935" type="use" value="Club Joined[COMMENT: AREA: Transfers; SUB-AREA: Wage contribution from selling club; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who player moved to when selling club wage contribution was introduced]" />
+				<translation id="hint" translation_id="557936" type="use" value="Club player joined when selling club wage contribution was introduced[COMMENT: AREA: Transfers; SUB-AREA: Wage contribution from selling club; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who player moved to when selling club wage contribution was introduced]" />
+			</record>
+		</record>
+
+		<!-- wage contribution -->
+		<record>
+			<integer id="id" value="wage" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557937" type="use" value="Wage Contribution[COMMENT: AREA: Transfers; SUB-AREA: Wage contribution from selling club; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Wage contribution being made by selling club after player moves to new club]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="wage_label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="0" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557937" type="use" value="Wage Contribution[COMMENT: AREA: Transfers; SUB-AREA: Wage contribution from selling club; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Wage contribution being made by selling club after player moves to new club]" />
+			</record>
+		</record>
+
+		<!-- End date -->
+		<record>
+			<integer id="id" value="wend" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="348007" type="use" value="Contributions Paid Till" />
+
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_future" value="5" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="348007" type="use" value="Contributions Paid Till" />
+			</record>
+		</record>
+
+	</list>
+</record>

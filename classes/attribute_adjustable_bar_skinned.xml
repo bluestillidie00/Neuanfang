@@ -1,0 +1,4 @@
+<!-- a popup button used to display role information -->
+<class class="attribute_adjustable_bar_skinned" parent="attribute_adjustable_bar" bar_value_colour="title" adj_bar_highlight_value_colour="title" adj_bar_adj_filler_colour="adj bar empty">
+
+</class>

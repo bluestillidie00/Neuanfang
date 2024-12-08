@@ -1,0 +1,4 @@
+<!-- When given a COMP object this widget displays a picture of the COMP's trophy -->
+
+<class class="comp_award_trophy_picture" parent="object_portrait_picture" comp_use_trophy_icon="true">
+</class>

@@ -1,0 +1,3 @@
+<class class="column_heading_store" parent="column_heading">
+    <flags id="appearance" value="tables/custom/store/heading/normal/row"/>
+</class>

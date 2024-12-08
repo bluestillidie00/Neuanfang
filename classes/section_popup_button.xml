@@ -1,0 +1,20 @@
+<class class="section_popup_button" parent="menubar_popup_button">
+  <flags id="appearance" value="tabs/standard/normal/top/button"/>
+  <flags id="selected_appearance" value="tabs/standard/selected/top/fm23/button"/>
+  <flags id="icon_enabled" value="true"/>
+  <flags id="icon_alignment" value="left,centre_y"/>
+  <flags id="secondary_icon_enabled" value="false"/>
+  <flags id="icon" value="icons/custom/interface/tab bar/down"/>
+  <flags id="icon_alignment" value="right,centre_y"/>
+  <flags id="draw_arrow" value="false"/>
+  <flags id="menu_appearance" value="menus/custom/interface/tab bar"/>
+  <flags id="alignment" value="left,centre_y"/>
+  <flags id="size" value="normal"/>
+  <flags id="font" value="fonts/text"/> 
+  <flags id="auto_size" value="all"/>
+  <boolean id="multiline" value="false"/>
+  <flags id="menu_font_colour" value="text" />
+  <flags id="menu_selected_font_colour" value="text" />
+  <flags id="menu_icon_colour" value="text" />
+
+</class>

@@ -1,0 +1,54 @@
+<!-- a popup button used to display role information -->
+<class class="role_table_popup_button" parent="role_popup_button">
+	<translation id="hint" translation_id="300790" type="use" value="Select a role for the player[COMMENT: team instructions: role hint]" />
+	<symbol id="widget_type" value="role_description_text"/>
+	<record id="widget_properties">
+		<integer id="width" value="280"/>
+		<boolean id="multiline" value="true"/>
+		<flags id="auto_size" value="vertical"/>
+	</record>
+
+	<record id="table_properties">
+		<flags id="mode" value="fill_rows,stripe_rows,select_rows" />
+		<integer id="row_height" value="24" />
+		<integer id="row_spacing" value="1" />
+
+		<list id="column_table_properties">
+			<!--first column is some text-->
+			<record>
+				<flags id="id" value="valu" />
+				<flags id="width" value="170" />
+				<integer id="left" value="5" />
+				<translation id="name" translation_id="316816" type="use" value="Role[COMMENT - person list view column heading]" />
+				<translation id="category" translation_id="248359" type="use" value="General" />
+				<record id="widget_info">
+					<symbol id="class" value="tactical_role_label" />
+				</record>
+				<record id="column_widget_properties">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+				<record id="column_heading">
+					<flags id="alignment" value="left,centre_y" />
+					<translation id="text" translation_id="316816" type="use" value="Role[COMMENT - person list view column heading]" />
+					<translation id="hint" translation_id="316816" type="use" value="Role[COMMENT - person list view column heading]" />
+				</record>
+			</record>
+
+			<!--this column, id "PCrs", corresponds to the PCrs propert held in the items; displays the suitability of the player for this role-->
+			<record>
+				<flags id="id" value="PCrs" />
+				<flags id="width" value="110" />
+				<translation id="name" translation_id="396452" type="use" value="Role Suitability[COMMENT: scout report panel label for showing how good a player in a given role, quite similar to string ID 394571 but shorter so refer to that string for translation context]" />
+				<record id="widget_info">
+					<symbol id="class" value="position_role_duty_suitability_stars" />
+				</record>
+
+				<record id="column_heading">
+					<flags id="alignment" value="left,centre_y" />
+					<translation id="text" translation_id="396452" type="use" value="Role Suitability[COMMENT: scout report panel label for showing how good a player in a given role, quite similar to string ID 394571 but shorter so refer to that string for translation context]" />
+					<translation id="hint" translation_id="396452" type="use" value="Role Suitability[COMMENT: scout report panel label for showing how good a player in a given role, quite similar to string ID 394571 but shorter so refer to that string for translation context]" />
+				</record>
+			</record>
+		</list>
+	</record>
+</class>

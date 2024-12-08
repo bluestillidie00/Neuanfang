@@ -1,0 +1,11 @@
+<!-- a popup menu for use on the header section -->
+<!-- (like a normal popup, but has a non-standard metallic appearance) -->
+
+<class class="header_first" parent="popup_button">
+    <flags id="appearance" value="navigation/popup_first"/>
+	<flags id="menu_appearance" value="buttons/primary/normal"/>
+    <flags id="auto_size" value="horizontal"/>
+    <boolean id="fixed" value="true"/>
+    <boolean id="dont_set_selection" value="true"/>
+    <flags id="style" value="embossed"/>
+</class>

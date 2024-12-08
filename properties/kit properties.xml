@@ -1,0 +1,292 @@
+<record>
+
+	<!-- 
+	The 'ktpr' property is based of these defines in "team_flags.h" (TEAM_KIT_DISPLAY_TYPE) and not KIT_PART in "kit_style.h"
+	Hope this saves someone in the future some time :) - Isaac
+	TKDT_ALL					0
+	TKDT_SHIRT				1					// the shirt design
+	TKDT_ICON					2					// the circle design
+	TKDT_TEXT					3					// the titlebar colours
+	TKDT_SHORTS				4					// the shorts colours
+	TKDT_SOCKS				5					// the socks colours
+	TKDT_COUNT				6
+	-->
+
+	<list id="column_table_properties">
+
+		<!-- Kit year -->
+		<record>
+			<integer id="id" value="year" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="497050" type="use" value="Kit for Specific Season (Start Year)[COMMENT: AREA: Editor; SUB-AREA: Kits; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: set a kit for a specific season, set the start year as the rule for when it should be in use (eg 2019 for the 2019-20 season)]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<global id="min_value" name="game.start_year" />
+				<integer id="max_value" value="2100" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="format_number_hint" value="false" />
+			</record>
+
+			<global id="default_value" name="game.start_year" />
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229773" type="use" value="Year" />
+			</record>
+		</record>
+
+		<!-- Alternative kit number -->
+		<record>
+			<integer id="id" value="ktal" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293525" type="use" value="Alternative Kit Number" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="10" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293525" type="use" value="Alternative Kit Number" />
+			</record>
+		</record>
+
+		<!-- Kit Competition -->
+		<record>
+			<integer id="id" value="comp" />
+			<integer id="width" value="150" />
+			<translation id="name" translation_id="227740" type="use" value="Competition" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="comp_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_comp_button" />
+				<flags id="auto_size" value="vertical" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!-- Foreground Colour -->
+		<record>
+			<integer id="id" value="ksfg" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="293520" type="use" value="Foreground" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<!-- Background Colour -->
+		<record>
+			<integer id="id" value="ksbg" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="293521" type="use" value="Background" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<!-- Outline Colour -->
+		<record>
+			<integer id="id" value="ksou" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="293522" type="use" value="Outline" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="ktpr" not_equals="4" />
+			</list>
+		</record>
+
+		<!-- Number Colour -->
+		<record>
+			<integer id="id" value="nmcl" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="293523" type="use" value="Number Colour" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<!-- text -->
+				<record id="ktpr" not_equals="3" />
+				<record id="ktpr" not_equals="4" />
+				<record id="ktpr" not_equals="5" />
+			</list>
+		</record>
+
+		<!-- Number Outline Colour -->
+		<record>
+			<integer id="id" value="nmoc" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="293524" type="use" value="Number Outline Colour" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<list id="use_field_if">
+				<record id="ktpr" not_equals="2" />
+				<!-- text -->
+				<record id="ktpr" not_equals="3" />
+				<record id="ktpr" not_equals="4" />
+				<record id="ktpr" not_equals="5" />
+			</list>
+		</record>
+
+		<!-- Kit Example -->
+		<record>
+			<integer id="id" value="kite" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="379206" type="use" value="Preview[COMMENT: editing kits in-game, preview what the kit will look like]" />
+			<integer id="auto_hide_priority" value="20" />
+
+			<record id="widget_info">
+				<symbol id="class" value="colours_example_panel" />
+				<integer id="height" value="30" />
+				<translation id="text" translation_id="379309" type="use" value="The Club Name[COMMENT:an example string for the in-game editor preview colour button]" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="379206" type="use" value="Preview[COMMENT: editing kits in-game, preview what the kit will look like]" />
+			</record>
+		</record>
+
+		<!-- Kit Style -->
+		<record>
+			<integer id="id" value="kits" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="293519" type="use" value="Kit Style" />
+			<integer id="auto_hide_priority" value="20" />
+
+			<record id="widget_info">
+				<symbol id="class" value="kit_style_panel" />
+				<!-- Don't change add the button to change the kit-->
+				<boolean id="islt" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="kit_style_panel" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<!-- This allows us to know the colours to preview the styles in -->
+			<list id="dependent_properties">
+				<integer value="ksfg" />
+				<integer value="ksbg" />
+				<integer value="ksou" />
+				<integer value="ktpr" />
+			</list>
+
+			<list id="use_field_if">
+				<!-- icon -->
+				<record id="ktpr" not_equals="2" />
+				<!-- text -->
+				<record id="ktpr" not_equals="3" />
+			</list>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293519" type="use" value="Kit Style" />
+			</record>
+		</record>
+
+		<!-- Kit part -->
+		<record>
+			<integer id="id" value="ktpr" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="229400" type="use" value="Type" />
+            <integer id="left" value="4"/>
+
+			<record id="widget_info">
+				<symbol id="class" value="kit_type_popup_button" />
+				<flags id="txmd" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="kit_type_popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<flags id="txmd" value="false" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+		<!--Back of shirt type -->
+		<record>
+			<integer id="id" value="bost" />
+			<translation id="name" translation_id="419350" type="use" value="Back Of Shirt Style[COMMENT: editor; field to set what the back of the shirt looks like]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="0">
+						<translation id="text" translation_id="419351" type="use" value="Same As Front[COMMENT: editor; back of shirt style]" />
+					</record>
+					<record id="1">
+						<translation id="text" translation_id="419352" type="use" value="Square For Number[COMMENT: editor; back of shirt style leaving a blank space for the number to appear on (most commonly on striped or hooped shirts)]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="419353" type="use" value="Plain[COMMENT: editor; back of shirt style]" />
+					</record>
+
+				</list>
+			</record>
+
+			<list id="use_field_if">
+				<!-- shirt -->
+				<record id="ktpr" equals="1" />
+			</list>
+
+		</record>
+
+	</list>
+	<!-- column display properties -->
+</record>

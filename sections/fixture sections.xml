@@ -1,0 +1,173 @@
+<!--
+this file contains a list of all of the sections in the game
+-->
+<properties>
+	<string id="text" value="Match"/>
+	<list id="items">
+
+		<record id="phmT" collapsed="false">
+			<translation id="text" translation_id="330036" type="use" value="Home Team Selection[COMMENT: sections.xml; match screen indicator text, matchday squad selection]" />
+			<list id="items">
+				<!--overview-->
+				<record id="phtc"/>
+				<!--team-->
+				<record id="PhcT"/>
+				<!--player-->
+				<record id="PhcP"/>
+				<!--takers-->
+				<record id="PhcS"/>
+				<!--penalties-->
+				<record id="PhcN"/>
+				<!--captains-->
+				<record id="PhcC"/>
+				<!--Opposition-->
+				<record id="phOI"/>
+				<!--squad numbers-->
+				<record id="phsn"/>
+			</list>
+		</record>
+		<record id="pamT" collapsed="false">
+			<translation id="text" translation_id="329730" type="use" value="Away Team Selection[COMMENT: sections.xml; match screen indicator text, matchday squad selection]" />
+			<list id="items">
+				<!--overview-->
+				<record id="patc"/>
+				<!--team-->
+				<record id="PacT"/>
+				<!--player-->
+				<record id="PacP"/>
+				<!--penalties-->
+				<record id="PacN"/>
+				<!--todo george.webster-->
+				<record id="setP">
+					<translation id="text" translation_id="306492" type="use" value="Set Pieces[COMMENT: match analysis panel; event type]" />
+					<list id="items">
+						<!--takers-->
+						<record id="PacS"/>
+					</list>
+				</record>
+				<!--captains-->
+				<record id="PacC"/>
+				<!--Opposition-->
+				<record id="paOI"/>
+				<!--squad numbers-->
+				<record id="pasn"/>
+			</list>
+		</record>
+		<!-- pre match briefings -->
+		<record id="phBR" />
+		<!-- pre match briefings -->
+		<record id="paBR" />
+		<!-- pre match tactical advice -->
+		<record id="phTA" />
+		<!-- pre match tactical advice -->
+		<record id="paTA" />
+		<!--stat pack-->
+		<record id="pmms"/>
+
+		<!--in-match sections, before kick off only-->
+		<!--line ups-->
+		<record id="mplu"/>
+		<!--team news-->
+		<record id="mptn"/>
+		<!--home press conference-->
+		<record id="mpPh"/>
+		<!--away press conference-->
+		<record id="mpPa"/>
+
+		<!--in-match sections, after kick off-->
+		<!--old match review-->
+		<record id="MRev"/>
+		<!--mid match review-->
+		<record id="mMMr"/>
+		<!--post match review-->
+		<record id="mpst"/>
+		<!--home team talk-->
+		<record id="htmt"/>
+		<!--away team talk-->
+		<record id="atmt"/>
+        <!--home penalties team talk-->
+        <record id="hPtt"/>
+        <!--away penalties team talk-->
+        <record id="aPtt"/>
+		<!--pitch-->
+		<record id="hilp"/>
+		<!--home and away penalty shootout picking -->
+		<record id="htSO"/>
+		<record id="atSO"/>
+
+		<!--post match section-->
+		<!--post match home press conference-->
+		<record id="mPCh"/>
+		<!--post match away press conference-->
+		<record id="mPCa"/>
+		<!--post match section-->
+		<record id="mmeS"/>
+
+		<!--tactics in match-->
+		<record id="TimR">
+			<list id="items">
+				<record id="TacH"/>
+				<record id="htpP"/>
+				<record id="TacA"/>
+				<record id="atpP"/>
+				<record id="htpS"/>
+				<record id="htpN"/>
+				<record id="atpS"/>
+				<record id="atpN"/>
+				<record id="htpC"/>
+				<record id="hopi"/>
+				<record id="atpC"/>
+				<record id="aopi"/>
+				<record id="DbTp"/>
+			</list>
+		</record>
+
+
+		<!--analysis-->
+		<record id="Anal" alternate_format="true">
+			<translation id="text" translation_id="296334" type="use" value="Analysis[COMMENT: match screen; analysis panel]" />
+			<list id="items">
+				<!--home-->
+				<record id="AnaH"/>
+				<!--away-->
+				<record id="AnaA"/>
+				<!--neutral-->
+				<record id="AnaN"/>
+				<!--summary-->
+				<record id="mspa"/>
+				<!--team analysis-->
+				<record id="matm"/>
+				<!--player analysis-->
+				<record id="mapl"/>
+				<!--shot analysis-->
+				<record id="mshp"/>
+				<!--home analysis-->
+				<record id="mhan"/>
+				<!--away analysis-->
+				<record id="maan"/>
+				<!--action zones-->
+				<record id="mazp"/>
+			</list>
+		</record>
+		<!--stats-->
+		<record id="Stat" alternate_format="true">
+			<translation id="text" translation_id="247412" type="use" value="Stats" />
+			<list id="items">
+				<!--stats-->
+				<record id="mtst"/>
+				<!--ratings-->
+				<record id="bmts"/>
+				<!--home stats-->
+				<record id="hfms"/>
+				<!--away stats-->
+				<record id="afms"/>
+				<!--formations-->
+				<record id="bmfs"/>
+			</list>
+		</record>
+		<!--updates-->
+		<record id="mgup"/>
+		<!--trophy presentation-->
+		<record id="mpTP"/>
+	</list>
+</properties>

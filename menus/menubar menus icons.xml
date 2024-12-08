@@ -1,0 +1,39 @@
+<!--
+Use this file to set icon properties on the top level items of the
+menus (popup buttons) in the menu bar (Manager, Team, World, Bookmarks and Options submenus).
+
+The following properties can be added/changed so that each menu item will either:
+- show a custom icon, when the "icon" property is set (e.g. <record id="manager_icon" icon="icons/16px/warning"/>)
+- show default icon* (if available), when the "use_default_icon" property is set to true and "file" is not set
+(e.g. <record id="manager_icon" use_default_icon="true"/>)
+- have no icon, when neither the "use_default_icon" not "file" have been set (e.g. <record id="manager_icon"/>)
+
+* The default icon is the icon of the game object being represented (e.g. the competition/league icon, the flag of a nation, etc..).
+  Only some of the items have game objects associated with them, so setting the default icon on an item like "Search" won't have any effect.
+
+Note that this file doesn't actually generate the menus as those are generated in code,
+but what it does is provide a template of the top level items of those menus so that
+the icons can be set on them using xml.
+This means that even if a menu item is listed in these xml properties, it doesn't
+mean that it will show up in the game; that depends on what items the game wants to show.
+-->
+<properties>
+
+<!-- Manager Menu -->
+<record id="manager_menu_icons">
+	<record id="change_user_icon"/>	
+</record>
+
+<!-- Bookmarks Menu -->
+<record id="bookmarks_menu_icons">
+	<record id="add_to_bookmarks_icon"/>
+	<record id="edit_bookmarks_icon"/>
+	<record id="set_as_homepage_icon"/>
+	<!-- actual bookmarks don't have icons (we'd end up with a list of bookmarks all using the same icon) -->
+</record>
+
+<!-- Options Menu -->
+<!-- icons for items in this menu should be set in game/data/menus/game.xml -->
+<!-- to set an icon, just add to the item record a line like this: <string id="icon" value="icons/16px/warning"/> -->
+
+</properties>

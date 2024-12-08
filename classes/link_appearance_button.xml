@@ -1,0 +1,4 @@
+﻿<class class="link_appearance_button" parent="button">
+	<flags id="appearance" value="buttons/link/button"/>
+	<flags id="auto_size" value="all"/>
+</class>

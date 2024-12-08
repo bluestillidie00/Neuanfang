@@ -1,0 +1,1255 @@
+<record>
+	<!-- NOTE: Column text and hints will be filled in by LEAGUE_STAGE_META_DATA_LOOKUP_POLICY if not specified, as long as 'column heading' is included
+        As well as the properties from 'league_stage_properties.h' you may add properties from 'team_properties.h' and these entries will override the settings in 
+        'team properties.xml' -->
+	<!-- See LEAGUE_STAGE::get_table_heading for the strings used -->
+
+	<list id="column_table_properties">
+
+		<!-- HOME games played -->
+		<record>
+			<integer id="id" value="LHpl" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgpH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME games won -->
+		<record>
+			<integer id="id" value="LHwo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgwH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME games drawn -->
+		<record>
+			<integer id="id" value="LHdr" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgdH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME games lost on pen -->
+		<record>
+			<integer id="id" value="LHlp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME games lost -->
+		<record>
+			<integer id="id" value="LHlo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tglH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME goals for -->
+		<record>
+			<integer id="id" value="LHfo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgsH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME goals against -->
+		<record>
+			<integer id="id" value="LHag" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgcH">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME goal difference -->
+		<record>
+			<integer id="id" value="LHgd" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME points -->
+		<record>
+			<integer id="id" value="LHpo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="league_points_text" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- HOME average points -->
+		<record>
+			<integer id="id" value="LHap" />
+			<integer id="width" value="70" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359499" type="use" value="Home[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<boolean id="FrcS" value="true" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- Home recent form -->
+		<record>
+			<integer id="id" value="Tshf" />
+			<integer id="width" value="70" />
+			<translation id="title" translation_id="344664" type="use" value="Recent Form" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<integer id="auto_hide_priority" value="16" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgpH">
+				<symbol id="class" value="team_recent_form_widget" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+				<translation id="hint" translation_id="395298" type="use" value="Recent form at home[COMMENT: league table panel; column hint team form 5 games, home only]" />
+			</record>
+		</record>
+
+		<!-- AWAY games played -->
+		<record>
+			<integer id="id" value="LApl" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgpA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY games won -->
+		<record>
+			<integer id="id" value="LAwo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgwA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY games drawn -->
+		<record>
+			<integer id="id" value="LAdr" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgdA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY games lost on pen -->
+		<record>
+			<integer id="id" value="LAlp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY games lost -->
+		<record>
+			<integer id="id" value="LAlo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tglA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY goals for -->
+		<record>
+			<integer id="id" value="LAfo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgsA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY goals against -->
+		<record>
+			<integer id="id" value="LAag" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" list="tgcA">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY goal difference -->
+		<record>
+			<integer id="id" value="LAgd" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY points -->
+		<record>
+			<integer id="id" value="LApo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="league_points_text" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY average points -->
+		<record>
+			<integer id="id" value="LAap" />
+			<integer id="width" value="70" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<boolean id="FrcS" value="true" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- AWAY recent form -->
+		<record>
+			<integer id="id" value="Tsaf" />
+			<integer id="width" value="70" />
+			<translation id="title" translation_id="344664" type="use" value="Recent Form" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359407" type="use" value="Away[COMMENT: league_table; use top 10 matches; category for stats relating to performance away from home]" />
+			<boolean id="sort_ascending" value="false" />
+			<integer id="auto_hide_priority" value="16" />
+
+			<record id="widget_info" class="team_recent_form_widget" list="tgpA"/>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+				<translation id="hint" translation_id="395299" type="use" value="Recent form away from home[COMMENT: league table panel; column hint team form 5 games, away only]" />
+			</record>
+		</record>
+
+		<!-- 1st half of season games played -->
+		<record>
+			<integer id="id" value="L1pl" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season games won -->
+		<record>
+			<integer id="id" value="L1wo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season games drawn -->
+		<record>
+			<integer id="id" value="L1dr" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season games lost on pen -->
+		<record>
+			<integer id="id" value="L1lp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season games lost -->
+		<record>
+			<integer id="id" value="L1lo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season goals for -->
+		<record>
+			<integer id="id" value="L1fo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season goals against -->
+		<record>
+			<integer id="id" value="L1ag" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season goal difference -->
+		<record>
+			<integer id="id" value="L1gd" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season points -->
+		<record>
+			<integer id="id" value="L1po" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="league_points_text" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 1st half of season average points -->
+		<record>
+			<integer id="id" value="L1ap" />
+			<integer id="width" value="70" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420592" type="use" value="1st half of the stage[COMMENT: league_table; category for stats relating to performance in the first half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<boolean id="FrcS" value="true" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season games played -->
+		<record>
+			<integer id="id" value="L2pl" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season games won -->
+		<record>
+			<integer id="id" value="L2wo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season games drawn -->
+		<record>
+			<integer id="id" value="L2dr" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season games lost on pen -->
+		<record>
+			<integer id="id" value="L2lp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season games lost -->
+		<record>
+			<integer id="id" value="L2lo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season goals for -->
+		<record>
+			<integer id="id" value="L2fo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season goals against -->
+		<record>
+			<integer id="id" value="L2ag" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season goal difference -->
+		<record>
+			<integer id="id" value="L2gd" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season points -->
+		<record>
+			<integer id="id" value="L2po" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="league_points_text" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- 2nd half of season average points -->
+		<record>
+			<integer id="id" value="L2ap" />
+			<integer id="width" value="70" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="420593" type="use" value="2nd half of the stage[COMMENT: league_table; category for stats relating to performance in the second half of the league stage]" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<boolean id="FrcS" value="true" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL games played -->
+		<record>
+			<integer id="id" value="LOpl" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="10" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tgpS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL games won -->
+		<record>
+			<integer id="id" value="LOwo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="20" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tgwS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL games drawn -->
+		<record>
+			<integer id="id" value="LOdr" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="20" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tgdS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL games lost on pen -->
+		<record>
+			<integer id="id" value="LOlp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="20" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL games lost -->
+		<record>
+			<integer id="id" value="LOlo" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="20" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tglS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL goals for -->
+		<record>
+			<integer id="id" value="LOfo" />
+			<integer id="width" value="42" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="30" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" navigation_focus_target="false">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tgsS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL goals against -->
+		<record>
+			<integer id="id" value="LOag" />
+			<integer id="width" value="42" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="30" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info" navigation_focus_target="false">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="list" value="tgcS" />
+				<integer id="wants_mouse_events" value="false" />
+				<integer id="mouse_hovering_time" value="0" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL goal difference -->
+		<record>
+			<integer id="id" value="LOgd" />
+			<integer id="width" value="42" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="15" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL points -->
+		<record>
+			<integer id="id" value="LOpo" />
+			<integer id="width" value="46" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="0" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="league_points_text" />
+				<flags id="alignment" value="centre" />
+				<integer id="navigation_focus_target" value="false" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL average points -->
+		<record>
+			<integer id="id" value="LOap" />
+			<integer id="width" value="70" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="2" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+				<boolean id="FrcS" value="true" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<boolean id="navigation_focus_target" value="true" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OVERALL recent form -->
+		<record >
+			<integer id="id" value="Tsof"  />
+			<integer id="width" value="60" />
+			<translation id="title" translation_id="344664" type="use" value="Recent Form" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359652" type="use" value="Overall[COMMENT: league_table; use top 10 matches; category for stats relating to performance at home or away]" />
+			<integer id="auto_hide_priority" value="21" />
+
+			<record id="widget_info">
+				<symbol id="class" value="team_recent_form_widget" />
+				<symbol id="show_overall_form" value="true" />
+				<integer id="list" value="tgp5" />
+				<flags id="icon_alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+				<translation id="hint" translation_id="395300" type="use" value="Recent form, home and away[COMMENT: league table panel; column hint team form 5 games, home and away]" />
+			</record>
+		</record>
+
+		<!-- OTHER games won by 2 goals or more -->
+		<record>
+			<integer id="id" value="Lwn2" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<integer id="auto_hide_priority" value="8" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OTHER games won by 1 goal -->
+		<record>
+			<integer id="id" value="Lwn1" />
+			<integer id="width" value="38" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<integer id="auto_hide_priority" value="8" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OTHER drawn offensive -->
+		<record>
+			<integer id="id" value="LdrO" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<integer id="auto_hide_priority" value="20" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OTHER offensive points -->
+		<record>
+			<integer id="id" value="Lofp" />
+			<integer id="width" value="38" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<integer id="auto_hide_priority" value="10" />
+			<boolean id="sort_ascending" value="false" />
+
+			<record id="widget_info">
+				<symbol id="class" value="text_button" />
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<!-- See LEAGUE_STAGE::get_table_heading -->
+			</record>
+		</record>
+
+		<!-- OTHER main league position -->
+		<record>
+			<integer id="id" value="Lpos" />
+			<integer id="width" value="46" />
+			<translation id="name" translation_id="284395" type="use" value="League Position[COMMENT: French attacking league table; league position heading hint]" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<integer id="auto_hide_priority" value="1" />
+			<boolean id="sort_ascending" value="true" />
+
+			<record id="widget_info">
+				<symbol id="class" value="team_league_position_text" />
+				<flags id="alignment" value="left,centre_y" />
+				<integer id="list" value="towS" /> -->
+				<integer id="wants_mouse_events" value="true" />
+				<integer id="mouse_hovering_time" value="2000" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="242478" type="use" value="Pos[(league position)]" />
+				<translation id="hint" translation_id="284395" type="use" value="League Position[COMMENT: French attacking league table; league position heading hint]" />
+			</record>
+		</record>
+
+		<!-- OTHER relative league position arrows-->
+		<record>
+			<integer id="id" value="Lrps" />
+			<integer id="width" value="16" />
+			<translation id="name" translation_id="359629" type="use" value="League Position Change[COMMENT: league table; hint/name for column displaying an arrow for whether the team has moved up or down the league table]" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<!--<boolean id="sort_disabled" value="true" />-->
+			<integer id="auto_hide_priority" value="1" />
+
+			<record id="widget_info">
+				<symbol id="class" value="value_based_picture" />
+				<boolean id="scale_picture" value="false" />
+				<flags id="image_alignment" value="centre" />
+				<integer id="colour" value="0" />
+				<list id="value_list">
+					<record min_value="-100" max_value="-1" file="icons/16px/table down" />
+					<record min_value="0" max_value="0" file="" />
+					<record min_value="1" max_value="100" file="icons/16px/table up" />
+				</list>
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="hint" translation_id="359629" type="use" value="League Position Change[COMMENT: league table; hint/name for column displaying an arrow for whether the team has moved up or down the league table]" />
+			</record>
+		</record>
+
+		<!-- OTHER qualifying info -->
+		<record>
+			<integer id="id" value="Lqin" />
+			<integer id="width" value="44" />
+			<translation id="name" translation_id="296470" type="use" value="Status of team in competition[COMMENT:league_stage_panel; tooltip for Inf column]" />
+			<flags id="customisation_context" value="league_table" />
+			<translation id="category" translation_id="359645" type="use" value="Other[COMMENT: league_table; use top 10 matches; category for misc stats]" />
+			<!--<boolean id="sort_disabled" value="true" />-->
+			<integer id="auto_hide_priority" value="12" />
+
+			<record id="widget_info" class="team_qualification_info_button" alignment="left, centre_y, can_scale"/>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="242480" type="use" value="Inf[(league info)]" />
+				<translation id="hint" translation_id="296470" type="use" value="Status of team in competition[COMMENT:league_stage_panel; tooltip for Inf column]" />
+			</record>
+		</record>
+
+		<!-- Team name listed under PROP_TEAM and PROP_TEAM_NAME so we can request PROP_TEAM without having to request all the strings -->
+		<record>
+			<integer id="id" value="Ttea" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="100" />
+			<translation id="name" translation_id="291489" type="use" value="Team Name" />
+			<integer id="auto_hide_priority" value="0" />
+
+			<record id="widget_info" class="team_button" enable_icon_for_nations="true" alternate_format="[%team#1-six_letter]" navigation_focus_target="true"/>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229408" type="use" value="Team" />
+				<translation id="hint" translation_id="296471" type="use" value="Teams in competition[COMMENT:league_stage_panel; tooltip for Team column]" />
+			</record>
+		</record>
+		
+		<record>
+			<integer id="id" value="Tte6" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="70" />
+			<translation id="name" translation_id="291489" type="use" value="Team Name" />
+			<integer id="auto_hide_priority" value="0" />
+
+			<record id="widget_info" class="team_button" enable_icon_for_nations="true" format="[%team#1-six_letter]" />
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229408" type="use" value="Team" />
+				<translation id="hint" translation_id="296471" type="use" value="Teams in competition[COMMENT:league_stage_panel; tooltip for Team column]" />
+			</record>
+		</record>
+
+		<!-- Nation -->
+		<record>
+			<integer id="id" value="Tnat" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="291489" type="use" value="Team Name" />
+			<integer id="auto_hide_priority" value="1" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229408" type="use" value="Team" />
+				<translation id="hint" translation_id="296471" type="use" value="Teams in competition[COMMENT:league_stage_panel; tooltip for Team column]" />
+			</record>
+		</record>
+
+		<!-- Cup Draw Nation -->
+		<record>
+			<integer id="id" value="Cnat" />
+			<integer id="width" value="30" />
+			<integer id="minimum_width" value="30" />
+			<boolean id="icon_only" value="true" />
+			<translation id="name" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+			<integer id="auto_hide_priority" value="15" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+				<integer id="display_format" value="3" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+				<translation id="hint" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+			</record>
+		</record>
+
+		<!--display nation-->
+		<record>
+			<integer id="id" value="Dnat" />
+			<integer id="width" value="65" />
+			<integer id="minimum_width" value="65" />
+			<translation id="name" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+			<integer id="auto_hide_priority" value="15" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+				<integer id="display_format" value="3" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+				<translation id="hint" translation_id="291490" type="use" value="Nation[COMMENT: nation the team is in]" />
+			</record>
+		</record>
+
+	</list>
+</record>

@@ -1,0 +1,3 @@
+﻿<class class="tactics_pitch_button" parent="button">
+  <flags id="appearance" value="buttons/custom/tactics/pitch switch/normal/button"/>
+</class>

@@ -1,0 +1,45 @@
+<record>
+	<list id="column_table_properties">
+
+		<record>
+			<integer id="id" value="dref" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="129" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="fixture_name_text" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+		<!-- fixture name-->
+		<record>
+			<integer id="id" value="FxNm" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+			<record id="widget_info">
+				<symbol id="class" value="fixture_name_text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+				<translation id="hint" translation_id="292561" type="use" value="Competition Name" />
+			</record>
+		</record>
+
+	</list>
+	<!-- column display properties -->
+
+</record>

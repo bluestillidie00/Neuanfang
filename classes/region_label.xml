@@ -1,0 +1,4 @@
+<class class="region_label" parent="game_formatted_label">
+  <string id="format" value="[%region#1]" />
+  <integer id="forced_formats" value="vf_region" />
+</class>

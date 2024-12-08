@@ -1,0 +1,5 @@
+﻿<!-- an action button that will be used in the news response panels -->
+
+<class class="primary_action_button_news" parent="action_button_news">
+  <flags id="appearance" value="buttons/primary/normal/button"/>
+</class>

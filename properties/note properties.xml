@@ -1,0 +1,121 @@
+<record>
+	<list id="column_table_properties">
+
+		<!-- Note title -->
+		<record>
+			<integer id="id" value="titl" />
+			<flags id="width" value="-1" />
+			<translation id="name" translation_id="257277" type="use" value="Note titles[COMMENT: Hint for table heading column with note titles]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257276" type="use" value="Notes[COMMENT: Table heading for column with note titles]" />
+				<translation id="hint" translation_id="257277" type="use" value="Note titles[COMMENT: Hint for table heading column with note titles]" />
+			</record>
+		</record>
+
+		<!-- note tag/category column -->
+		<record>
+			<integer id="id" value="ntgs" />
+			<flags id="width" value="200" />
+			<translation id="name" translation_id="257278" type="use" value="Categories[COMMENT: Table heading for column with note categories/tags]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="note_tag_label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257278" type="use" value="Categories[COMMENT: Table heading for column with note categories/tags]" />
+				<translation id="hint" translation_id="257279" type="use" value="Categories assigned to this note[COMMENT: Hint for table heading column with note categories/tags]" />
+			</record>
+		</record>
+
+		<!-- note reminder date column -->
+		<record>
+			<integer id="id" value="nord" />
+			<flags id="width" value="130" />
+			<flags id="minimum_width" value="60" />
+			<translation id="name" translation_id="257281" type="use" value="Reminder date[COMMENT: Hint for table heading column with note reminder dates]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257280" type="use" value="Reminder[COMMENT: Table heading for column with note reminder dates]" />
+				<translation id="hint" translation_id="257281" type="use" value="Reminder date[COMMENT: Hint for table heading column with note reminder dates]" />
+			</record>
+		</record>
+
+		<!-- note reminder recurrence column -->
+		<record>
+			<integer id="id" value="norr" />
+			<flags id="width" value="130" />
+			<flags id="minimum_width" value="60" />
+			<translation id="name" translation_id="257283" type="use" value="Reminder recurrence[COMMENT: Hint for table heading column with note reminder recurrence]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="note_recurrence_label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257282" type="use" value="Recurrence[COMMENT: Table heading for column with note reminder recurrence]" />
+				<translation id="hint" translation_id="257283" type="use" value="Reminder recurrence[COMMENT: Hint for table heading column with note reminder recurrence]" />
+			</record>
+		</record>
+
+		<!-- note creation date -->
+		<record>
+			<integer id="id" value="ncda" />
+			<flags id="width" value="100" />
+			<flags id="minimum_width" value="20" />
+			<translation id="name" translation_id="257284" type="use" value="Creation Date[COMMENT: Table heading for column with note creation date]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+				<string id="format" value="[%date#1-short]" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257284" type="use" value="Creation Date[COMMENT: Table heading for column with note creation date]" />
+				<translation id="hint" translation_id="257285" type="use" value="The date the note was created[COMMENT: Hint for table heading column with creation date]" />
+			</record>
+		</record>
+
+		<!-- note object name column -->
+		<record>
+			<integer id="id" value="dref" />
+			<flags id="width" value="250" />
+			<flags id="minimum_width" value="60" />
+			<translation id="name" translation_id="257286" type="use" value="Item[COMMENT: Table heading for column with the name of the database record (player/team/etc) the note is about]" />
+			<integer id="auto_hide_priority" value="20" />
+			<record id="widget_info">
+				<symbol id="class" value="client_object_label" />
+				<flags id="alignment" value="left,centre_y" />
+				<flags id="spec" value="text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257286" type="use" value="Item[COMMENT: Table heading for column with the name of the database record (player/team/etc) the note is about]" />
+				<translation id="hint" translation_id="257287" type="use" value="The item this note is about[COMMENT: Table heading hint for column with the name of the database record (player/team/etc) the note is about]" />
+			</record>
+		</record>
+
+	</list>
+	<!-- column display properties -->
+
+</record>

@@ -1,0 +1,572 @@
+<record>
+	<list id="column_table_properties">
+
+		<record>
+			<integer id="id" value="dref" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="129" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="comp_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+		<!--Competition and competition name are the same thing-->
+		<record>
+			<integer id="id" value="comp" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+			<record id="widget_info">
+				<symbol id="class" value="comp_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+				<translation id="hint" translation_id="292561" type="use" value="Competition Name" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cnam" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292798" type="use" value="Name[comment - Competition name]" />
+				<translation id="hint" translation_id="292561" type="use" value="Competition Name" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="csnm" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292684" type="use" value="Short Name" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="c3ln" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="293087" type="use" value="Three Letter Name" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="ChoR" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="385506" type="use" value="Holders[COMMENT: FR 9550 - holders, i.e. last winners of a competition]" />
+			<record id="widget_info">
+				<symbol id="class" value="team_button" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="CLwR" />
+			<integer id="width" value="-1" />
+			<translation id="text" translation_id="416340" type="use" value="Title Holders[COMMENT - Competition Overview Title Holders]" />
+			<record id="widget_info">
+				<symbol id="class" value="team_button" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="trop" />
+			<integer id="width" value="20" />
+			<translation id="name" translation_id="227740" type="use" value="Competition" />
+			<record id="widget_info">
+				<symbol id="class" value="object_portrait_picture" />
+				<boolean id="scale_picture" value="true" />
+				<boolean id="keep_aspect_ratio" value="true" />
+				<boolean id="comp_use_trophy_icon" value="true" />
+				<flags id="image_alignment" value="centre" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="PrFv" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="437031" type="use" value="Pre-Season Favs[COMMENT: FR 13665 - team wins competition news item; pre-season favourites for competition title]" />
+			<record id="widget_info">
+				<symbol id="class" value="team_button" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="crep" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="227963" type="use" value="Reputation" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="200" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cREp" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="227963" type="use" value="Reputation" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="200" />
+				<integer id="max_value" value="1" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="lREp" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="227963" type="use" value="Reputation" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="200" />
+				<integer id="max_value" value="1" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cmnl" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="386798" type="use" value="Minimum Pitch Length[COMMENT: editor field, allows user to input the minimum possible pitch dimension type]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="90" />
+				<integer id="max_value" value="120" />
+				<boolean id="is_optional" value="true" />
+				<!-- Allow floats -->
+				<boolean id="allf" value="true" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cmxl" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="256844" type="use" value="Maximum Pitch Length[COMMENT: team stadium max pitch length, title]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="90" />
+				<integer id="max_value" value="120" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="allf" value="true" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cmnw" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="386799" type="use" value="Minimum Pitch Width[COMMENT: editor field, allows user to input the minimum possible pitch dimension type]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="55" />
+				<integer id="max_value" value="90" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="allf" value="true" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cmxw" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="256846" type="use" value="Maximum Pitch Width[COMMENT: team stadium max pitch width, title]" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="55" />
+				<integer id="max_value" value="90" />
+				<boolean id="is_optional" value="true" />
+				<boolean id="allf" value="true" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cuae" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316920" type="use" value="Uses Extra Officials[COMMENT: editor field]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="csso" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316921" type="use" value="Uses Seated Stadiums Only[COMMENT: editor field]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="wbst" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="388979" type="use" value="Winter Ball Start Date[COMMENT: editor; when does the winter ball start getting used]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="wben" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="388978" type="use" value="Winter Ball End Date[COMMENT: editor; when does the winter ball stop getting used]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="wbcl" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="314577" type="use" value="Winter Ball Colour[COMMENT: editor; city limit for regional division]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cosr" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="557876" type="use" value="Overriden Subs Rules[COMMENT: AREA: In-Game Editor; SUB-AREA: Substitution override; FR-BN: FM-916; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: editor field; Video Assistant Referee]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="substitutes_popup_button" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<translation id="hint" translation_id="557877" type="use" value="Substitutes[COMMENT: AREA: In-Game Editor; SUB-AREA: Substitution override; FR-BN: FM-916; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: editor; hint for Video Assistant Referee, can't be feminised]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="HKEt" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="557878" type="use" value="Uses Goal-line Technology[COMMENT: AREA: In-Game Editor; SUB-AREA: Goal-line Technology override; FR-BN: FM-916; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: editor field; Video Assistant Referee]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="VARf" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="509212" type="use" value="Enable VAR Database Settings[COMMENT: AREA: In-Game Editor; SUB-AREA: VAR Settings; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: editor field; Video Assistant Referee]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+				<translation id="hint" translation_id="509213" type="use" value="Set this to override the competition rules and provide your own VAR settings[COMMENT: AREA: In-Game Editor; SUB-AREA: VAR Settings; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: editor; hint for Video Assistant Referee, can't be feminised]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="VARt" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="457661" type="use" value="Video Assistant Referee[COMMENT: editor; VAR type for a competition]" />
+			
+
+			<list id="use_field_if">
+				<record id="VARf" equals="true" />
+			</list>
+			
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<translation id="hint" translation_id="457662" type="use" value="Does this competition use a VAR system?[COMMENT: editor; hint for Video Assistant Referee]" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+	
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="469254" type="use" value="Referee Review[COMMENT: editor, Video Assistant Referee type]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="469255" type="use" value="Remote Review[COMMENT: editor, Video Assistant Referee type]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="469256" type="use" value="Referee And/Or Remote Review[COMMENT: editor, Video Assistant Referee type]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="469257" type="use" value="Unknown VAR Type[COMMENT: editor, Video Assistant Referee type]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="469258" type="use" value="No VAR[COMMENT: editor, Video Assistant Referee type]" />
+					</record>
+
+				</list>
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="VARd" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="457668" type="use" value="VAR - From Date[COMMENT: editor; VAR field for a competition]" />
+
+			<list id="use_field_if">
+				<record id="VARt" not_equals="4" />
+				<record id="VARt" not_equals="5" />
+				<record id="VARf" equals="true" />
+			</list>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<integer id="years_in_future" value="5" />
+				<translation id="hint" translation_id="457669" type="use" value="Does VAR only get used for matches from a certain date onwards?[COMMENT: editor; hint for VAR rule]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="VARv" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="457672" type="use" value="Uses Goal-line Technology - TV Matches Only[COMMENT: editor; Goal-line technology tv flag for a competition]" />
+		
+			<list id="use_field_if">
+				<record id="VARt" not_equals="4" />
+				<record id="VARt" not_equals="5" />
+				<record id="VARf" equals="true" />
+			</list>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+				<translation id="hint" translation_id="457673" type="use" value="Does Goal-line technology only get used for matches on television?[COMMENT: editor; hint for Goal-line tv matches only field]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cnat" />
+			<integer id="width" value="170" />
+			<translation id="name" translation_id="292799" type="use" value="Nation[COMMENT: nation the competition is in]" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292799" type="use" value="Nation[COMMENT: nation the competition is in]" />
+				<translation id="hint" translation_id="292799" type="use" value="Nation[COMMENT: nation the competition is in]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="crps" />
+			<integer id="width" value="170" />
+			<translation id="name" translation_id="306609" type="use" value="Reputation[COMMENT: competitions reputation in a continent]" />
+			<boolean id="sort_ascending" value="false" />
+			<record id="widget_info">
+				<symbol id="class" value="comp_reputation_stars_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="306609" type="use" value="Reputation[COMMENT: competitions reputation in a continent]" />
+				<translation id="hint" translation_id="306609" type="use" value="Reputation[COMMENT: competitions reputation in a continent]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="ccrp" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="306610" type="use" value="Pos[COMMENT: competitions reputation in a continent]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<translation id="format" translation_id="242482" type="use" value="[%number#1-nth]" />
+				<flags id="alignment" value="left, centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="306610" type="use" value="Pos[COMMENT: competitions reputation in a continent]" />
+				<translation id="hint" translation_id="306611" type="use" value="Ranking by Reputation[COMMENT: competitions reputation in a continent]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="clrp" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="312748" type="use" value="Prev[COMMENT: previous competition's reputation in a continent, abbreviated]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<translation id="format" translation_id="242482" type="use" value="[%number#1-nth]" />
+				<flags id="alignment" value="left, centre_y" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="312748" type="use" value="Prev[COMMENT: previous competition's reputation in a continent, abbreviated]" />
+				<translation id="hint" translation_id="312749" type="use" value="Previous Ranking by Reputation[COMMENT: previous competition's reputation in a continent]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cdif" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="319591" type="use" value="Change[COMMENT: competitions reputation rank change]" />
+			<record id="widget_info">
+				<symbol id="class" value="position_change_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="319592" type="use" value="Change[COMMENT:  change of competitions reputation in a continent]" />
+				<translation id="hint" translation_id="306612" type="use" value="Reputation Change[COMMENT:  change of competitions reputation in a continent]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="cCoR" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+				<translation id="hint" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+			</record>
+		</record>
+
+		<!-- news subscription: unsubscribe button -->
+		<record>
+			<integer id="id" value="Srem" />
+			<integer id="width" value="25" />
+			<flags id="customisation_context" value="none" />
+			<integer id="minimum_width" value="25" />
+			<record id="widget_info">
+				<symbol id="class" value="button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+			</record>
+		</record>
+
+		<!-- Subscribe / Unsubscribe -->
+		<record>
+			<integer id="id" value="nsss" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="412472" type="use" value="Follow/Unfollow[COMMENT: toggle subscription status]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="50" />
+			<record id="widget_info">
+				<symbol id="class" value="news_subscribe_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316791" type="use" value="News[COMMENT: toggle subscription status]" />
+				<translation id="hint" translation_id="412473" type="use" value="Click to set follow on/off[COMMENT: hint text describing what a particular button does, in this case toggling whether subscriptions are enabled or not]" />
+			</record>
+		</record>
+
+		<!-- Total transfer spend transfer window -->
+		<record>
+			<integer id="id" value="cTWs" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="420761" type="use" value="Total Transfer Window Spend[COMMENT: competition panel, label indicating the total transfer expenditure during a given transfer window]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="230119" type="use" value="Transfer" />
+			<integer id="minimum_width" value="50" />
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="420761" type="use" value="Total Transfer Window Spend[COMMENT: competition panel, label indicating the total transfer expenditure during a given transfer window]" />
+				<translation id="hint" translation_id="420761" type="use" value="Total Transfer Window Spend[COMMENT: competition panel, label indicating the total transfer expenditure during a given transfer window]" />
+			</record>
+		</record>
+	</list>
+	<!-- column display properties -->
+
+</record>

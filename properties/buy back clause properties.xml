@@ -1,0 +1,134 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- player -->
+		<record>
+			<integer id="id" value="play" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="227966" type="use" value="Player" />
+			
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_person_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227966" type="use" value="Player" />
+			</record>
+		</record>
+
+		<!-- club -->
+		<record>
+			<integer id="id" value="club" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="557864" type="use" value="Buying Club[COMMENT: AREA: Transfers; SUB-AREA: Buy back clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who is able to trigger the buy back clause]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557864" type="use" value="Buying Club[COMMENT: AREA: Transfers; SUB-AREA: Buy back clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who is able to trigger the buy back clause]" />
+				<translation id="hint" translation_id="557865" type="use" value="Club able to trigger buy back clause[COMMENT: AREA: Transfers; SUB-AREA: Buy back clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who is able to trigger the buy back clause]" />
+			</record>
+		</record>
+
+		<!-- fee -->
+		<record>
+			<integer id="id" value="cash" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293033" type="use" value="Buy Back Fee" />
+			
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293033" type="use" value="Buy Back Fee" />
+			</record>
+		</record>
+
+		<!-- Start date -->
+		<record>
+			<integer id="id" value="bbsd" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293013" type="use" value="Start Date" />
+			
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_past" value="10" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293013" type="use" value="Start Date" />
+			</record>
+		</record>
+
+		<!-- End date -->
+		<record>
+			<integer id="id" value="bbed" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293014" type="use" value="End Date" />
+			
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_future" value="10" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293014" type="use" value="End Date" />
+			</record>
+		</record>
+
+	</list>
+</record>

@@ -1,0 +1,993 @@
+<record>
+
+	<list id="column_table_properties">
+
+		<record>
+			<integer id="id" value="stad" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292792" type="use" value="Name[comment - Award name]" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_button" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229689" type="use" value="Name" />
+				<translation id="hint" translation_id="349091" type="use" value="Stadium Name[COMMENT: team stadium name]" />
+			</record>
+		</record>
+
+		<!--Stadium name-->
+		<record>
+			<integer id="id" value="Snam" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="349091" type="use" value="Stadium Name[COMMENT: team stadium name]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<list id="attachments">
+					<record class="max_length_attachment">
+						<integer id="length" value="25" />
+					</record>
+				</list>
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="229689" type="use" value="Name" />
+				<translation id="hint" translation_id="349091" type="use" value="Stadium Name[COMMENT: team stadium name]" />
+			</record>
+		</record>
+
+		<!--Stadium name reason-->
+		<record>
+			<integer id="id" value="Snft" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515121" type="use" value="Stadium Named After[COMMENT: AREA: stadiums; SUB-AREA: team stadium named after; NOTE: reason for the stadium name]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_named_after_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515121" type="use" value="Stadium Named After[COMMENT: AREA: stadiums; SUB-AREA: team stadium named after; NOTE: reason for the stadium name]" />
+				<translation id="hint" translation_id="515121" type="use" value="Stadium Named After[COMMENT: AREA: stadiums; SUB-AREA: team stadium named after; NOTE: reason for the stadium name]" />
+			</record>
+		</record>
+
+		<!--Nation-->
+		<record>
+			<integer id="id" value="Snat" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="229390" type="use" value="Nation" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="229390" type="use" value="Nation" />
+				<translation id="hint" translation_id="229390" type="use" value="Nation" />
+			</record>
+		</record>
+
+		<!--City-->
+		<record>
+			<integer id="id" value="SctI" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="319589" type="use" value="City[COMMENT: team stadium city, short title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="city_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="319589" type="use" value="City[COMMENT: team stadium city, short title]" />
+				<translation id="hint" translation_id="319590" type="use" value="City[COMMENT: team stadium city, title]" />
+			</record>
+		</record>
+
+		<!--City Weather-->
+		<record>
+			<integer id="id" value="SctW" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="292964" type="use" value="Weather" />
+			<integer id="minimum_width" value="60" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info">
+				<symbol id="class" value="weather_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="292964" type="use" value="Weather" />
+				<translation id="hint" translation_id="292964" type="use" value="Weather" />
+			</record>
+		</record>
+
+		<!--Latitude-->
+		<record>
+			<integer id="id" value="Slat" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="292961" type="use" value="Latitude" />
+			<integer id="minimum_width" value="60" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="292961" type="use" value="Latitude" />
+				<translation id="hint" translation_id="292961" type="use" value="Latitude" />
+			</record>
+		</record>
+
+		<!--Longitude-->
+		<record>
+			<integer id="id" value="Slon" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="292962" type="use" value="Longitude" />
+			<integer id="minimum_width" value="60" />
+			<flags id="customisation_context" value="none" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="292962" type="use" value="Longitude" />
+				<translation id="hint" translation_id="292962" type="use" value="Longitude" />
+			</record>
+		</record>
+
+		<!--is extinct-->
+		<record>
+			<integer id="id" value="Sext" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515122" type="use" value="No Longer In Use?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is no longer in use]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515122" type="use" value="No Longer In Use?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is no longer in use]" />
+				<translation id="hint" translation_id="515122" type="use" value="No Longer In Use?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is no longer in use]" />
+			</record>
+		</record>
+
+		<!--is training ground-->
+		<record>
+			<integer id="id" value="Sitg" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515123" type="use" value="Is Training Ground?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is a training ground, yes or no]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515123" type="use" value="Is Training Ground?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is a training ground, yes or no]" />
+				<translation id="hint" translation_id="515123" type="use" value="Is Training Ground?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is a training ground, yes or no]" />
+			</record>
+		</record>
+
+		<!--is under construction-->
+		<record>
+			<integer id="id" value="Snew" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515124" type="use" value="Is Under Construction?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is under construction, yes or no]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515124" type="use" value="Is Under Construction?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is under construction, yes or no]" />
+				<translation id="hint" translation_id="515124" type="use" value="Is Under Construction?[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is under construction, yes or no]" />
+			</record>
+		</record>
+
+		<!--Cost-->
+		<record>
+			<integer id="id" value="Scos" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="333752" type="use" value="Cost[COMMENT: store dialog; text indicating how much a purchasable item costs]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="333752" type="use" value="Cost[COMMENT: store dialog; text indicating how much a purchasable item costs]" />
+				<translation id="hint" translation_id="333752" type="use" value="Cost[COMMENT: store dialog; text indicating how much a purchasable item costs]" />
+			</record>
+		</record>
+
+		<!--build start date-->
+		<record>
+			<integer id="id" value="SblS" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="420795" type="use" value="Build Start Date[COMMENT: stadium: date it it due to commence being built]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="420795" type="use" value="Build Start Date[COMMENT: stadium: date it it due to commence being built]" />
+				<translation id="hint" translation_id="420795" type="use" value="Build Start Date[COMMENT: stadium: date it it due to commence being built]" />
+			</record>
+		</record>
+
+		<!--build completion date-->
+		<record>
+			<integer id="id" value="SblC" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="420796" type="use" value="Build Completion Date[COMMENT: stadium: date it it due to finish being built]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="420796" type="use" value="Build Completion Date[COMMENT: stadium: date it it due to finish being built]" />
+				<translation id="hint" translation_id="420796" type="use" value="Build Completion Date[COMMENT: stadium: date it it due to finish being built]" />
+			</record>
+		</record>
+
+		<!--build date-->
+		<record>
+			<integer id="id" value="Sbld" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="420794" type="use" value="Built[COMMENT: stadium: date it was built]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="420794" type="use" value="Built[COMMENT: stadium: date it was built]" />
+				<translation id="hint" translation_id="420794" type="use" value="Built[COMMENT: stadium: date it was built]" />
+			</record>
+		</record>
+
+		<!--rebuild date-->
+		<record>
+			<integer id="id" value="Srbd" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="515125" type="use" value="Rebuilt[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date it was rebuilt]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515125" type="use" value="Rebuilt[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date it was rebuilt]" />
+				<translation id="hint" translation_id="515125" type="use" value="Rebuilt[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date it was rebuilt]" />
+			</record>
+		</record>
+
+		<!-- year built -->
+		<record>
+			<integer id="id" value="Sbdy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<boolean id="NumF" value="0" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+				<translation id="hint" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+			</record>
+		</record>
+
+		<!-- year rebuilt -->
+		<record>
+			<integer id="id" value="Srby" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="383931" type="use" value="Year Rebuilt[COMMENT: heading; team_information_panel; year the stadium was re-built on]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<boolean id="NumF" value="0" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="383931" type="use" value="Year Rebuilt[COMMENT: heading; team_information_panel; year the stadium was re-built on]" />
+				<translation id="hint" translation_id="383931" type="use" value="Year Rebuilt[COMMENT: heading; team_information_panel; year the stadium was re-built on]" />
+			</record>
+		</record>
+
+		<!--condition of stadium-->
+		<record>
+			<integer id="id" value="Sdcy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_condition_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="100" />
+				<translation id="hint" translation_id="420797" type="use" value="The lower the number the better the condition of the stadium, this reduces ground maintenance[COMMENT: in-game editor; edit stadium condition number]" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+				<translation id="hint" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+			</record>
+		</record>
+
+		<!--condition of stadium environment-->
+		<record>
+			<integer id="id" value="Senv" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515126" type="use" value="Stadium Environment Condition[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: stadium condition, what does the area around the stadium look like in terms of quality]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_environment_condition_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="100" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515126" type="use" value="Stadium Environment Condition[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: stadium condition, what does the area around the stadium look like in terms of quality]" />
+				<translation id="hint" translation_id="515126" type="use" value="Stadium Environment Condition[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: stadium condition, what does the area around the stadium look like in terms of quality]" />
+			</record>
+		</record>
+
+		<!--Nearby Stadium-->
+		<record>
+			<integer id="id" value="Snbs" />
+			<integer id="width" value="-1" />
+			<string id="name" value="Nearby Stadium" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_button" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<string id="name" value="Nearby Stadium" />
+				<string id="name" value="Stadium that lives close this stadium" />
+			</record>
+		</record>
+
+		<!--owner type-->
+		<record>
+			<integer id="id" value="Soty" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284335" type="use" value="Owned By[COMMENT: heading; team_information_panel; who owns the stadium]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_owner_type_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284335" type="use" value="Owned By[COMMENT: heading; team_information_panel; who owns the stadium]" />
+				<translation id="hint" translation_id="284335" type="use" value="Owned By[COMMENT: heading; team_information_panel; who owns the stadium]" />
+			</record>
+		</record>
+
+		<!--owner-->
+		<record>
+			<integer id="id" value="Sown" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="386668" type="use" value="Club Owned By[COMMENT: heading; team_information_panel; the club who owns the stadium]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="NumF" value="0" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="386668" type="use" value="Club Owned By[COMMENT: heading; team_information_panel; the club who owns the stadium]" />
+				<translation id="hint" translation_id="386668" type="use" value="Club Owned By[COMMENT: heading; team_information_panel; the club who owns the stadium]" />
+			</record>
+		</record>
+
+		<!--Date of ownership-->
+		<record>
+			<integer id="id" value="Doco" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="515127" type="use" value="Owned Since[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date since it was owned]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515127" type="use" value="Owned Since[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date since it was owned]" />
+				<translation id="hint" translation_id="515127" type="use" value="Owned Since[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: date since it was owned]" />
+			</record>
+		</record>
+
+		<!--rent-->
+		<record>
+			<integer id="id" value="Sren" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284331" type="use" value="Rent[COMMENT: heading; team_information_panel; stadium rent for FM2009]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_rent_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284331" type="use" value="Rent[COMMENT: heading; team_information_panel; stadium rent for FM2009]" />
+				<translation id="hint" translation_id="284331" type="use" value="Rent[COMMENT: heading; team_information_panel; stadium rent for FM2009]" />
+			</record>
+		</record>
+
+		<!--Capacity-->
+		<record>
+			<integer id="id" value="Scpy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+				<translation id="hint" translation_id="252903" type="use" value="Stadium Capacity[COMMENT: team stadium capacity, title]" />
+			</record>
+		</record>
+
+		<!-- Seated Capacity-->
+		<record>
+			<integer id="id" value="Sscy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="349078" type="use" value="Seating Capacity[COMMENT: team stadium seating capacity]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="client_validation_number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+				<integer id="property" value="Scpy" />
+				<integer id="mode" value="1" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="349074" type="use" value="S Capacity[COMMENT: team stadium seated capacity, short title]" />
+				<translation id="hint" translation_id="349078" type="use" value="Seating Capacity[COMMENT: team stadium seating capacity]" />
+			</record>
+		</record>
+
+		<!--Capacity (more detailled)-->
+		<record>
+			<integer id="id" value="TstD" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+			<integer id="minimum_width" value="100" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_capacity_description_text" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+				<translation id="hint" translation_id="252903" type="use" value="Stadium Capacity[COMMENT: team stadium capacity, title]" />
+			</record>
+		</record>
+
+		<!-- All Seater Capacity-->
+		<record>
+			<integer id="id" value="Scas" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="348784" type="use" value="Capacity For All-Seater Games[COMMENT: team stadium all seater capacity]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="client_validation_number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+				<integer id="property" value="Sscy" />
+				<integer id="mode" value="1" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="348766" type="use" value="All S Capacity[COMMENT: team stadium all seater capacity, short title]" />
+				<translation id="hint" translation_id="348785" type="use" value="Capacity For All-Seater Games[COMMENT: team stadium seating capacity]" />
+			</record>
+		</record>
+
+		<!-- Used Capacity-->
+		<record>
+			<integer id="id" value="Sucy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="293478" type="use" value="Used Capacity" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="client_validation_number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+				<integer id="property" value="Scpy" />
+				<integer id="mode" value="1" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="349165" type="use" value="Used Cap[COMMENT: team stadium used capacity; short text]" />
+				<translation id="hint" translation_id="293478" type="use" value="Used Capacity" />
+			</record>
+		</record>
+
+		<!-- Expansion Capacity-->
+		<record>
+			<integer id="id" value="Secy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="348826" type="use" value="Expansion Capacity[COMMENT: team stadium expansion capacity]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="client_validation_number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+				<integer id="property" value="Scpy" />
+				<integer id="mode" value="0" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="348825" type="use" value="Exp. Cap[COMMENT: team stadium expansion capacity; short text]" />
+				<translation id="hint" translation_id="348826" type="use" value="Expansion Capacity[COMMENT: team stadium expansion capacity]" />
+			</record>
+		</record>
+
+		<!--undersoil heating-->
+		<record>
+			<integer id="id" value="Sush" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+				<boolean id="ynwo" value="true" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+				<translation id="hint" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+			</record>
+		</record>
+
+		<!--covered-->
+		<record>
+			<integer id="id" value="Scov" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284338" type="use" value="Roof[COMMENT: heading; team_information_panel; indicates if stadium is covered]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+				<boolean id="ynwo" value="true" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284338" type="use" value="Roof[COMMENT: heading; team_information_panel; indicates if stadium is covered]" />
+				<translation id="hint" translation_id="284338" type="use" value="Roof[COMMENT: heading; team_information_panel; indicates if stadium is covered]" />
+			</record>
+		</record>
+
+		<!--retractable roof-->
+		<record>
+			<integer id="id" value="Srrf" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515128" type="use" value="Retractable Roof[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has retractable roof]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+				<boolean id="ynwo" value="true" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515128" type="use" value="Retractable Roof[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has retractable roof]" />
+				<translation id="hint" translation_id="515128" type="use" value="Retractable Roof[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has retractable roof]" />
+			</record>
+		</record>
+
+		<!--digital ad hoaring-->
+		<record>
+			<integer id="id" value="Sdah" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515129" type="use" value="Digital Ad Hoarding[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has digital ad hoaring]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515129" type="use" value="Digital Ad Hoarding[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has digital ad hoaring]" />
+				<translation id="hint" translation_id="515129" type="use" value="Digital Ad Hoarding[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium has digital ad hoaring]" />
+			</record>
+		</record>
+
+		<!--oval-->
+		<record>
+			<integer id="id" value="Sovl" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515130" type="use" value="Oval[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is oval]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<integer id="click_event" value="CDBd" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515130" type="use" value="Oval[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is oval]" />
+				<translation id="hint" translation_id="515130" type="use" value="Oval[COMMENT: AREA: stadiums; SUB-AREA: team stadium details; NOTE: indicates if stadium is oval]" />
+			</record>
+		</record>
+
+		<!--surface type-->
+		<record>
+			<integer id="id" value="SsfT" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="pitch_surface_type_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="284181" type="use" value="Grass[COMMENT:Pitch surface type]" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="289985" type="use" value="Synthetic (New Type - Soft)[COMMENT:Pitch surface type]" />
+					</record>
+					<record id="3">
+						<translation id="text" translation_id="284183" type="use" value="Synthetic (Old Type - Hard)[COMMENT:Pitch surface type]" />
+					</record>
+					<record id="4">
+						<translation id="text" translation_id="284184" type="use" value="Non-grass[COMMENT:Pitch surface type]" />
+					</record>
+					<record id="5">
+						<translation id="text" translation_id="293484" type="use" value="Gravel[COMMENT: stadium pitch type]" />
+					</record>
+					<record id="6">
+						<translation id="text" translation_id="293485" type="use" value="Clay[COMMENT: stadium pitch type]" />
+					</record>
+					<record id="7">
+						<translation id="text" translation_id="293486" type="use" value="Sand[COMMENT: stadium pitch type]" />
+					</record>
+					<record id="8">
+						<translation id="text" translation_id="390435" type="use" value="Grass/Synthetic Mix[COMMENT: FR#10627 - stadium pitch type]" />
+					</record>
+				</list>
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+				<translation id="hint" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+			</record>
+		</record>
+
+		<!--pitch dimension-->
+		<record>
+			<integer id="id" value="Sdim" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="257332" type="use" value="Pitch Dimensions[COMMENT: heading; team_information_panel; pitch dimensions]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dimension_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="257332" type="use" value="Pitch Dimensions[COMMENT: heading; team_information_panel; pitch dimensions]" />
+				<translation id="hint" translation_id="257332" type="use" value="Pitch Dimensions[COMMENT: heading; team_information_panel; pitch dimensions]" />
+			</record>
+		</record>
+
+		<!--max pitch dimension-->
+		<record>
+			<integer id="id" value="SMdi" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="257333" type="use" value="Maximum Pitch Dimensions[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dimension_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="257333" type="use" value="Maximum Pitch Dimensions[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+				<translation id="hint" translation_id="257333" type="use" value="Maximum Pitch Dimensions[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+			</record>
+		</record>
+
+		<!--pitch condition-->
+		<record>
+			<integer id="id" value="Sptc" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="282080" type="use" value="Pitch Condition[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="pitch_condition_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="282080" type="use" value="Pitch Condition[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+				<translation id="hint" translation_id="282080" type="use" value="Pitch Condition[COMMENT: heading; team_information_panel; max pitch dimensions]" />
+			</record>
+		</record>
+
+		<!--pitch last relaid date-->
+		<record>
+			<integer id="id" value="Splr" />
+			<integer id="width" value="100" />
+			<flags id="customisation_context" value="none" />
+			<translation id="name" translation_id="454733" type="use" value="Pitch Last Relaid[COMMENT: stadium: date pitch was last relaid]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="454734" type="use" value="Last relaid[COMMENT: stadium: date pitch was last relaid]" />
+				<translation id="hint" translation_id="454733" type="use" value="Pitch Last Relaid[COMMENT: stadium: date pitch was last relaid]" />
+			</record>
+		</record>
+
+		<!--pitch description picture-->
+		<record>
+			<integer id="id" value="SdeS" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="492047" type="use" value="Pitch[COMMENT: AREA: Development Centre; SUB-AREA: Youth Team Tactics; FR-BN: 28435; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: label for displaying team selection on a pitch view graphic]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="pitch_description_picture" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="492047" type="use" value="Pitch[COMMENT: AREA: Development Centre; SUB-AREA: Youth Team Tactics; FR-BN: 28435; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: label for displaying team selection on a pitch view graphic]" />
+				<translation id="hint" translation_id="492047" type="use" value="Pitch[COMMENT: AREA: Development Centre; SUB-AREA: Youth Team Tactics; FR-BN: 28435; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: label for displaying team selection on a pitch view graphic]" />
+			</record>
+		</record>
+
+		<!--Used by national team-->
+		<record>
+			<integer id="id" value="Sunt" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515131" type="use" value="Used By National Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national team]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_used_by_national_team_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515131" type="use" value="Used By National Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national team]" />
+				<translation id="hint" translation_id="515131" type="use" value="Used By National Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national team]" />
+			</record>
+		</record>
+
+		<!--Used by national u21 team-->
+		<record>
+			<integer id="id" value="Su21" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515132" type="use" value="Used By National Under-21 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 21 team]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_used_by_national_team_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515133" type="use" value="Used By National Under-21 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 21team]" />
+				<translation id="hint" translation_id="515132" type="use" value="Used By National Under-21 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 21 team]" />
+			</record>
+		</record>
+
+		<!--Used by national u19 team-->
+		<record>
+			<integer id="id" value="Su19" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="515134" type="use" value="Used By National Under-19 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 19 team]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_used_by_national_team_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="515134" type="use" value="Used By National Under-19 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 19 team]" />
+				<translation id="hint" translation_id="515134" type="use" value="Used By National Under-19 Team[COMMENT: AREA: Stadium panel; SUB-AREA: Stadium information; FR-BN: 30348; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: how often this stadium is used by the local national Under 19 team]" />
+			</record>
+		</record>
+
+		<!-- Stadium seat colour -->
+		<record>
+			<integer id="id" value="Sscl" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="344753" type="use" value="Seat Colour[COMMENT: editor, field name]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+	</list>
+
+</record>

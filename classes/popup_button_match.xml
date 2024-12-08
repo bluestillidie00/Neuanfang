@@ -1,0 +1,7 @@
+<class class="popup_button_match" parent="popup_button">
+	<flags id="appearance" value="buttons/custom/match/standard/normal/button"/>
+	<flags id="menu_appearance" value="menus/standard"/>
+	<flags id="alignment" value="left,centre_y"/>
+	<boolean id="multiline" value="false"/>
+	<flags id="colour" value="white"/>
+</class>

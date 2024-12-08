@@ -1,0 +1,4 @@
+<!-- a purchase button that can be used on the news response panels -->
+
+<class class="purchase_button_news" parent="icon_button" appearance="buttons/custom/inbox/button" red_replacement="black">
+</class>

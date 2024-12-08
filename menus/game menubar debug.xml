@@ -1,0 +1,102 @@
+<!-- mac menubar --><record>
+
+  <translation id="text" translation_id="259404" type="use" value="menubar" />
+  <!-- the 'key' in these menu items are configurabe inside the game, and
+	in theory they can mean something different than the default/standards.
+	For this reason, until we add code that updates the Mac menu bar with
+	the current settings of the user preferences, we do not show the keys
+	in the menubar for the following actions -->
+
+  <list id="items">
+    <record id="128">
+      <string id="text" value="Apple" />
+      <list id="items">
+        <record event_id="PREF" event_target="scrC" key=",">
+          <translation id="text" translation_id="229824" type="use" value="Preferences" />
+        </record>
+        <record id="----" />
+      </list>
+    </record>
+
+    <record id="129">
+      <translation id="text" translation_id="230242" type="use" value="File" />
+      <list id="items">
+        <record event_id="NEW " event_target="glob">
+          <translation id="text" translation_id="251223" type="use" value="New Game..." />
+        </record>    <!-- key="N" -->
+        <record id="----" />
+        <record event_id="OPN?" event_target="glob">
+          <translation id="text" translation_id="248149" type="use" value="Load Game" />
+        </record>   <!-- key="O" -->
+        <record id="----" />
+        <record event_id="SAVE" event_target="glob">
+          <translation id="text" translation_id="247111" type="use" value="Save" />
+        </record>          <!-- key="S" -->
+        <record event_id="SAVA" event_target="glob">
+          <translation id="text" translation_id="247112" type="use" value="Save As..." />
+        </record>
+      </list>
+    </record>
+
+    <record id="130">
+      <translation id="text" translation_id="229690" type="use" value="Edit" />
+      <list id="items">
+        <record event_id="UNDO">
+          <translation id="text" translation_id="230251" type="use" value="Undo" />
+        </record>
+        <record id="----" />
+        <record event_id="CUT ">
+          <translation id="text" translation_id="247113" type="use" value="Cut" />
+        </record>         <!-- key="X" -->
+        <record event_id="COPY">
+          <translation id="text" translation_id="247114" type="use" value="Copy" />
+        </record>        <!-- key="C" -->
+        <record event_id="PAST">
+          <translation id="text" translation_id="247115" type="use" value="Paste" />
+        </record>       <!-- key="V" -->
+        <record event_id="DELE">
+          <translation id="text" translation_id="229717" type="use" value="Clear" />
+        </record>
+        <record id="----" />
+        <record>
+        <translation id="text" translation_id="247116" type="use" value="Select All" />
+      </record>                <!-- key="A" -->
+      </list>
+    </record>
+
+    <record id="131">
+      <translation id="text" translation_id="247117" type="use" value="Window" />
+      <list id="items">
+        <record event_id="MAMR">
+          <translation id="text" translation_id="291297" type="use" value="Start Screen[COMMENT: section title for game start screen]" />
+        </record>
+        <record id="----" />
+        <record event_id="FULL">
+          <translation id="text" translation_id="247118" type="use" value="Full Screen Mode" />
+        </record>
+        <!-- key="F" -->
+      </list>
+    </record>
+
+    <record id="139">
+      <translation id="text" translation_id="247119" type="use" value="Help" />
+      <list id="items">
+        <record event_id="HHLP" event_target="glob" key="?">
+          <translation id="text" translation_id="247119" type="use" value="Help" />
+        </record>
+        <!-- keep this as is for now; will cause Cmd+? not to work as custom key -->
+      </list>
+    </record>
+
+    <record file="menus/debug" id="132" />
+    <record property="Dchn" id="134" />
+
+    <record file="menus/media debug" id="135" />
+    <record file="menus/morale debug" id="136" />
+    <record file="menus/news debug" id="137" />
+    <record file="menus/ai debug" id="138" />
+	<record file="menus/tutorial debug" id="140" />
+    <record file="menus/misc debug" id="139" />
+
+  </list>
+</record>

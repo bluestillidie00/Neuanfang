@@ -1,0 +1,34 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- Fixture Venue -->
+		<record>
+			<integer id="id" value="FxVn" />
+			<integer id="width" value="55" />
+			<integer id="minimum_width" value="55" />
+		</record>
+
+		<!-- Fixture Context Team Result -->
+		<record>
+			<integer id="id" value="FxRT" />
+			<integer id="width" value="25" />
+			<integer id="minimum_width" value="25" />
+		</record>
+
+		<!-- Fixture Scoreline/postponement/view button -->
+		<record>
+			<integer id="id" value="FxRs" />
+			<integer id="width" value="55" />
+			<integer id="minimum_width" value="55" />
+		</record>
+
+		<!-- Fixture date availability -->
+		<record>
+			<integer id="id" value="Fxda" />
+			<integer id="width" value="90" />
+			<integer id="minimum_width" value="90" />
+		</record>
+
+	</list>
+
+</record>

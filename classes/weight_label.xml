@@ -1,0 +1,5 @@
+<!-- Used to display weight strings. -->
+<class class="weight_label" parent="game_formatted_label">
+  <string id="format" value="[%weight#1]" />
+  <integer id="forced_formats" value="vf_weight" />
+</class>

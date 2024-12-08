@@ -1,0 +1,25 @@
+﻿<class class="player_target_icon" parent="value_based_picture">
+	<flags id="image_alignment" value="centre"/>
+	<boolean id="scale_picture" value="true"/>
+	<boolean id="keep_aspect_ratio" value="true"/>
+	<list id="value_list">
+		<!-- TRAINS_WELL -->
+		<record value="1" file="icons/26px/training" red_replacement="text"/>
+		<!-- PLAY_WELL_FIRST_TEAM -->
+		<record value="2" file="icons/26px/squad shirt" red_replacement="text"/>
+		<!-- DO_PPM_TRAINING -->
+		<record value="3" file="icons/26px/training traits" red_replacement="text"/>
+		<!-- LEARN_PLAY_NEW_ROLE -->
+		<record value="4" file="icons/26px/learn role" red_replacement="text"/>
+		<!-- LEARN_NEW_POSITION -->
+		<record value="5" file="icons/26px/learn position" red_replacement="text"/>
+		<!-- SCORE_GOALS -->
+		<record value="6" file="icons/26px/goal" red_replacement="text"/>
+		<!-- ASSIST_GOALS -->
+		<record value="7" file="icons/26px/assist" red_replacement="text"/>
+		<!-- KEEP_CLEAN_SHEETS -->
+		<record value="8" file="icons/16px/training goalkeeping" red_replacement="text"/>
+		<!-- PLAY_WELL_RESERVE_TEAM -->
+		<record value="9" file="icons/26px/squad shirt" red_replacement="text"/>
+	</list>
+</class>

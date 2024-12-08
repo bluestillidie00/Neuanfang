@@ -1,0 +1,8 @@
+﻿<class class="empty_state_button_container" parent="container">
+	<list id="attachments">
+		<record class="stick_to_sides_attachment" alignment="bottom" inset="0" apply_to_children="true" />
+		<record class="fit_children_attachment" alignment="vertical" offset="0" />
+		<record class="arrange_horizontal_platform_attachment" alignment="middle" offset="0" />
+	</list>
+
+</class>

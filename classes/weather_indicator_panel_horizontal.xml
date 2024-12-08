@@ -1,0 +1,5 @@
+<class class="weather_indicator_panel_horizontal" parent="weather_indicator_panel">
+
+  <flags id="file" value="match/weather indicator horizontal"/>
+  
+</class>

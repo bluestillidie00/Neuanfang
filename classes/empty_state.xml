@@ -1,0 +1,30 @@
+﻿<class class="empty_state" parent="bordered_box">
+	<list id="attachments">
+		<record class="vertical_arrange" vertical_offset="0" vertical_gap="0" horizontal_inset="0" vertical_alignment="middle"/>
+	</list>
+
+	<list id="mapped_properties">
+		<record>
+			<flags id="widget_id" value="header_widget" />
+			<record id="properties">
+				<flags id="spec" value="text" />
+				<flags id="style" value="bold" />
+				<flags id="size" value="large" />
+				<flags id="alignment" value="centre_x,bottom" />
+				<flags id="auto_size" value="vertical" />
+				<flags id="colour" value="text" />
+			</record>
+		</record>
+
+		<record>
+			<flags id="widget_id" value="body_widget" />
+			<record id="properties">
+				<flags id="spec" value="text" />
+				<flags id="size" value="normal" />
+				<flags id="alignment" value="centre_x,top" />
+				<flags id="auto_size" value="vertical" />
+				<flags id="colour" value="faded text" />
+			</record>
+		</record>
+	</list>
+</class>

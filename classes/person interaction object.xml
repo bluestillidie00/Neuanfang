@@ -1,0 +1,21 @@
+﻿<class class="person_interaction_object" parent="container" >
+
+	<list id="attachments">
+		<record class="vertical_arrange_autosize" />
+	</list>
+
+	<list id="contents">
+		
+		<record class="text" >
+			<record id="properties" widget_id="pioT" font="title" auto_size="all"/>
+		</record>
+		
+		<record class="container">
+			<record id="properties" widget_id="pioC"/>
+			<list id="attachments">
+				<record class="fit_children_attachment" id="ftch" alignment="vertical, extend"/>
+				<record class="arrange_horizontal_attachment" wrap="true" id="arhz" />
+			</list>
+		</record>
+	</list>
+</class>

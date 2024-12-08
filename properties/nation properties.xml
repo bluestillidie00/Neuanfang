@@ -1,0 +1,1407 @@
+<record>
+	<list id="column_table_properties">
+
+		<record>
+			<integer id="id" value="dref" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="129" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+				<integer id="mode" value="1" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+		<!--Team name listed under PROP_NATION and PROP_NATION_NAME so we can request PROP_NATION without having to request all the strings-->
+		<record>
+			<integer id="id" value="Nnat" />
+			<list id="dependent_properties">
+				<integer value="Ttmc" />
+			</list>
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292801" type="use" value="Name[comment - Nation name]" />
+			<record id="widget_info">
+				<symbol id="class" value="nation_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292801" type="use" value="Name[comment - Nation name]" />
+				<translation id="hint" translation_id="292802" type="use" value="Nation Name" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nnam" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292801" type="use" value="Name[comment - Nation name]" />
+			<!-- Note: This property should NOT use a nation_button as it is returned from the server as a string -->
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292801" type="use" value="Name[comment - Nation name]" />
+				<translation id="hint" translation_id="292802" type="use" value="Nation Name" />
+			</record>
+		</record>
+
+		<!--continent-->
+		<record>
+			<integer id="id" value="Ncni" />
+			<integer id="width" value="110" />
+			<translation id="name" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+			<record id="widget_info">
+				<symbol id="class" value="continent_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+				<translation id="hint" translation_id="291492" type="use" value="Continent[COMMENT: continent a nation belongs to]" />
+			</record>
+		</record>
+
+		<!--rivals-->
+		<record>
+			<integer id="id" value="Nriv" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="297313" type="use" value="Rival Nation(s)[COMMENT:label for displaying a nation's rivals]" />
+			<record id="widget_info">
+				<symbol id="class" value="rival_nations_text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="297313" type="use" value="Rival Nation(s)[COMMENT:label for displaying a nation's rivals]" />
+				<translation id="hint" translation_id="297313" type="use" value="Rival Nation(s)[COMMENT:label for displaying a nation's rivals]" />
+			</record>
+		</record>
+
+		<!--nickname-->
+		<record>
+			<integer id="id" value="TCnn" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="319435" type="use" value="Nickname[COMMENT: heading; team information panel; club nickname]" />
+			<record id="widget_info">
+				<symbol id="class" value="text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="319435" type="use" value="Nickname[COMMENT: heading; team information panel; club nickname]" />
+				<translation id="hint" translation_id="319435" type="use" value="Nickname[COMMENT: heading; team information panel; club nickname]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nrep" />
+			<integer id="width" value="30" />
+			<translation id="name" translation_id="227963" type="use" value="Reputation" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="10000" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227962" type="use" value="Rep[COMMENT:Abbreviation for 'reputation']" />
+				<translation id="hint" translation_id="227963" type="use" value="Reputation" />
+			</record>
+		</record>
+
+		<!--manager status-->
+		<record>
+			<integer id="id" value="TCMJ" />
+			<integer id="width" value="70" />
+			<translation id="name" translation_id="247319" type="use" value="Job Security" />
+			<record id="widget_info">
+				<symbol id="class" value="job_status_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="335336" type="use" value="Status[COMMENT: abbreviation of Job Status for a manager in the game]" />
+				<translation id="hint" translation_id="247319" type="use" value="Job Security" />
+			</record>
+		</record>
+
+		<!--capital-->
+		<!--<record>
+      <integer id="id" value="Ncac" />
+      <integer id="width" value="90" />
+      <translation id="name" translation_id="297309" type="use" value="Capital City[COMMENT:label for displaying a nation's capital city]" />
+      <record id="widget_info">
+        <symbol id="class" value="city_label" />
+      </record>
+
+      <record id="column_heading">
+        <flags id="alignment" value="left,centre_y" />
+        <translation id="text" translation_id="297309" type="use" value="Capital City[COMMENT:label for displaying a nation's capital city]" />
+        <translation id="hint" translation_id="297309" type="use" value="Capital City[COMMENT:label for displaying a nation's capital city]" />
+      </record>
+    </record>-->
+
+		<!--region-->
+		<record>
+			<integer id="id" value="NrgR" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="257209" type="use" value="Region[COMMENT: heading; team_information_panel; nation's region e.g. Britain]" />
+			<record id="widget_info">
+				<symbol id="class" value="region_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="257209" type="use" value="Region[COMMENT: heading; team_information_panel; nation's region e.g. Britain]" />
+				<translation id="hint" translation_id="257209" type="use" value="Region[COMMENT: heading; team_information_panel; nation's region e.g. Britain]" />
+			</record>
+		</record>
+
+		<!--population-->
+		<record>
+			<integer id="id" value="Npop" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="297310" type="use" value="Population[COMMENT:label for displaying a nation's population]" />
+			<record id="widget_info">
+				<symbol id="class" value="population_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="297310" type="use" value="Population[COMMENT:label for displaying a nation's population]" />
+				<translation id="hint" translation_id="297310" type="use" value="Population[COMMENT:label for displaying a nation's population]" />
+			</record>
+		</record>
+
+		<!--languages-->
+		<record>
+			<integer id="id" value="Nlan" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="316602" type="use" value="Language(s)[COMMENT:label for displaying languages spoken in a nation]" />
+			<record id="widget_info">
+				<symbol id="class" value="languages_text" />
+				<boolean id="show_fluency" value="false" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316602" type="use" value="Language(s)[COMMENT:label for displaying languages spoken in a nation]" />
+				<translation id="hint" translation_id="316602" type="use" value="Language(s)[COMMENT:label for displaying languages spoken in a nation]" />
+			</record>
+		</record>
+
+		<!--agreements-->
+		<record>
+			<integer id="id" value="Naag" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="317296" type="use" value="Agreements[COMMENT: displayed on nation overview panel if nation is e.g. a member of the European Union]" />
+			<record id="widget_info">
+				<symbol id="class" value="agreement_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="317296" type="use" value="Agreements[COMMENT: displayed on nation overview panel if nation is e.g. a member of the European Union]" />
+				<translation id="hint" translation_id="317296" type="use" value="Agreements[COMMENT: displayed on nation overview panel if nation is e.g. a member of the European Union]" />
+			</record>
+		</record>
+
+		<!--stadium-->
+		<record>
+			<integer id="id" value="NnsR" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="297311" type="use" value="National Stadium[COMMENT:label for displaying a nation's national stadium]" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="297311" type="use" value="National Stadium[COMMENT:label for displaying a nation's national stadium]" />
+				<translation id="hint" translation_id="297311" type="use" value="National Stadium[COMMENT:label for displaying a nation's national stadium]" />
+			</record>
+		</record>
+
+		<!--Capacity-->
+		<record>
+			<integer id="id" value="Scpy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+				<translation id="hint" translation_id="252903" type="use" value="Stadium Capacity[COMMENT: team stadium capacity, title]" />
+			</record>
+		</record>
+
+		<!-- Used Capacity-->
+		<record>
+			<integer id="id" value="Sucy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="293478" type="use" value="Used Capacity" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+			<record id="widget_edit_info">
+				<symbol id="class" value="client_validation_number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="150000" />
+				<integer id="property" value="Scpy" />
+				<integer id="mode" value="1" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="349165" type="use" value="Used Cap[COMMENT: team stadium used capacity; short text]" />
+				<translation id="hint" translation_id="293478" type="use" value="Used Capacity" />
+			</record>
+		</record>
+
+		<!-- Nation Attendence -->
+		<record>
+			<integer id="id" value="Catd" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="308771" type="use" value="Attendance[COMMENT: conversation; the club's attendence]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="150000" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="308771" type="use" value="Attendance[COMMENT: conversation; the club's attendence]" />
+			</record>
+		</record>
+
+		<!-- Nation Minimum Attendence -->
+		<record>
+			<integer id="id" value="Cmna" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="292979" type="use" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="150000" />
+			</record>
+
+		</record>
+
+		<!-- Nation Maximum Attendence -->
+		<record>
+			<integer id="id" value="Cmxa" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="292980" type="use" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="150000" />
+			</record>
+
+		</record>
+
+		<!-- year built -->
+		<record>
+			<integer id="id" value="Sbdy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<boolean id="NumF" value="0" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+				<translation id="hint" translation_id="284334" type="use" value="Year Built[COMMENT: heading; team_information_panel; year the stadium was build on]" />
+			</record>
+		</record>
+
+		<!--stadium capacity-->
+		<record>
+			<integer id="id" value="NnsC" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="297312" type="use" value="Stadium Capacity[COMMENT:label for displaying a stadium's capacity]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="297312" type="use" value="Stadium Capacity[COMMENT:label for displaying a stadium's capacity]" />
+				<translation id="hint" translation_id="297312" type="use" value="Stadium Capacity[COMMENT:label for displaying a stadium's capacity]" />
+			</record>
+		</record>
+
+		<!--fa founded-->
+		<record>
+			<integer id="id" value="Nafy" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="319436" type="use" value="Football Association Founded[COMMENT: heading; team information panel; nations assocation founded date]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<flags id="NumF" value="0" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="319436" type="use" value="Football Association Founded[COMMENT: heading; team information panel; nations assocation founded date]" />
+				<translation id="hint" translation_id="319436" type="use" value="Football Association Founded[COMMENT: heading; team information panel; nations assocation founded date]" />
+			</record>
+		</record>
+
+		<!--joined fifa-->
+		<record>
+			<integer id="id" value="Nfay" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="319437" type="use" value="Joined World Governing Body[COMMENT: heading; team information panel; when they joined FIFA]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<flags id="NumF" value="0" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="319437" type="use" value="Joined World Governing Body[COMMENT: heading; team information panel; when they joined FIFA]" />
+				<translation id="hint" translation_id="319437" type="use" value="Joined World Governing Body[COMMENT: heading; team information panel; when they joined FIFA]" />
+			</record>
+		</record>
+
+		<!--joined uefa-->
+		<record>
+			<integer id="id" value="Nfdy" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="319438" type="use" value="Joined Continental Governing Body[COMMENT: heading; team information panel; when they joined UEFA etc]" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+				<flags id="NumF" value="0" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="319438" type="use" value="Joined Continental Governing Body[COMMENT: heading; team information panel; when they joined UEFA etc]" />
+				<translation id="hint" translation_id="319438" type="use" value="Joined Continental Governing Body[COMMENT: heading; team information panel; when they joined UEFA etc]" />
+			</record>
+		</record>
+
+		<!-- news subscription: unsubscribe button -->
+		<record>
+			<integer id="id" value="Srem" />
+			<integer id="width" value="25" />
+			<flags id="customisation_context" value="none" />
+			<integer id="minimum_width" value="25" />
+			<record id="widget_info">
+				<symbol id="class" value="button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Tsta" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252900" type="use" value="Stadium[COMMENT: team stadium, short title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_button" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252900" type="use" value="Stadium[COMMENT: team stadium, short title]" />
+				<translation id="hint" translation_id="252901" type="use" value="Stadium[COMMENT: team stadium, title]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Tstc" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252903" type="use" value="Stadium Capacity[COMMENT: team stadium capacity, title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="dashed_number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252902" type="use" value="Capacity[COMMENT: team stadium capacity, short title]" />
+				<translation id="hint" translation_id="252903" type="use" value="Stadium Capacity[COMMENT: team stadium capacity, title]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Tsgs" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252894" type="use" value="Goals[COMMENT: team stat overall goals scored, short title]" />
+			<integer id="minimum_width" value="60" />
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252894" type="use" value="Goals[COMMENT: team stat overall goals scored, short title]" />
+				<translation id="hint" translation_id="252895" type="use" value="Goals[COMMENT: team stat overall goals scored, title]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Tsgc" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="252897" type="use" value="Goals Conceded[COMMENT: team stat overall goals conceded, title]" />
+			<integer id="minimum_width" value="60" />
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252896" type="use" value="Conc[COMMENT: team stat overall goals conceded, short title]" />
+				<translation id="hint" translation_id="252897" type="use" value="Goals Conceded[COMMENT: team stat overall goals conceded, title]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Tfrm" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="283775" type="use" value="Overall Form[COMMENT: team form 5 games, all competitions]" />
+			<record id="widget_info">
+				<symbol id="class" value="team_recent_form_widget" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+				<translation id="hint" translation_id="283775" type="use" value="Overall Form[COMMENT: team form 5 games, all competitions]" />
+			</record>
+		</record>
+
+		<!--fifa ranking-->
+		<record>
+			<integer id="id" value="Nffr" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="247167" type="use" value="Rank" />
+			<record id="widget_info">
+				<symbol id="class" value="fifa_ranking_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="247167" type="use" value="Rank" />
+				<translation id="hint" translation_id="297998" type="use" value="World Ranking[COMMENT: heading; a team's world ranking]" />
+			</record>
+		</record>
+
+		<!--fifa ranking monthly change-->
+		<record>
+			<integer id="id" value="Nfrc" />
+			<integer id="width" value="80" />
+			<translation id="name" translation_id="251232" type="use" value="Change[COMMENT: fifa rankings screen; 'change' column to show difference from last month]" />
+			<record id="widget_info" navigation_focus_target="false">
+				<symbol id="class" value="position_change_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="251232" type="use" value="Change[COMMENT: fifa rankings screen; 'change' column to show difference from last month]" />
+				<translation id="hint" translation_id="251232" type="use" value="Change[COMMENT: fifa rankings screen; 'change' column to show difference from last month]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nfrp" />
+			<integer id="width" value="80" />
+			<translation id="name" translation_id="229789" type="use" value="Points" />
+			<boolean id="sort_ascending" value="false" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229789" type="use" value="Points" />
+				<translation id="hint" translation_id="229789" type="use" value="Points" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nucr" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="247167" type="use" value="Rank" />
+			<record id="widget_info">
+				<symbol id="class" value="fifa_ranking_label" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="247167" type="use" value="Rank" />
+				<translation id="hint" translation_id="363616" type="use" value="Continental Cup coefficient Ranking[COMMENT: heading - FR#1364; the ranking position for a national team according to its UEFA coefficient]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nuc1" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="363620" type="use" value="Cycle 1[COMMENT: heading - FR#1364; points scored in the first cycle that needs to be considered for the national teams UEFA coefficient]" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="363620" type="use" value="Cycle 1[COMMENT: heading - FR#1364; points scored in the first cycle that needs to be considered for the national teams UEFA coefficient]" />
+				<translation id="hint" translation_id="363619" type="use" value="Cycle 1 contribution points[COMMENT: heading - FR#1364; points scored in the first cycle that needs to be considered for the national teams UEFA coefficient]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nuc2" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="363622" type="use" value="Cycle 2[COMMENT: heading - FR#1364; points scored in the second cycle that needs to be considered for the national teams UEFA coefficient]" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="363622" type="use" value="Cycle 2[COMMENT: heading - FR#1364; points scored in the second cycle that needs to be considered for the national teams UEFA coefficient]" />
+				<translation id="hint" translation_id="363621" type="use" value="Cycle 2 contribution points[COMMENT: heading - FR#1364; points scored in the second cycle that needs to be considered for the national teams UEFA coefficient]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nuc3" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="363624" type="use" value="Cycle 3[COMMENT: heading - FR#1364; points scored in the third cycle that needs to be considered for the national teams UEFA coefficient]" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="363624" type="use" value="Cycle 3[COMMENT: heading - FR#1364; points scored in the third cycle that needs to be considered for the national teams UEFA coefficient]" />
+				<translation id="hint" translation_id="363623" type="use" value="Cycle 3 contribution points[COMMENT: heading - FR#1364; points scored in the third cycle that needs to be considered for the national teams UEFA coefficient]" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="Nucp" />
+			<integer id="width" value="80" />
+			<translation id="name" translation_id="229789" type="use" value="Points" />
+			<record id="widget_info">
+				<symbol id="class" value="number_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229789" type="use" value="Points" />
+				<translation id="hint" translation_id="229789" type="use" value="Points" />
+			</record>
+		</record>
+
+		<!-- Subscribe / Unsubscribe -->
+		<record>
+			<integer id="id" value="nsss" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="412472" type="use" value="Follow/Unfollow[COMMENT: toggle subscription status]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="50" />
+			<record id="widget_info">
+				<symbol id="class" value="news_subscribe_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316791" type="use" value="News[COMMENT: toggle subscription status]" />
+				<translation id="hint" translation_id="412473" type="use" value="Click to set follow on/off[COMMENT: hint text describing what a particular button does, in this case toggling whether subscriptions are enabled or not]" />
+			</record>
+		</record>
+
+		<!-- top players-->
+		<record>
+			<integer id="id" value="CmpM" />
+			<integer id="minimum_width" value="100" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="297306" type="use" value="Top Players[COMMENT: major players snapshot; lists the top players in a nation or continent]" />
+			<record id="widget_info">
+				<symbol id="class" value="person_list_text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="297306" type="use" value="Top Players[COMMENT: major players snapshot; lists the top players in a nation or continent]" />
+				<translation id="hint" translation_id="297306" type="use" value="Top Players[COMMENT: major players snapshot; lists the top players in a nation or continent]" />
+			</record>
+		</record>
+
+		<!--legends-->
+		<record>
+			<integer id="id" value="TLeg" />
+			<integer id="minimum_width" value="100" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+			<record id="widget_info">
+				<symbol id="class" value="person_list_text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+				<translation id="hint" translation_id="281393" type="use" value="Legends[COMMENT: heading; team_information_panel; list of legends persons to current club]" />
+			</record>
+		</record>
+
+		<!--derbies-->
+		<record>
+			<integer id="id" value="TDer" />
+			<integer id="minimum_width" value="100" />
+			<integer id="width" value="100" />
+			<translation id="name" translation_id="306595" type="use" value="Derbies[COMMENT: heading; team_information_panel; list of current club's derbies]" />
+			<record id="widget_info">
+				<symbol id="class" value="team_derbies_text" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="306595" type="use" value="Derbies[COMMENT: heading; team_information_panel; list of current club's derbies]" />
+				<translation id="hint" translation_id="306595" type="use" value="Derbies[COMMENT: heading; team_information_panel; list of current club's derbies]" />
+			</record>
+		</record>
+
+		<!--captain-->
+		<record>
+			<integer id="id" value="TCap" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="258290" type="use" value="Captain[COMMENT: heading; team_information_panel; club/nation captain]" />
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="258290" type="use" value="Captain[COMMENT: heading; team_information_panel; club/nation captain]" />
+				<translation id="hint" translation_id="258290" type="use" value="Captain[COMMENT: heading; team_information_panel; club/nation captain]" />
+			</record>
+		</record>
+
+		<!--vice captain-->
+		<record>
+			<integer id="id" value="TVca" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="258291" type="use" value="Vice-Captain[COMMENT: heading; team_information_panel; club/nation vice-captain]" />
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="258291" type="use" value="Vice-Captain[COMMENT: heading; team_information_panel; club/nation vice-captain]" />
+				<translation id="hint" translation_id="258291" type="use" value="Vice-Captain[COMMENT: heading; team_information_panel; club/nation vice-captain]" />
+			</record>
+		</record>
+
+		<!--condition of stadium-->
+		<record>
+			<integer id="id" value="Sdcy" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="stadium_condition_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+				<translation id="hint" translation_id="284336" type="use" value="Stadium Condition[COMMENT: heading; team_information_panel; stadium condition]" />
+			</record>
+		</record>
+
+		<!--surface type-->
+		<record>
+			<integer id="id" value="SsfT" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="pitch_surface_type_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+				<translation id="hint" translation_id="284339" type="use" value="Surface[COMMENT: heading; team_information_panel; pitch surface type]" />
+			</record>
+		</record>
+
+		<!--undersoil heating-->
+		<record>
+			<integer id="id" value="Sush" />
+			<integer id="width" value="60" />
+			<translation id="name" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="yes_no_label" />
+				<boolean id="ynwo" value="true" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+				<translation id="hint" translation_id="284337" type="use" value="Under Soil Heating[COMMENT: heading; team_information_panel; under soil heating]" />
+			</record>
+		</record>
+
+		<!--stadium-->
+		<record>
+			<integer id="id" value="Tsre" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="252900" type="use" value="Stadium[COMMENT: team stadium, short title]" />
+			<integer id="minimum_width" value="60" />
+			<record id="widget_info">
+				<symbol id="class" value="client_object_label" />
+			</record>
+
+			<record id="column_widget_properties">
+				<flags id="alignment" value="centre" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+				<translation id="text" translation_id="252900" type="use" value="Stadium[COMMENT: team stadium, short title]" />
+				<translation id="hint" translation_id="252901" type="use" value="Stadium[COMMENT: team stadium, title]" />
+			</record>
+		</record>
+
+		<!--Club attacking-->
+		<record>
+			<integer id="id" value="Natt" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230042" type="use" value="Attacking" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club depth-->
+		<record>
+			<integer id="id" value="Ndep" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="319523" type="use" value="Defensive Line[COMMENT:title for an area to choose defensive line options for the touchline instructions]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+				<translation id="hint" translation_id="349130" type="use" value="The lower the value the higher the defensive line[COMMENT: edit field for club defensive line tendency]" />
+			</record>
+		</record>
+
+		<!--Club directness-->
+		<record>
+			<integer id="id" value="Ndir" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230030" type="use" value="Directness" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Fluidity -->
+		<record>
+			<integer id="id" value="Nflm" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="420760" type="use" value="Fluidity[COMMENT: club attribute; how fluid a club's general playing style tends to be]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Flexibility-->
+		<record>
+			<integer id="id" value="Nflx" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230032" type="use" value="Flexibility" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Free Roles-->
+		<record>
+			<integer id="id" value="Nfrl" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230051" type="use" value="Free Roles" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Marking-->
+		<record>
+			<integer id="id" value="Nmar" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="227838" type="use" value="Marking" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+				<translation id="hint" translation_id="539048" type="use" value="Lower values tend more towards zonal marking and higher values more towards player marking[COMMENT: AREA: tactics; NOTE: used to be man mark, made friendly for all modes of football]" />
+			</record>
+		</record>
+
+		<!--Club Offisde-->
+		<record>
+			<integer id="id" value="Noff" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230053" type="use" value="Offside" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Pressing-->
+		<record>
+			<integer id="id" value="Nprs" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="534818" type="use" value="Trigger Press[COMMENT: AREA: Tactics; SUB-AREA: Team Instruction descriptions; FR-BN: 34854; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: renaming Pressing Intensity]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club Sitting back-->
+		<record>
+			<integer id="id" value="Nstb" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="293053" type="use" value="Sitting Back" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club tempo-->
+		<record>
+			<integer id="id" value="Ntpo" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230057" type="use" value="Tempo" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club use of playmaker-->
+		<record>
+			<integer id="id" value="Nupm" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="349163" type="use" value="Use of Playmaker[COMMENT: tactical attribute]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!--Club width -->
+		<record>
+			<integer id="id" value="Nwid" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="230060" type="use" value="Width" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!-- Youth Rating -->
+		<record>
+			<integer id="id" value="NYRt" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="328562" type="use" value="Youth Rating[COMMENT: editor field for nation]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="200" />
+			</record>
+		</record>
+
+		<!-- State of Development -->
+		<record>
+			<integer id="id" value="Nsod" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="293209" type="use" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="293211" type="use" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="293212" type="use" />
+					</record>
+					<record id="3">
+						<translation id="text" translation_id="293213" type="use" />
+					</record>
+				</list>
+			</record>
+
+		</record>
+
+		<!-- Economic Factor -->
+		<record>
+			<integer id="id" value="Necf" />
+			<translation id="name" translation_id="293206" type="use" value="Economic Factor" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!-- FA Financial Power -->
+		<record>
+			<integer id="id" value="Nfap" />
+			<translation id="name" translation_id="316923" type="use" value="FA Financial Power[COMMENT: comp editor; indicates the financial strength of a national FA]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!-- Years To Gain Nationality -->
+		<record>
+			<integer id="id" value="Nygn" />
+			<translation id="name" translation_id="346956" type="use" value="Years To Gain Nationality[COMMENT: comp editor field]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="0" />
+				<integer id="max_value" value="100" />
+			</record>
+		</record>
+
+		<!-- Does not allow dual nationality -->
+		<record>
+			<integer id="id" value="Nndn" />
+			<translation id="name" translation_id="364318" type="use" value="Does Not Allow Dual Nationality[COMMENT: editor nation field]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+			</record>
+		</record>
+
+		<!-- Allows multiple asistant managers -->
+		<record>
+			<integer id="id" value="Numa" />
+			<translation id="name" translation_id="508732" type="use" value="Allow Multiple Assistant Managers[COMMENT: AREA: Editor; SUB-AREA: Best job role for a non player; TONE: Formal; CHARLIMIT: None; NOTE: editor nation field]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<flags id="click_event" value="CDBd" />
+			</record>
+		</record>
+
+		<!-- Max Youth Age -->
+		<record>
+			<integer id="id" value="Nmya" />
+			<translation id="name" translation_id="344224" type="use" value="Max. Youth Age[COMMENT: advanced editor, details of the maximum age a player can be designated as a youth player in this country]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="15" />
+				<integer id="max_value" value="25" />
+			</record>
+		</record>
+
+		<!-- Foreign Manager Likelyhood -->
+		<record>
+			<integer id="id" value="Nfml" />
+			<translation id="name" translation_id="316939" type="use" value="Foreign Manager Likelihood[COMMENT: editor field]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!-- FA Patience -->
+		<record>
+			<integer id="id" value="Nfpa" />
+			<translation id="name" translation_id="316938" type="use" value="FA Patience[COMMENT: editor field]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<flags id="edit_event" value="CDBd" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="20" />
+			</record>
+		</record>
+
+		<!-- Gain Citizenship type -->
+		<record>
+			<integer id="id" value="Ngct" />
+			<translation id="name" translation_id="312864" type="use" value="Gain Nationality Type[COMMENT: do they have to live in the nation Continuously or is the time Accumulative]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="312865" type="use" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="312866" type="use" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Temperament template -->
+		<record>
+			<integer id="id" value="Ntem" />
+			<translation id="name" translation_id="316937" type="use" value="Temperament[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Professionalism template -->
+		<record>
+			<integer id="id" value="Npro" />
+			<translation id="name" translation_id="316935" type="use" value="Professionalism[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Pressure template -->
+		<record>
+			<integer id="id" value="Npss" />
+			<translation id="name" translation_id="316934" type="use" value="Pressure[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Loyalty template -->
+		<record>
+			<integer id="id" value="Nlol" />
+			<translation id="name" translation_id="316933" type="use" value="Loyalty[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Controversey template -->
+		<record>
+			<integer id="id" value="Ncty" />
+			<translation id="name" translation_id="316932" type="use" value="Controversy[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="339015" type="use" value="Good (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="338901" type="use" value="Above Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="338942" type="use" value="Below Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="339090" type="use" value="Poor (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Ambition template -->
+		<record>
+			<integer id="id" value="Namb" />
+			<translation id="name" translation_id="316931" type="use" value="Ambition[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Adaptability template -->
+		<record>
+			<integer id="id" value="Nada" />
+			<translation id="name" translation_id="316925" type="use" value="Adaptability[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<!-- Sportsmanship template -->
+		<record>
+			<integer id="id" value="Nspt" />
+			<translation id="name" translation_id="316936" type="use" value="Sportsmanship[COMMENT: nation player tendency]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<integer id="popup_updated_event" value="CDBd" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="316926" type="use" value="Poor (6-7)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="316927" type="use" value="Below Average (8-9)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="316928" type="use" value="Average (10-11)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="4">
+						<translation id="name" translation_id="316929" type="use" value="Above Average (12-13)[COMMENT; nation attribute tendency rating]" />
+					</record>
+					<record id="5">
+						<translation id="name" translation_id="316930" type="use" value="Good (14-15)[COMMENT; nation attribute tendency rating]" />
+					</record>
+				</list>
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="ttcl" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="292688" type="use" value="Foreground Colour" />
+			<translation id="hint" translation_id="345232" type="use" value="The primary text colour of the competition's title bar[COMMENT: editor hint text]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="tbcl" />
+			<integer id="width" value="90" />
+			<translation id="name" translation_id="292689" type="use" value="Background Colour" />
+			<translation id="hint" translation_id="345231" type="use" value="The primary background colour of the competition's title bar[COMMENT: editor hint text]" />
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_colour_button" />
+				<record id="colour_selected_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+	</list>
+	<!-- column display properties -->
+
+</record>

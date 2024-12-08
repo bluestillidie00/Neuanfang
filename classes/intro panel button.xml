@@ -1,0 +1,63 @@
+﻿<class class="intro_panel_button" parent="container">
+
+	<list id="properties_to_forward">
+		<record get_property="text" set_property="text" target="titl"/>
+		<record get_property="description" set_property="text" target="desc"/>
+		<record get_property="hint" set_property="hint" target="hnBT"/>
+		<record get_property="click_event" set_property="click_event" target="hnBT"/>
+	</list>
+
+	<list id="attachments">
+
+		<record class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	</list>
+
+	<list id="contents">
+
+		<record class="container">
+
+			<list id="attachments">
+				<record class="arrange_horizontal_attachment" layout="60,-1" offset="0" gap="0"/>
+				<record class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+			</list>
+
+			<!-- icon -->
+			<list id="contents">
+				<record class="container">
+					<list id="attachments">
+						<record class="stick_to_sides_attachment" alignment="all" inset="10" apply_to_children="true"/>
+					</list>
+					<list id="contents">
+						<record class="picture">
+							<record id="properties" widget_id="pict" image_alignment="centre" scale_picture="false" keep_aspect_ratio="true" />
+						</record>
+					</list>
+				</record>
+
+
+				<!-- Button Text -->
+				<record class="container">
+					<list id="attachments">
+						<record class="arrange_vertical_attachment" alignment="top" offset="2" gap="0"/>
+						<record class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+					</list>
+
+					<list id="contents">
+						<record class="text">
+							<record id="properties" widget_id="titl" multiline="false"  font="fonts/main menu" alignment="left" auto_size="vertical" />
+						</record>
+
+						<record class="text">
+							<record id="properties" widget_id="desc" spec="text" font="fonts/main menu subtitle" alignment="left" size="7.5" auto_size="vertical" multiline="false" />
+						</record>
+					</list>
+				</record>
+			</list>
+		</record>
+
+		<!-- Button (spans across entire parent container) -->
+		<record class="button" >
+			<record id="properties" widget_id="hnBT" appearance="buttons/custom/intro panel/button" />
+		</record>
+	</list>
+</class>

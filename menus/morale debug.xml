@@ -1,0 +1,18 @@
+<!-- morale debug menu -->
+<record>
+	<string id="text" value="Morale" />
+	<list id="items">
+		<record event_id="WSEP">
+			<string id="text" value="Advance Warning For Season Ended Promises" />
+		</record>
+		<record event_id="WESP">
+			<string id="text" value="Advance Warning For End of Season Promises" />
+		</record>
+		<record event_id="ESEP">
+			<string id="text" value="Evaluate Season Ended Promises" />
+		</record>
+		<record event_id="EESP">
+			<string id="text" value="Evaluate End of Season Promises" />
+		</record>
+	</list>
+</record>

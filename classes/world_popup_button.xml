@@ -1,0 +1,13 @@
+<!-- an action button that will be used in the news response panels -->
+
+<class class="world_popup_button" parent="widget_popup_button" appearance="menubar/standard/button" widget_type="world_menu_panel" alignment="" popup_alignment="bottom">
+  <translation id="hint" translation_id="227362" type="use" value="World" />
+  <record id="modal_popup_properties">
+    <flags id="stick_to_parent" value="horizontal" />
+    <boolean id="darkened" value="true"/>
+    <boolean id="propagate_mouse_events" value="false"/>
+    <string id="file" value="modal popup panel auto sized"/>
+  </record>
+  <event id="click_notification_event" event_id="WRLD" item="NULL" />
+  <event id="menu_layout_notification_event" event_id="wdmn" event_target="wrld" />
+</class>

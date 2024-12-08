@@ -1,0 +1,25 @@
+<!-- news debug menu -->
+<record>
+	<string id="text" value="News"/>
+	<list id="items">
+		<record event_id="SNDP">
+			<string id="text" value="Auto Generate News"/>
+		</record>
+		<record event_id="DOJN">
+			<string id="text" value="Log All Jesperbox News IDs"/>
+		</record>
+		<record id="DOFN">
+			<string id="text" value="Flood News"/>
+			<list id="items">
+				<record event_id="DNFN" info="-2">
+					<string id="text" value="Add All"/>
+				</record>
+				<record event_id="DNFN" info="-1">
+					<string id="text" value="Clear All"/>
+				</record>
+				<record id="----" />
+				<!-- rest are populated in code -->
+			</list>
+		</record>
+	</list>
+</record>

@@ -1,0 +1,98 @@
+﻿<class class="manager_appearance_dialog_button" parent="container">
+	
+	<list id="properties_to_forward">
+		<record get_property="click_event" set_property="click_event" target="hnBT" />
+		<!-- PROP_SELECTED -->
+		<record get_property="sltd" set_property="sltd" target="hnBT" />
+		<!-- PROP_ICON -->
+		<record get_property="icon" set_property="file" target="pict" />
+		<!-- PROP_HINT -->
+		<record get_property="hint" set_property="hint" target="hnBT" />
+		
+		<record get_property="titl" set_property="valu" target="titl" />
+		<record get_property="slct" set_property="Shwn" target="topS" />
+	</list>
+
+	<list id="attachments">
+		<record class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	</list>
+
+	<list id="contents">
+		<record class="plain_box">
+
+			<list id="attachments">
+				<record class="arrange_horizontal_attachment" layout="-1" offset="0" gap="0" />
+				<record class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+			</list>
+
+			<list id="contents">
+				<record class="container">
+					<list id="attachments">
+						<record class="stick_to_sides_attachment" alignment="all" inset="10" apply_to_children="true" />
+					</list>
+					
+					<list id="contents">
+						<record class="picture">
+							<record id="properties" widget_id="pict" image_alignment="centre_x, top" scale_picture="true" keep_aspect_ratio="true" />
+						</record>					
+						
+						<record class="plain_box">
+							<list id="attachments">
+								<record class="arrange_vertical_attachment" layout="30" offset="0" gap="0" />
+								<record class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							</list>
+							
+							<record id="properties" widget_id="topS" hidden="true" />
+
+							<list id="contents">
+								<record class="plain_box">
+									<record id="properties" widget_id="wwww" appearance="boxes/custom/darken/rounded/no margin/paper" />
+
+									<list id="attachments">
+										<record class="arrange_horizontal_attachment" alignment="middle" offset="0" gap="6" />
+										<record class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+									</list>
+
+									<list id="contents">
+										<record class="plain_box">
+											<record id="properties" width="25" />
+
+											<list id="attachments">
+												<record class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+											</list>
+
+											<list id="contents">
+												<record class="picture">
+													<record id="properties" file="icons/26px/circle" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre" rrep="positive dark" />
+												</record>
+												<record class="picture">
+													<record id="properties" file="icons/16px/tick" image_alignment="centre" rrep="text" />
+												</record>
+
+											</list>
+										</record>
+										<record class="label">
+											 <record id="properties" alignment="centre_y, left" colour="text" auto_size="horizontal">
+												 <translation id="text" translation_id="561849" type="use" value="Applied[COMMENT: AREA: Add Manager; SUB-AREA: Set accessories; NOTE: accessory has been applied]" />
+											</record>
+										</record>
+									</list>
+								</record>
+
+							</list>
+						</record>
+
+						<record class="label">
+							<record id="properties" widget_id="titl" alignment="centre_x, bottom" font="title" colour="text" size="large" />
+						</record>
+					</list>
+				</record>			
+			</list>
+		</record>
+
+		<!-- Radio button (spans across entire parent container) -->
+		<record class="manager_appearance_dialog_radio_button">
+			<record id="properties" widget_id="hnBT" group_parent_level="maRB" />
+		</record>
+	</list>
+</class>

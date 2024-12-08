@@ -1,0 +1,9 @@
+﻿<!-- Used to display weight strings. -->
+<class class="preferences_network_options" parent="button">
+	<flags id="alignment" value="centre" />
+	<record id="click_event">
+		<integer id="event_id" value="shSa" />
+		<integer id="index" value="1" />
+	</record>
+	<translation id="text" translation_id="349026" type="use" value="Online Game Preferences[COMMENT: preferences section title]" />
+</class>

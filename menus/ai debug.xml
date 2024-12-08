@@ -1,0 +1,230 @@
+<!-- regeneration debug menu -->
+<record>
+	<string id="text" value="AI" />
+	<list id="items">
+		<record event_id="RMCY">
+			<string id="text" value="NewGen(Tm) and DB Analysis" />
+			<list id="items">
+				<record event_id="NEWG">
+					<string id="text" value="Simulate Newgens (All Nations)" />
+				</record>
+				<record event_id="NEWT">
+					<string id="text" value="Simulate Newgens (All Nations, 20 years)" />
+				</record>
+				<record event_id="NGNP">
+					<string id="text" value="Simulate Newgen Non-Players (All Nations)" />
+				</record>
+				<record event_id="FIAN">
+					<string id="text" value="Fix In-Active Nation Player Counts" />
+				</record>
+				<record event_id="RETT">
+					<string id="text" value="Test Retirements (All Nations)" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="ALDP">
+					<string id="text" value="Create Analysis on game DB (Players/Staff)" />
+				</record>
+				<record event_id="ALDR">
+					<string id="text" value="Create Analysis on game DB (Players Newgen only)" />
+				</record>
+				<record event_id="ALDO">
+					<string id="text" value="Create Analysis on game DB (Players Original only)" />
+				</record>
+				<record event_id="ALD8">
+					<string id="text" value="Create Analysis on game DB (Players U17 only)" />
+				</record>
+				<record event_id="ALD9">
+					<string id="text" value="Create Analysis on game DB (Players 18-25 only)" />
+				</record>
+				<record event_id="ALD6">
+					<string id="text" value="Create Analysis on game DB (Players 26+ only)" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="GNPC">
+					<string id="text" value="Generate Players Based in Nation Counts" />
+				</record>
+				<record event_id="GNPX">
+					<string id="text" value="Generate Players Based in Nation Counts (xml)" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="ADNA">
+					<string id="text" value="Create Analysis on game DB (All Non-Players)" />
+				</record>
+				<record event_id="ADNN">
+					<string id="text" value="Create Analysis on game DB (Newgen Non-Players only)" />
+				</record>
+				<record event_id="ADNR">
+					<string id="text" value="Create Analysis on game DB (Real Non-Players only)" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="ALDC">
+					<string id="text" value="Create Analysis on game DB (Clubs)" />
+				</record>
+				<record event_id="PARW">
+					<string id="text" value="Analyse Weightings" />
+				</record>
+				<record event_id="AApc">
+					<string id="text" value="Analyse attribute patterns by position and ca" />
+				</record>
+				<record event_id="Ansn">
+					<string id="text" value="Analyse nationalities" />
+				</record>
+				<record event_id="anvc">
+					<string id="text" value="Analyse New Versatility Code" />
+				</record>
+				<record event_id="RDNT">
+					<string id="text" value="Re-Do Player Newgen Templates" />
+				</record>
+				<record event_id="RNNT">
+					<string id="text" value="Re-Do Non-Player Newgen Templates" />
+				</record>
+				<record event_id="NTAN">
+					<string id="text" value="Newgen Template Analysis" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="VPCT">
+					<string id="text" value="Virtual Player Template Analysis" />
+				</record>
+				<record event_id="GVPR">
+					<string id="text" value="Generate Virtual Players Report" />
+				</record>
+				<record event_id="VPRC">
+					<string id="text" value="Virtual Player Referee Count Analysis" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="TPFx">
+					<string id="text" value="Create Test Person Fix File" />
+				</record>
+				<record event_id="LPFx">
+					<string id="text" value="Load Test Person Fix File" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+				<record event_id="AnPT">
+					<string id="text" value="Analyse player potential templates" />
+				</record>
+				<record event_id="NPTC">
+					<string id="text" value="Create Non-Player Tendency Templates" />
+				</record>
+				<record event_id="NPTO">
+					<string id="text" value="Output Non-Player Tendency Template Analysis" />
+				</record>
+				<record event_id="NPTA">
+					<string id="text" value="Output Non-Player Tendency Analysis" />
+				</record>
+				<record event_id="POS%">
+					<string id="text" value="Position Percentages" />
+				</record>
+				<record event_id="HCAN">
+					<string id="text" value="Hair Colors per Ethnicity Analysis" />
+				</record>
+				<record event_id="PPM^">
+					<string id="text" value="PPM Analysis - currently active in the game" />
+				</record>
+				<record event_id="PPM%">
+					<string id="text" value="PPM Analysis - generate ppms for everyone" />
+				</record>
+				<record event_id="RGyf">
+					<string id="text" value="Create Youth Facility Analysis (All Clubs)" />
+				</record>
+				<record event_id="ANTW">
+					<string id="text" value="Test National Team Wages" />
+				</record>
+				<record event_id="BRXT">
+					<string id="text" value="Test Work Permits for FM21 Brexit System" />
+				</record>
+				<record event_id="ANTX">
+					<string id="text" value="Analyse and Output All Nation Tax Rules" />
+				</record>
+				<record event_id="ANEP">
+					<string id="text" value="Analyse and Output EPPP system costs" />
+				</record>
+				<record event_id="ANSW">
+					<string id="text" value="Analyse and Output Wage budgets" />
+				</record>
+				<record event_id="CHYP">
+					<string id="text" value="Create Analysis on Historical Youth Production" />
+				</record>
+				<record>
+					<string id="text" value="--------------" />
+				</record>
+			</list>
+		</record>
+		<record event_id="BOTA">
+			<string id="text" value="Board Takeovers" />
+			<list id="items">
+				<record event_id="GCBT">
+					<string id="text" value="Generate Current Takeovers Report" />
+				</record>
+				<record event_id="OSDT">
+					<string id="text" value="Output Active Sugar Daddies" />
+				</record>
+				<record event_id="TBTT">
+					<string id="text" value="Test Board Takeover Types" />
+				</record>
+				<record event_id="NBSM">
+					<string id="text" value="Test New Board Sacking Manager" />
+				</record>
+				<record event_id="TSCH">
+					<string id="text" value="Test Suitable Chairmen" />
+				</record>
+			</list>
+		</record>
+		<record event_id="TRAI">
+			<string id="text" value="Training" />
+			<list id="items">
+				<record event_id="OPPO">
+					<string id="text" value="Output Player Progression Observations" />
+				</record>
+				<record event_id="TRST">
+					<string id="text" value="Reset All Training" />
+				</record>
+				<record event_id="TTPN">
+					<string id="text" value="Test Training Progression News for Humans" />
+				</record>
+				<record event_id="TRJS">
+					<string id="text" value="Test Importing Training Session Data from JSON files" />
+				</record>
+				<record event_id="TSJS">
+					<string id="text" value="Test Importing Training Schedules from JSON file" />
+				</record>
+			</list>
+		</record>
+		<record event_id="TUTI">
+			<string id="text" value="Tutorial" />
+			<list id="items">
+				<record event_id="COMI">
+					<string id="text" value="Complete all Inductions(debug only)" />
+				</record>
+				<record event_id="CLRI">
+					<string id="text" value="Reset all Inductions(debug only)" />
+				</record>
+				<record event_id="CDAI">
+					<string id="text" value="Disable all tutorial content(debug only)" />
+				</record>
+				<record event_id="CEAI">
+					<string id="text" value="Re-enable all tutorial content(debug only)" />
+				</record>
+				<record event_id="RLID" >
+					<string id="text" value="Reload induction data" />
+				</record>
+				<record event_id="RTuT" >
+					<string id="text" value="Run Induction Test" />
+				</record>
+			</list>
+		</record>
+	</list>
+</record>

@@ -1,12 +1,12 @@
-﻿<class class="training_rating_label_formatted" parent="match_rating_label"  appearance="labels/custom/match rating/label" font="bold" size="small" should_recolour="true" fixed_appearance_alignment="centre" navigation_focus_target="false">
+﻿<class class="training_rating_label_formatted" parent="match_rating_label"  appearance="labels/custom/match rating/label" font="bold" size="small" should_recolour="false" fixed_appearance_alignment="centre" navigation_focus_target="false">
 	<list id="value_list">
-		<record min_value="-1" max_value="0" background_colour="match rating none" colour="match rating text none" />
-		<record min_value="0" max_value="4.999999999" background_colour="match rating zero to five" colour="match rating text zero to five" />
-		<record min_value="5" max_value="5.999999999" background_colour="match rating five to six" colour="match rating text five to six" />
-		<record min_value="6" max_value="6.999999999" background_colour="match rating six to seven" colour="match rating text six to seven" />
-		<record min_value="7" max_value="7.999999999" background_colour="match rating seven to eight" colour="match rating text seven to eight" />
-		<record min_value="8" max_value="8.999999999" background_colour="match rating eight to nine" colour="match rating text eight to nine" />
-		<record min_value="9" max_value="10" background_colour="match rating nine to ten" colour="match rating text nine to ten" />
+		<record min_value="-1" max_value="0" background_colour="match rating six to seven"	colour="training rating none" />
+		<record min_value="0" max_value="4.999999999" background_colour="match rating six to seven" colour="training rating zero to five" />
+		<record min_value="5" max_value="5.999999999" background_colour="match rating six to seven" colour="training rating five to six" />
+		<record min_value="6" max_value="6.999999999" background_colour="match rating six to seven" colour="training rating six to seven" />
+		<record min_value="7" max_value="7.999999999" background_colour="match rating six to seven"  colour="training rating seven to eight" />
+		<record min_value="8" max_value="8.999999999" background_colour="match rating six to seven" colour="training rating eight to nine" />
+		<record min_value="9" max_value="10" background_colour="match rating six to seven" colour="training rating nine to ten" />
 	</list>
 </class>
 

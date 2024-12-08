@@ -1,0 +1,21 @@
+﻿<!-- tutorial debug menu -->
+<record>
+	<string id="text" value="Tutorial" />
+	<list id="items">
+		<record event_id="COMI">
+			<string id="text" value="Complete all Inductions(debug only)" />
+		</record>
+		<record event_id="CLRI">
+			<string id="text" value="Reset all Inductions(debug only)" />
+		</record>
+		<record event_id="CDAI">
+			<string id="text" value="Disable all tutorial content(debug only)" />
+		</record>
+		<record event_id="CEAI">
+			<string id="text" value="Re-enable all tutorial content(debug only)" />
+		</record>
+		<record event_id="RLID" >
+			<string id="text" value="Reload induction data" />
+		</record>
+	</list>
+</record>

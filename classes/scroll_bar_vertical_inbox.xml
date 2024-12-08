@@ -1,0 +1,4 @@
+<!-- a popup menu which only appears as a button when you roll over it -->
+<class class="scroll_bar_vertical_inbox" parent="scroll_bar_vertical">
+    <flags id="appearance" value="scrollbars/custom/inbox/vertical/paper"/>
+</class>

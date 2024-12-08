@@ -1,0 +1,5 @@
+﻿<class class="manager_appearance_dialog_radio_button" parent="radio_button" >
+  <flags id="show_button_appearance" value="true"/>
+  <flags id="appearance" value="switches/custom/manager appearance/button"/>
+  <flags id="icon_enabled" value="false"/>
+  </class>

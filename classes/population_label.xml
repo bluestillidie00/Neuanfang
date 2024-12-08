@@ -1,0 +1,4 @@
+<class class="population_label" parent="game_formatted_label">
+  <string id="format" value="[%number_grouped#1]" />
+  <integer id="forced_formats" value="vf_population" />
+</class>

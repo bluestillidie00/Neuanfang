@@ -1,0 +1,5 @@
+﻿
+  
+<class class="pre_match_briefing_environment" parent="character_widget" graphics_view="character_widget" scene_type="pre_match_briefing" room_type="pre_match_briefing" camera_id="pre_match_briefing" view_behind="true" view_camera="character_widget">
+</class>
+  

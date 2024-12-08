@@ -1,0 +1,6 @@
+<!-- a popup button that will be used in the news response panels -->
+
+<class class="popup_button_news" parent="popup_button">
+  <flags id="appearance" value="buttons/custom/inbox/button"/>
+  <boolean id="fixed" value="false"/>
+</class>

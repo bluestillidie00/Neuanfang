@@ -1,0 +1,4 @@
+<class class="weather_label" parent="game_formatted_label">
+  <string id="format" value="[%weather#1]" />
+  <integer id="forced_formats" value="vf_weather" />
+</class>

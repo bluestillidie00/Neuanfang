@@ -1,0 +1,5 @@
+﻿<class class="column_heading_bundesliga" parent="column_heading">
+    <flags id="colour" value="grey 900" />
+    <flags id="font" value="bundesliga-condensed" />
+    <flags id="size" value="large" />
+</class>

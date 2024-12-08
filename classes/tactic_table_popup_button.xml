@@ -1,0 +1,49 @@
+<!-- a popup button used to display role information -->
+<class class="tactic_table_popup_button" parent="popup_table_button">
+	<record id="table_properties">
+		<flags id="mode" value="fill_rows,stripe_rows,select_rows" />
+		<boolean id="auto_size_rows" value="true"/>
+		<boolean id="fixed_size_rows" value="false"/>
+		<integer id="row_spacing" value="1" />
+
+		<list id="column_table_properties">
+			<!--first column is remove buttons-->
+			<record>
+				<flags id="id" value="RemT" />
+				<flags id="width" value="34" />
+				<integer id="left" value="5" />
+				<record id="widget_info">
+					<symbol id="class" value="icon_button" />
+					<string id="icon" value="icons/16px/remove from list"/>
+					<integer id="click_event" value="remo"/>
+					<translation id="hint" translation_id="306557" type="use" value="Remove[COMMENT: remove button on banned ip table of preferences screen]" />
+				</record>
+				<record id="column_widget_properties">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+				<record id="column_heading">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+			</record>
+
+			<!--this column is just the regular text-->
+			<record>
+				<flags id="id" value="text" />
+				<flags id="width" value="130" />
+				<record id="widget_info">
+					<symbol id="class" value="label" />
+				</record>
+
+				<record id="column_heading">
+					<flags id="alignment" value="left,centre_y" />
+				</record>
+			</record>
+
+			<!--this column is for the submenu arrow-->
+			<record>
+				<flags id="id" value="SubM" />
+				<flags id="width" value="20" />
+			</record>
+		</list>
+	</record>
+</class>

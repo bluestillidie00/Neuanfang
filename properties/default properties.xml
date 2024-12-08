@@ -1,0 +1,268 @@
+<record>
+	<list id="column_table_properties">
+		<record>
+			<integer id="id" value="objt" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="129" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="client_object_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="dref" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="129" />
+			<integer id="auto_hide_priority" value="10" />
+			<!-- a very high chance of not being hidden for this property (lower value = higher priority) -->
+			<record id="widget_info">
+				<symbol id="class" value="client_object_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316793" type="use" value="Name[COMMENT: default properties.xml; list header for any game object name - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229689" type="use" value="Name" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="dtty" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="80" />
+			<record id="widget_info">
+				<symbol id="class" value="client_object_type_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+		<record>
+			<integer id="id" value="obtd" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="80" />
+			<record id="widget_info">
+				<symbol id="class" value="client_object_type_label" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316794" type="use" value="Type[COMMENT: default properties.xml; list header to describe the type of game object shown - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+		<!--subtitle-->
+		<record>
+			<integer id="id" value="subt" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="80" />
+			<record id="widget_info">
+				<symbol id="class" value="text" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!--short subtitle-->
+		<record>
+			<integer id="id" value="subS" />
+			<list id="dependent_properties">
+				<integer value="subt" />
+			</list>
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="80" />
+			<record id="widget_info">
+				<symbol id="class" value="text" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!--short subtitle with links-->
+		<record>
+			<integer id="id" value="subl" />
+			<list id="dependent_properties">
+				<integer value="subt" />
+			</list>
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			<flags id="customisation_context" value="none" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="80" />
+			<record id="widget_info">
+				<symbol id="class" value="text" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+				<translation id="hint" translation_id="383657" type="use" value="Subtitle[COMMENT: default properties.xml; list header to describe the sub type of game object shown - a game object is anything the user can interact with]" />
+			</record>
+		</record>
+
+		<!-- Subscribe / Unsubscribe -->
+		<record>
+			<integer id="id" value="nsss" />
+			<integer id="width" value="45" />
+			<translation id="name" translation_id="412472" type="use" value="Follow/Unfollow[COMMENT: toggle subscription status]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="50" />
+			<record id="widget_info">
+				<symbol id="class" value="news_subscribe_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316791" type="use" value="News[COMMENT: toggle subscription status]" />
+				<translation id="hint" translation_id="412473" type="use" value="Click to set follow on/off[COMMENT: hint text describing what a particular button does, in this case toggling whether subscriptions are enabled or not]" />
+			</record>
+		</record>
+
+		<!-- PROP_OBJECT_ACCENT_COLOUR -->
+		<record>
+			<integer id="id" value="oACL" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_DARK_ACCENT_COLOUR -->
+		<record>
+			<integer id="id" value="oDAC" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_PRIMARY_COLOUR -->
+		<record>
+			<integer id="id" value="oPCL" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_SECONDARY_COLOUR -->
+		<record>
+			<integer id="id" value="oSCL" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_ACCENT_COLOUR_NO_FILTER -->
+		<record>
+			<integer id="id" value="oACn" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_DARK_ACCENT_COLOUR_NO_FILTER -->
+		<record>
+			<integer id="id" value="oDCn" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_PRIMARY_COLOUR_NO_FILTER -->
+		<record>
+			<integer id="id" value="oPCn" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_OBJECT_SECONDARY_COLOUR_NO_FILTER -->
+		<record>
+			<integer id="id" value="oSCn" />
+			<list id="dependent_properties">
+				<integer value="Accl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_TITLE_COLOUR -->
+		<record>
+			<integer id="id" value="ttcl" />
+			<list id="dependent_properties">
+				<integer value="tbcl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+
+		<!-- PROP_TITLE_BACKGROUND_COLOUR -->
+		<record>
+			<integer id="id" value="tbcl" />
+			<list id="dependent_properties">
+				<integer value="ttcl" />
+			</list>
+			<flags id="customisation_context" value="none" />
+		</record>
+	</list>
+	<!-- column display properties -->
+</record>

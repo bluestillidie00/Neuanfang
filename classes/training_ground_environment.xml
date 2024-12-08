@@ -1,0 +1,5 @@
+﻿
+
+<class  class="training_ground_environment" parent="character_widget" graphics_view="character_widget" room_type="training_ground" scene_type="training_ground" camera_id="training_ground" view_behind="true" view_camera="character_widget">  
+</class>
+   

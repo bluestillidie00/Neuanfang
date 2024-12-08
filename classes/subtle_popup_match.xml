@@ -1,0 +1,5 @@
+<!-- a popup menu which only appears as a button when you roll over it -->
+<class class="subtle_popup_match" parent="popup_button">
+    <flags id="appearance" value="buttons/subtle/normal"/>
+	<boolean id="multiline" value="false"/>
+</class>

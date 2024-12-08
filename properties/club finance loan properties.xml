@@ -1,0 +1,297 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- Amount -->
+		<record>
+			<integer id="id" value="amot" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="383590" type="use" value="Original Debt[COMMENT: FR 10982, content for Finances Screen]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383590" type="use" value="Original Debt[COMMENT: FR 10982, content for Finances Screen]" />
+			</record>
+		</record>
+
+		<!-- Source -->
+		<record>
+			<integer id="id" value="sour" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="293023" type="use" value="Source" />
+
+			<record id="widget_info">
+				<symbol id="class" value="formatted_label" />
+				<flags id="alignment" value="left,centre_y" />
+				<list id="format">
+					<record value="1">
+						<translation id="format" translation_id="293026" type="use" value="Bank[COMMENT: club debt type]" />
+					</record>
+					<record value="2">
+						<translation id="format" translation_id="521009" type="use" value="Chairperson[COMMENT: AREA: Jobs; SUB-AREA: Job Type; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: formerly named chairman but made non-gender specific]" />
+					</record>
+					<record value="3">
+						<translation id="format" translation_id="293025" type="use" value="CVA[COMMENT: club debt type]" />
+					</record>
+					<record value="4">
+						<translation id="format" translation_id="293027" type="use" value="PFA[COMMENT: club debt type]" />
+					</record>
+					<record value="5">
+						<translation id="format" translation_id="293028" type="use" value="State[COMMENT: club debt type]" />
+					</record>
+					<record value="6">
+						<translation id="format" translation_id="293029" type="use" value="Supporters Trust[COMMENT: club debt type]" />
+					</record>
+					<record value="7">
+						<translation id="format" translation_id="312821" type="use" value="Gift Repayable Once Profitable[COMMENT: club debt type]" />
+					</record>
+					<record value="8">
+						<translation id="format" translation_id="312822" type="use" value="Gift Repayable On Departure[COMMENT: club debt type]" />
+					</record>
+					<record value="9">
+						<translation id="format" translation_id="312823" type="use" value="Gift Non-Repayable[COMMENT: club debt type]" />
+					</record>
+					<record value="10">
+						<translation id="format" translation_id="314572" type="use" value="Loan Repayable On Promotion To Top Division[COMMENT: club debt type]" />
+					</record>
+					<record value="11">
+						<translation id="format" translation_id="314573" type="use" value="Loan Repayable When Established In Top Division[COMMENT: club debt type]" />
+					</record>
+					<record value="12">
+						<translation id="format" translation_id="227969" type="use" value="Director[COMMENT - director job, short text]" />
+					</record>
+					<record value="13">
+						<translation id="format" translation_id="393365" type="use" value="PIK Loan (Total amount of loan repayable on maturity)[COMMENT: FR 10982, content for Finances Screen, PIK is Payment in Kind, finances debt loan panel, type of outstanding debt held by a club]" />
+					</record>
+					<record value="14">
+						<translation id="format" translation_id="396733" type="use" value="Lump Sum Paid On Promotion To Top Division[COMMENT: club debt type]" />
+					</record>
+					<record value="15">
+						<translation id="format" translation_id="395029" type="use" value="Miscellaneous[COMMENT:Button text inside fantasy club panel; to edit other relevant club details]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="293026" type="use" value="Bank[COMMENT: club debt type]" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="521009" type="use" value="Chairperson[COMMENT: AREA: Jobs; SUB-AREA: Job Type; FR-BN: n/a; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: formerly named chairman but made non-gender specific]" />
+					</record>
+					<record id="3">
+						<translation id="text" translation_id="293025" type="use" value="CVA[COMMENT: club debt type]" />
+					</record>
+					<record id="4">
+						<translation id="text" translation_id="293027" type="use" value="PFA[COMMENT: club debt type]" />
+					</record>
+					<record id="5">
+						<translation id="text" translation_id="293028" type="use" value="State[COMMENT: club debt type]" />
+					</record>
+					<record id="6">
+						<translation id="text" translation_id="293029" type="use" value="Supporters Trust[COMMENT: club debt type]" />
+					</record>
+					<record id="7">
+						<translation id="text" translation_id="312821" type="use" value="Gift Repayable Once Profitable[COMMENT: club debt type]" />
+					</record>
+					<record id="8">
+						<translation id="text" translation_id="312822" type="use" value="Gift Repayable On Departure[COMMENT: club debt type]" />
+					</record>
+					<record id="9">
+						<translation id="text" translation_id="312823" type="use" value="Gift Non-Repayable[COMMENT: club debt type]" />
+					</record>
+					<record id="10">
+						<translation id="text" translation_id="314572" type="use" value="Loan Repayable On Promotion To Top Division[COMMENT: club debt type]" />
+					</record>
+					<record id="11">
+						<translation id="text" translation_id="314573" type="use" value="Loan Repayable When Established In Top Division[COMMENT: club debt type]" />
+					</record>
+					<record id="12">
+						<translation id="text" translation_id="227969" type="use" value="Director[COMMENT - director job, short text]" />
+					</record>
+					<record id="13">
+						<translation id="text" translation_id="393365" type="use" value="PIK Loan (Total amount of loan repayable on maturity)[COMMENT: FR 10982, content for Finances Screen, PIK is Payment in Kind, finances debt loan panel, type of outstanding debt held by a club]" />
+					</record>
+					<record id="14">
+						<translation id="text" translation_id="396733" type="use" value="Lump Sum Paid On Promotion To Top Division[COMMENT: club debt type]" />
+					</record>
+					<record id="15">
+						<translation id="text" translation_id="395029" type="use" value="Miscellaneous[COMMENT:Button text inside fantasy club panel; to edit other relevant club details]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293023" type="use" value="Source" />
+			</record>
+		</record>
+
+		<!-- Monthly Repayment -->
+		<record>
+			<integer id="id" value="mrep" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557866" type="use" value="Monthly Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for loan monthly repayment]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557866" type="use" value="Monthly Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for loan monthly repayment]" />
+			</record>
+		</record>
+
+		<!-- Monthly Interest Repayment -->
+		<record>
+			<integer id="id" value="mire" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557867" type="use" value="Monthly Interest Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for loan monthly interest repayment]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557867" type="use" value="Monthly Interest Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for loan monthly interest repayment]" />
+			</record>
+		</record>
+
+		<!-- Conditional Repayment -->
+		<record>
+			<integer id="id" value="cnre" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557868" type="use" value="Conditional Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for conditional repayment on loan to be made when condition is met]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557868" type="use" value="Conditional Repayment[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for conditional repayment on loan to be made when condition is met]" />
+			</record>
+		</record>
+
+		<!-- Start Date -->
+		<record>
+			<integer id="id" value="strt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293013" type="use" value="Start Date" />
+
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_past" value="50" />
+				<integer id="years_in_future" value="50" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293013" type="use" value="Start Date" />
+			</record>
+		</record>
+
+		<!-- End Date -->
+		<record>
+			<integer id="id" value="endt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293014" type="use" value="End Date" />
+
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_future" value="50" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293014" type="use" value="End Date" />
+			</record>
+		</record>
+
+		<!-- Include In FFP Calculations -->
+		<record>
+			<integer id="id" value="iffp" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557869" type="use" value="Include In FPP Calculations[COMMENT: AREA: In-Game Editor; SUB-AREA: Finance Loan; FR-BN: FM-309; TONE: Formal; CHARLIMIT: None; REF-ID: XXXXXX; NOTE: Heading for if loan is included in FFP calculations]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<!-- Interest Only Payment -->
+		<record>
+			<integer id="id" value="iopy" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="393308" type="use" value="Interest-only payment.[COMMENT: finance_summary_panel; FR:3764 Explaining that only the interest is paid on the loan]" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+		
+	</list>
+</record>

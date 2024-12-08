@@ -1,0 +1,25 @@
+<!-- game debug menu -->
+<record>
+	<string id="text" value="Debug" />
+	<flags id="event_target" value="scrC" />
+	
+	<list id="items">
+		<!-- sitoolkit debug menu -->
+		<record file="menus/debug">
+			<string id="text" value="SITOOLKIT" />
+		</record>
+		
+		<!-- debug channels  -->
+		<record property="Dchn">
+			<string id="text" value="Channels" />
+		</record>
+		
+		<!-- game debug menus stored in other files (in game/data/menus/...)  --> 
+		<record file="menus/match debug" />
+		<record file="menus/media debug" />
+		<record file="menus/morale debug" />
+		<record file="menus/news debug" />
+		<record file="menus/ai debug" />
+		<record file="menus/misc debug" />
+	</list>
+</record>

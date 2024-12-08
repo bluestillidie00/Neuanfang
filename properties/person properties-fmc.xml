@@ -1,0 +1,559 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- team selection -->
+		<record>
+			<integer id="id" value="PtsL" />
+			<integer id="width" value="120" />
+		</record>
+
+		<!--position, role and duty (outside a match)-->
+		<record>
+			<integer id="id" value="TPRD" />
+			<integer id="width" value="225" />
+		</record>
+
+		<!--position, role and duty (inside a match)-->
+		<record>
+			<integer id="id" value="TPRM" />
+			<integer id="width" value="225" />
+		</record>
+
+		<!-- opposition team selection -->
+		<record>
+			<integer id="id" value="POsL" />
+			<integer id="width" value="65" />
+		</record>
+
+		<!--status info-->
+		<record>
+			<integer id="id" value="Pnfo" />
+			<integer id="width" value="38" />
+			<integer id="minimum_width" value="38" />
+		</record>
+
+		<!--make available-->
+		<record>
+			<integer id="id" value="Pnma" />
+			<integer id="width" value="38" />
+			<integer id="minimum_width" value="38" />
+		</record>
+
+		<!-- Full player status -->
+		<record>
+			<integer id="id" value="Pnfa" />
+			<integer id="width" value="275" />
+		</record>
+
+		<!--shirt number in a coloured circle-->
+		<record>
+			<integer id="id" value="PsnC" />
+			<integer id="width" value="34" />
+		</record>
+
+		<!-- preferred feet -->
+		<record>
+			<integer id="id" value="Pfot" />
+			<integer id="width" value="100" />
+		</record>
+
+		<!--contract offer-->
+		<record>
+			<integer id="id" value="Pofc" />
+			<integer id="width" value="115" />
+		</record>
+
+		<!--contract offer extension clause-->
+		<record>
+			<integer id="id" value="Pcec" />
+			<integer id="width" value="135" />
+		</record>
+
+		<!--pie version of condition-->
+		<record>
+			<integer id="id" value="Pcon" />
+			<integer id="width" value="65" />
+		</record>
+
+		<!--pie version of match sharpness-->
+		<record>
+			<integer id="id" value="Pfit" />
+			<integer id="width" value="58" />
+		</record>
+
+		<!--The label version of match sharpness-->
+		<record>
+			<integer id="id" value="PFIT" />
+			<integer id="width" value="65" />
+		</record>
+
+		<!--morale-->
+		<record>
+			<integer id="id" value="Pmor" />
+			<integer id="width" value="105" />
+		</record>
+
+		<!--Start morale for the team meeting full screen only-->
+		<record>
+			<integer id="id" value="Pstm" />
+			<integer id="width" value="105" />
+		</record>
+
+		<!--key passes per 90-->
+		<record>
+			<integer id="id" value="POkG" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!--chances created per 90-->
+		<record>
+			<integer id="id" value="POcG" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!--interceptions per 90-->
+		<record>
+			<integer id="id" value="POiG" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!--opposition tight marking-->
+		<record>
+			<integer id="id" value="OPtm" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="32" />
+		</record>
+
+		<!--opposition pressing intensity-->
+		<record>
+			<integer id="id" value="OPcd" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="32" />
+		</record>
+
+		<!--opposition tackling-->
+		<record>
+			<integer id="id" value="OPtk" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="32" />
+		</record>
+
+		<!--opposition show onto foot-->
+		<record>
+			<integer id="id" value="OPsf" />
+			<integer id="width" value="-1" />
+			<integer id="minimum_width" value="32" />
+		</record>
+
+		<!--coaching qualification-->
+		<record>
+			<integer id="id" value="Pcqu" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--context job-->
+		<record>
+			<integer id="id" value="PcJj" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--relationship level-->
+		<record>
+			<integer id="id" value="rlhn" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--context job no team-->
+		<record>
+			<integer id="id" value="PcjN" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--club job-->
+		<record>
+			<integer id="id" value="PCcj" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--club secondary job-->
+		<record>
+			<integer id="id" value="PScj" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!--international job-->
+		<record>
+			<integer id="id" value="PCij" />
+			<integer id="width" value="195" />
+		</record>
+
+		<!-- shirt position -->
+		<record>
+			<integer id="id" value="Pshp" />
+			<integer id="width" value="90" />
+		</record>
+
+		<!--role-->
+		<record>
+			<integer id="id" value="TPrl" />
+			<integer id="width" value="80" />
+		</record>
+
+		<!--context position-->
+		<record>
+			<integer id="id" value="PCXT" />
+			<integer id="width" value="80" />
+		</record>
+
+		<!--context role-->
+		<record>
+			<integer id="id" value="CcoR" />
+			<integer id="width" value="80" />
+		</record>
+
+		<!-- Last international position -->
+		<record>
+			<integer id="id" value="PIps" />
+			<integer id="width" value="53" />
+		</record>
+
+		<!-- Last club position -->
+		<record>
+			<integer id="id" value="PCps" />
+			<integer id="width" value="53" />
+		</record>
+
+		<!-- Last international match incident -->
+		<record>
+			<integer id="id" value="PImi" />
+			<integer id="width" value="22" />
+		</record>
+
+		<!-- Last international match incident -->
+		<record>
+			<integer id="id" value="PCmi" />
+			<integer id="width" value="24" />
+		</record>
+
+		<!-- non player club team type -->
+		<record>
+			<integer id="id" value="PcnT" />
+			<integer id="width" value="72" />
+		</record>
+
+		<!-- Player club team type -->
+		<record>
+			<integer id="id" value="PtmT" />
+			<integer id="width" value="72" />
+		</record>
+
+		<!-- Last club fixture score -->
+		<record>
+			<integer id="id" value="PCsc" />
+			<integer id="width" value="55" />
+		</record>
+
+		<!-- Last international fixture date -->
+		<record>
+			<integer id="id" value="PIfd" />
+			<integer id="width" value="60" />
+		</record>
+
+		<!-- Last international fixture date -->
+		<record>
+			<integer id="id" value="PCfd" />
+			<integer id="width" value="60" />
+		</record>
+
+		<!-- Last international minutes played -->
+		<record>
+			<integer id="id" value="PImp" />
+			<integer id="width" value="40" />
+		</record>
+
+		<!-- Last club minutes played -->
+		<record>
+			<integer id="id" value="PCmp" />
+			<integer id="width" value="45" />
+		</record>
+
+		<!-- substituted on minute -->
+		<record>
+			<integer id="id" value="SuNm" />
+			<integer id="width" value="45" />
+		</record>
+
+		<!-- Incident minutes -->
+		<record>
+			<integer id="id" value="PinD" />
+			<integer id="width" value="45" />
+		</record>
+
+		<!-- Last club goals scored -->
+		<record>
+			<integer id="id" value="PCgo" />
+			<integer id="width" value="50" />
+		</record>
+
+		<!-- Last international rating -->
+		<record>
+			<integer id="id" value="PIra" />
+			<integer id="width" value="58" />
+		</record>
+
+		<!-- Last club rating -->
+		<record>
+			<integer id="id" value="PCra" />
+			<integer id="width" value="58" />
+		</record>
+
+		<!--Last match rating for context team-->
+		<record>
+			<integer id="id" value="LMrt" />
+			<integer id="width" value="58" />
+		</record>
+
+		<!-- PLAYER MATCH STATS -->
+		<!-- Pass attempts -->
+		<record>
+			<integer id="id" value="MPpa" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Passes completed -->
+		<record>
+			<integer id="id" value="MPpc" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- Crosses attempted -->
+		<record>
+			<integer id="id" value="MPcr" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Crosses completed -->
+		<record>
+			<integer id="id" value="MPcc" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- Key passes in match-->
+		<record>
+			<integer id="id" value="MPkp" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!--chances created in match-->
+		<record>
+			<integer id="id" value="MPCc" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Tackle attempts -->
+		<record>
+			<integer id="id" value="MPta" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Key tackles -->
+		<record>
+			<integer id="id" value="MPkt" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Tackles won -->
+		<record>
+			<integer id="id" value="MPtw" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Header attempts -->
+		<record>
+			<integer id="id" value="MPha" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Headers won -->
+		<record>
+			<integer id="id" value="MPhw" />
+			<integer id="width" value="34" />
+		</record>
+
+		<!-- Key headers -->
+		<record>
+			<integer id="id" value="MPky" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Interceptions -->
+		<record>
+			<integer id="id" value="MPic" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- cross percentage -->
+		<record>
+			<integer id="id" value="MCR%" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- heading percentage -->
+		<record>
+			<integer id="id" value="MHE%" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- tackles percentage -->
+		<record>
+			<integer id="id" value="MTA%" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- shots on target percentage -->
+		<record>
+			<integer id="id" value="MST%" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Run with ball -->
+		<record>
+			<integer id="id" value="MPrw" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Offsides -->
+		<record>
+			<integer id="id" value="MOff" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Fouls made -->
+		<record>
+			<integer id="id" value="MPfm" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Fouled -->
+		<record>
+			<integer id="id" value="MPfd" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Assists -->
+		<record>
+			<integer id="id" value="MPas" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Shots -->
+		<record>
+			<integer id="id" value="MPst" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Shots on target -->
+		<record>
+			<integer id="id" value="MPso" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Conceded -->
+		<record>
+			<integer id="id" value="MPcn" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Shots Faced -->
+		<record>
+			<integer id="id" value="MPSF" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Saves held -->
+		<record>
+			<integer id="id" value="MPsh" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Saves parried -->
+		<record>
+			<integer id="id" value="MPsp" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Saves tipped -->
+		<record>
+			<integer id="id" value="MPsd" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Goals -->
+		<record>
+			<integer id="id" value="MPgl" />
+			<integer id="width" value="30" />
+		</record>
+
+		<!-- Shots blocked -->
+		<record>
+			<integer id="id" value="MPsb" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Shots hit woodwork -->
+		<record>
+			<integer id="id" value="HwdW" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Throw ins -->
+		<record>
+			<integer id="id" value="MPti" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Corners -->
+		<record>
+			<integer id="id" value="MPce" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Defending freekicks -->
+		<record>
+			<integer id="id" value="MPdf" />
+			<integer id="width" value="32" />
+		</record>
+
+		<!-- Attacking freekicks -->
+		<record>
+			<integer id="id" value="MPaf" />
+			<integer id="width" value="32" />
+		</record>
+
+		<record>
+			<integer id="id" value="PMid" />
+			<integer id="width" value="130" />
+			<translation id="name" translation_id="595255" type="use" value="Mindset[COMMENT: AREA: Dynamics; SUB-AREA: Player information; NOTE: Player's mindset, personality trait]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="auto_hide_priority" value="98" />
+			<record id="widget_info">
+				<symbol id="class" value="player_mindset_label" />
+				<flags id="multiline" value="false" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="595255" type="use" value="Mindset[COMMENT: AREA: Dynamics; SUB-AREA: Player information; NOTE: Player's mindset, personality trait]" />
+				<translation id="hint" translation_id="595255" type="use" value="Mindset[COMMENT: AREA: Dynamics; SUB-AREA: Player information; NOTE: Player's mindset, personality trait]" />
+			</record>
+			<record id="search_filter">
+				<integer id="id" value="pfpu" />
+			</record>
+		</record>
+
+	</list>
+
+</record>

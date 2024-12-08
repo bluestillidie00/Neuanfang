@@ -1,0 +1,28 @@
+<!--item selection panel customised for player instructions-->
+<class class="player_instructions_selector_panel" parent="item_selection_panel">
+  <translation id="title" translation_id="343974" type="use" value="Instructions[COMMENT: title for a table that shows additional instructions to be employed by the team]" />
+  <record id="changed_event" event_id="Pinc" />
+  <translation id="add_button_text" translation_id="452032" type="use" value="Add[COMMENT: button text for the user to add a new instruction to a list]" />
+  <translation id="edit_button_text" translation_id="452033" type="use" value="Edit[COMMENT: button text for the user to edit instructions in a list]" />
+  <!--<translation id="no_items_explanatory_text" translation_id="382828" type="use" value="Selected players have different instructions. Click 'Edit' to give them the same instructions.[COMMENT: player instructions help text]" />-->
+  <record id="dialog_properties">
+    <boolean id="auto_revert_conflicts" value="true" />
+    <list id="category_layout">
+      <list>
+        <integer value="1" />
+      </list>
+      <list>
+        <integer value="0" />
+      </list>
+      <list>
+        <integer value="2" />
+      </list>
+      <list>
+        <integer value="3" />
+      </list>
+      <list>
+        <integer value="4" />
+      </list>
+    </list>
+  </record>
+</class>

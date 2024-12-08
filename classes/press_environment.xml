@@ -1,0 +1,5 @@
+﻿
+  
+<class class="press_environment" parent="character_widget" graphics_view="character_widget" scene_type="press_conference" room_type="press_conference_room" camera_id="press_conference_room" view_behind="true" view_camera="character_widget">
+</class>
+  

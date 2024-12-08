@@ -1,0 +1,24 @@
+<!--item selection panel customised for team strategies--><class class="team_instructions_selector_panel" parent="item_selection_panel">
+  <translation id="title" translation_id="343974" type="use" value="Instructions[COMMENT: title for a table that shows additional instructions to be employed by the team]" />
+  <record id="changed_event" event_id="Tinc" />
+  <translation id="add_button_text" translation_id="343180" type="use" value="Add Instruction[COMMENT: button text for the user to add a new instruction to a list]" />
+  <translation id="edit_button_text" translation_id="382596" type="use" value="Edit Instructions[COMMENT: button text for the user to edit instructions in a list]" />
+  <record id="dialog_properties">
+    <boolean id="auto_revert_conflicts" value="true" />
+    <list id="category_layout">
+      <list>
+        <integer value="0" />
+      </list>
+      <list>
+        <integer value="1" />
+        <integer value="2" />
+      </list>
+      <list>
+        <integer value="3" />
+      </list>
+      <list>
+        <integer value="4" />
+      </list>
+    </list>
+  </record>
+</class>

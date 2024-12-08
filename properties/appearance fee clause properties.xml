@@ -1,0 +1,166 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- player -->
+		<record>
+			<integer id="id" value="play" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="227966" type="use" value="Player" />
+
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_person_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227966" type="use" value="Player" />
+			</record>
+		</record>
+
+		<!-- club -->
+		<record>
+			<integer id="id" value="club" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="557859" type="use" value="Receiving Club[COMMENT: AREA: Transfers; SUB-AREA: Transfer Clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the money]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557859" type="use" value="Receiving Club[COMMENT: AREA: Transfers; SUB-AREA: Transfer Clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the money]" />
+				<translation id="hint" translation_id="557860" type="use" value="Club receiving the fee[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the additional fee]" />
+			</record>
+		</record>
+
+		<!-- fee -->
+		<record>
+			<integer id="id" value="cash" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="230121" type="use" value="Fee" />
+
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="230121" type="use" value="Fee" />
+			</record>
+		</record>
+
+		<!-- amount required -->
+		<record>
+			<integer id="id" value="apps" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557861" type="use" value="Amount Required[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557861" type="use" value="Amount Required[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+			</record>
+		</record>
+
+		<!-- amount so far-->
+		<record>
+			<integer id="id" value="apfr" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557862" type="use" value="Amount So Far[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557862" type="use" value="Amount So Far[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+			</record>
+		</record>
+
+		<!-- condition -->
+		<record>
+			<integer id="id" value="type" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="557863" type="use" value="Condition[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="293038" type="use" value="After International Appearances[COMMENT: appearance money clause type]" />
+					</record>
+					<record id="0">
+						<translation id="name" translation_id="293039" type="use" value="After League Appearances[COMMENT: appearance money clause type]" />
+					</record>
+					<record id="3">
+						<translation id="name" translation_id="293040" type="use" value="After League Goals[COMMENT: appearance money clause type]" />
+					</record>
+					<record id="2">
+						<translation id="name" translation_id="293041" type="use" value="Per League Appearance[COMMENT: appearance money clause type]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557863" type="use" value="Condition[COMMENT: AREA: Transfers; SUB-AREA: Additional Fees; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Additional fees which are triggered by condition being met]" />
+			</record>
+		</record>
+
+	</list>
+</record>

@@ -1,0 +1,28 @@
+<class class="section_popup_button_match" parent="section_popup_button">
+  <flags id="icon_enabled" value="true"/>
+  <flags id="icon_alignment" value="left,centre_y"/>
+  <flags id="secondary_icon_enabled" value="false"/>
+  <flags id="icon" value="icons/custom/interface/tab bar/down"/>
+  <flags id="icon_alignment" value="right,centre_y"/>
+  <flags id="draw_arrow" value="false"/>
+  <flags id="menu_appearance" value="menus/custom/interface/tab bar"/>
+  <flags id="alignment" value="left,centre_y"/>
+  <flags id="size" value="normal"/>
+  <flags id="colour" value="text"/>
+	<flags id="icon_colour" value="text" />
+  <flags id="red_replacement" value="text"/>
+  <flags id="auto_size" value="all"/>
+  <boolean id="multiline" value="false"/>
+  <float id="circle_radius" value="3.0"/>
+  <float id="circle_offset_x" value="0.0"/>
+  <float id="circle_offset_y" value="4.0"/>
+  <record id="marker_colours">
+    <colour id="hilp" name="match_feed_goal"/>
+    <colour id="TacH" name="match_feed_serious_injury"/>
+    <colour id="TacA" name="match_feed_serious_injury"/>
+    <colour id="AnaH" name="match_feed_event"/>
+    <colour id="AnaA" name="match_feed_event"/>
+    <colour id="mgup" name="match_feed_important_score"/>
+  </record>
+
+</class>

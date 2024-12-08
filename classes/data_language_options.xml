@@ -1,0 +1,8 @@
+﻿<!-- Used to display data language options. --><class class="data_language_options" parent="button">
+	<flags id="alignment" value="centre" />
+	<record id="click_event">
+		<integer id="event_id" value="shSa" />
+		<integer id="index" value="5" />
+	</record>
+	<translation id="text" translation_id="557533" type="use" value="Data Language Preferences[COMMENT: AREA: Preferences; SUB-AREA: Data Language Preferences Panel; FN-BN: FM-5171; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: allows user to set data language preferences]" />
+</class>

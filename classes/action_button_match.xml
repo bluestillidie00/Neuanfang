@@ -1,0 +1,5 @@
+<class class="action_button_match" parent="button">
+    <flags id="appearance" value="button/match/button"/>
+    <flags id="auto_size" value="all"/>
+	<flags id="colour" value="white"/>
+</class>

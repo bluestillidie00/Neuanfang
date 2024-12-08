@@ -1,0 +1,56 @@
+<record>
+	<list id="column_table_properties">
+
+		<record>
+			<integer id="id" value="awrd" />
+			<integer id="width" value="-1" />
+			<translation id="name" translation_id="292792" type="use" value="Name[comment - Award name]" />
+			<record id="widget_info">
+				<symbol id="class" value="award_button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="292792" type="use" value="Name[comment - Award name]" />
+				<translation id="hint" translation_id="292793" type="use" value="Award Name" />
+			</record>
+		</record>
+
+		<!-- news subscription: unsubscribe button -->
+		<record>
+			<integer id="id" value="Srem" />
+			<integer id="width" value="25" />
+			<flags id="customisation_context" value="none" />
+			<integer id="minimum_width" value="25" />
+			<record id="widget_info">
+				<symbol id="class" value="button" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="centre" />
+			</record>
+		</record>
+
+		<!-- Subscribe / Unsubscribe -->
+		<record>
+			<integer id="id" value="nsss" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="412472" type="use" value="Follow/Unfollow[COMMENT: toggle subscription status]" />
+			<flags id="customisation_context" value="any" />
+			<translation id="category" translation_id="248359" type="use" value="General" />
+			<integer id="minimum_width" value="50" />
+			<record id="widget_info">
+				<symbol id="class" value="news_subscribe_button" />
+			</record>
+			<record id="column_widget_properties">
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="316791" type="use" value="News[COMMENT: toggle subscription status]" />
+				<translation id="hint" translation_id="412473" type="use" value="Click to set follow on/off[COMMENT: hint text describing what a particular button does, in this case toggling whether subscriptions are enabled or not]" />
+			</record>
+		</record>
+	</list>
+
+</record>

@@ -1,0 +1,5 @@
+﻿
+  
+<class class="interview_environment" parent="character_widget" graphics_view="character_widget" scene_type="interview_area" room_type="interview_area"  camera_id="interview_area" view_behind="true" view_camera="character_widget">
+</class>
+  

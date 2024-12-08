@@ -10,8 +10,10 @@
 
   <real id="extra_height" value="2" /> 
 
-    <colour id="fill_colour" name="blue grey 900"/>
-
+  <integer id="fill_colour_red" value="255" />
+  <integer id="fill_colour_green" value="255" />
+  <integer id="fill_colour_blue" value="255" />
+  <integer id="fill_colour_alpha" value="255" />
 
   <!-- styles -->
   <list id="styles">

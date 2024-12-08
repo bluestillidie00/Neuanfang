@@ -1,0 +1,10 @@
+<class class="section_button" parent="menubar_icon_button">
+  <flags id="appearance" value="tabs/standard/normal/top/button"/>
+  <flags id="selected_appearance" value="tabs/standard/selected/top/fm23/button"/>
+  <flags id="icon_enabled" value="true"/>
+  <flags id="icon_alignment" value="left,centre_y"/>
+  <flags id="auto_size" value="all"/>
+  <flags id="alignment" value="left,centre_y"/>
+  <flags id="size" value="normal"/>
+  <flags id="font" value="fonts/text"/> 
+</class>

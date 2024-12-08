@@ -1,0 +1,5 @@
+﻿<class class="credits_chunk_container" parent="subsection_box">
+	<list id="attachments">
+		    <record class="vertical_arrange_autosize" vertical_gap="0" horizontal_inset="0" />
+	</list>
+</class>

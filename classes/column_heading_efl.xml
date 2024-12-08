@@ -1,0 +1,5 @@
+﻿<class class="column_heading_efl" parent="column_heading">
+    <flags id="colour" value="efl blue" />
+    <flags id="font" value="efl bold" />
+    <flags id="size" value="small" />
+</class>

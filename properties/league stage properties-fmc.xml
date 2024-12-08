@@ -1,0 +1,287 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- HOME games played -->
+		<record>
+			<integer id="id" value="LHpl" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME games won -->
+		<record>
+			<integer id="id" value="LHwo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME games drawn -->
+		<record>
+			<integer id="id" value="LHdr" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME games lost on pen -->
+		<record>
+			<integer id="id" value="LHlp" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME games lost -->
+		<record>
+			<integer id="id" value="LHlo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME goals for -->
+		<record>
+			<integer id="id" value="LHfo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME goals against -->
+		<record>
+			<integer id="id" value="LHag" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME goal difference -->
+		<record>
+			<integer id="id" value="LHgd" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- HOME points -->
+		<record>
+			<integer id="id" value="LHpo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY games played -->
+		<record>
+			<integer id="id" value="LApl" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY games won -->
+		<record>
+			<integer id="id" value="LAwo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY games drawn -->
+		<record>
+			<integer id="id" value="LAdr" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY games lost on pen -->
+		<record>
+			<integer id="id" value="LAlp" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY games lost -->
+		<record>
+			<integer id="id" value="LAlo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY goals for -->
+		<record>
+			<integer id="id" value="LAfo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY goals against -->
+		<record>
+			<integer id="id" value="LAag" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY goal difference -->
+		<record>
+			<integer id="id" value="LAgd" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY points -->
+		<record>
+			<integer id="id" value="LApo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- AWAY recent form -->
+		<record>
+			<integer id="id" value="Tsaf" />
+			<integer id="width" value="70" />
+		</record>
+
+		<!-- 1st half of season games played -->
+		<record>
+			<integer id="id" value="L1pl" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season games won -->
+		<record>
+			<integer id="id" value="L1wo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season games drawn -->
+		<record>
+			<integer id="id" value="L1dr" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season games lost on pen -->
+		<record>
+			<integer id="id" value="L1lp" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season games lost -->
+		<record>
+			<integer id="id" value="L1lo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season goals for -->
+		<record>
+			<integer id="id" value="L1fo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season goals against -->
+		<record>
+			<integer id="id" value="L1ag" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season goal difference -->
+		<record>
+			<integer id="id" value="L1gd" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 1st half of season points -->
+		<record>
+			<integer id="id" value="L1po" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season games played -->
+		<record>
+			<integer id="id" value="L2pl" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season games won -->
+		<record>
+			<integer id="id" value="L2wo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season games drawn -->
+		<record>
+			<integer id="id" value="L2dr" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season games lost on pen -->
+		<record>
+			<integer id="id" value="L2lp" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season games lost -->
+		<record>
+			<integer id="id" value="L2lo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season goals for -->
+		<record>
+			<integer id="id" value="L2fo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season goals against -->
+		<record>
+			<integer id="id" value="L2ag" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season goal difference -->
+		<record>
+			<integer id="id" value="L2gd" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- 2nd half of season points -->
+		<record>
+			<integer id="id" value="L2po" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL games played -->
+		<record>
+			<integer id="id" value="LOpl" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL games won -->
+		<record>
+			<integer id="id" value="LOwo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL games drawn -->
+		<record>
+			<integer id="id" value="LOdr" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL games lost on pen -->
+		<record>
+			<integer id="id" value="LOlp" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL games lost -->
+		<record>
+			<integer id="id" value="LOlo" />
+			<integer id="width" value="36" />
+		</record>
+
+		<!-- OVERALL goals for -->
+		<record>
+			<integer id="id" value="LOfo" />
+			<integer id="width" value="40" />
+		</record>
+
+		<!-- OVERALL goals against -->
+		<record>
+			<integer id="id" value="LOag" />
+			<integer id="width" value="40" />
+		</record>
+
+		<!-- OVERALL goal difference -->
+		<record>
+			<integer id="id" value="LOgd" />
+			<integer id="width" value="40" />
+		</record>
+
+		<!-- OVERALL points -->
+		<record>
+			<integer id="id" value="LOpo" />
+			<integer id="width" value="44" />
+		</record>
+		
+		<!-- OTHER main league position -->
+		<record>
+			<integer id="id" value="Lpos" />
+			<integer id="width" value="50" />
+		</record>
+
+	</list>
+</record>

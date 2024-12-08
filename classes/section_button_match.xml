@@ -1,0 +1,21 @@
+<class class="section_button_match" parent="section_button">
+  <flags id="icon_enabled" value="true"/>
+  <flags id="icon_alignment" value="left,centre_y"/>
+  <flags id="auto_size" value="all"/>
+  <flags id="alignment" value="centre"/>
+  <flags id="size" value="normal"/>
+  <flags id="colour" value="white"/>
+  <flags id="red_replacement" value="white"/>
+  <float id="circle_radius" value="3.0"/>
+  <float id="circle_offset_x" value="0.0"/>
+  <float id="circle_offset_y" value="4.0"/>
+  <record id="marker_colours">
+    <colour id="hilp" name="match_feed_goal"/>
+    <colour id="TacH" name="match_feed_serious_injury"/>
+    <colour id="TacA" name="match_feed_serious_injury"/>
+    <colour id="AnaH" name="match_feed_event"/>
+    <colour id="AnaA" name="match_feed_event"/>
+    <colour id="mgup" name="match_feed_important_score"/>
+  </record>
+
+</class>

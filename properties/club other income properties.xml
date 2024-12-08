@@ -1,0 +1,251 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- Amount -->
+		<record>
+			<integer id="id" value="cash" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="383814" type="use" value="Total Value[COMMENT: FR 10982, content for Finances Screen]" />
+			<record id="widget_info">
+				<symbol id="class" value="cash_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383814" type="use" value="Total Value[COMMENT: FR 10982, content for Finances Screen]" />
+			</record>
+		</record>
+
+		<!-- Income Type -->
+		<record>
+			<integer id="id" value="type" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="293005" type="use" value="Income Type" />
+
+			<record id="widget_info">
+				<symbol id="class" value="formatted_label" />
+				<flags id="alignment" value="left,centre_y" />
+				<list id="format">
+					<record value="1">
+						<translation id="format" translation_id="293006" type="use" value="Kit Sponsor[COMMENT: other income type]" />
+					</record>
+					<record value="2">
+						<translation id="format" translation_id="293007" type="use" value="Government/Council Grant[COMMENT: other income type]" />
+					</record>
+					<record value="3">
+						<translation id="format" translation_id="293008" type="use" value="Stadium Sponsor[COMMENT: other income type]" />
+					</record>
+					<record value="4">
+						<translation id="format" translation_id="293009" type="use" value="General Sponsor[COMMENT: other income type]" />
+					</record>
+					<record value="5">
+						<translation id="format" translation_id="293010" type="use" value="Individual TV Deal[COMMENT: other income type]" />
+					</record>
+					<record value="6">
+						<translation id="format" translation_id="293011" type="use" value="Other Income[COMMENT: other income type]" />
+					</record>
+					<record value="7">
+						<translation id="format" translation_id="293012" type="use" value="Club Membership[COMMENT: other income type]" />
+					</record>
+					<record value="8">
+						<translation id="format" translation_id="312816" type="use" value="Kit Sponsor (Secondary)[COMMENT: other income type]" />
+					</record>
+					<record value="9">
+						<translation id="format" translation_id="312817" type="use" value="Kit Sponsor (Other)[COMMENT: other income type]" />
+					</record>
+					<record value="10">
+						<translation id="format" translation_id="312818" type="use" value="Parachute Payment[COMMENT: other income type]" />
+					</record>
+					<record value="11">
+						<translation id="format" translation_id="393155" type="use" value="Back of Shirt[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="19">
+						<translation id="format" translation_id="493372" type="use" value="Shirt Sleeve[COMMENT: AREA: Finances screen; SUB-AREA: Sponsorship type; FR: 26786; TONE: Formal; CHARLIMIT: None; NOTE: content for Finances Screen denoting a type of sponsorship, refers to sponsor placed on the sleeve of the shirt]" />
+					</record>
+					<record value="12">
+						<translation id="format" translation_id="393438" type="use" value="Shorts[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="13">
+						<translation id="format" translation_id="393623" type="use" value="Training Kit[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="14">
+						<translation id="format" translation_id="393668" type="use" value="Youth Team[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="15">
+						<translation id="format" translation_id="393622" type="use" value="Training Ground[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="16">
+						<translation id="format" translation_id="393180" type="use" value="Continental Competition[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record value="17">
+						<translation id="format" translation_id="396946" type="use" value="Equity Injection[COMMENT: editor; other income type]" />
+					</record>
+					<record value="18">
+						<translation id="format" translation_id="396978" type="use" value="Total Commercial Income[COMMENT: editor; other income type]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="text" translation_id="293006" type="use" value="Kit Sponsor[COMMENT: other income type]" />
+					</record>
+					<record id="2">
+						<translation id="text" translation_id="293007" type="use" value="Government/Council Grant[COMMENT: other income type]" />
+					</record>
+					<record id="3">
+						<translation id="text" translation_id="293008" type="use" value="Stadium Sponsor[COMMENT: other income type]" />
+					</record>
+					<record id="4">
+						<translation id="text" translation_id="293009" type="use" value="General Sponsor[COMMENT: other income type]" />
+					</record>
+					<record id="5">
+						<translation id="text" translation_id="293010" type="use" value="Individual TV Deal[COMMENT: other income type]" />
+					</record>
+					<record id="6">
+						<translation id="text" translation_id="293011" type="use" value="Other Income[COMMENT: other income type]" />
+					</record>
+					<record id="7">
+						<translation id="text" translation_id="293012" type="use" value="Club Membership[COMMENT: other income type]" />
+					</record>
+					<record id="8">
+						<translation id="text" translation_id="312816" type="use" value="Kit Sponsor (Secondary)[COMMENT: other income type]" />
+					</record>
+					<record id="9">
+						<translation id="text" translation_id="312817" type="use" value="Kit Sponsor (Other)[COMMENT: other income type]" />
+					</record>
+					<record id="10">
+						<translation id="text" translation_id="312818" type="use" value="Parachute Payment[COMMENT: other income type]" />
+					</record>
+					<record id="11">
+						<translation id="text" translation_id="393155" type="use" value="Back of Shirt[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="19">
+						<translation id="text" translation_id="493372" type="use" value="Shirt Sleeve[COMMENT: AREA: Finances screen; SUB-AREA: Sponsorship type; FR: 26786; TONE: Formal; CHARLIMIT: None; NOTE: content for Finances Screen denoting a type of sponsorship, refers to sponsor placed on the sleeve of the shirt]" />
+					</record>
+					<record id="12">
+						<translation id="text" translation_id="393438" type="use" value="Shorts[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="13">
+						<translation id="text" translation_id="393623" type="use" value="Training Kit[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="14">
+						<translation id="text" translation_id="393668" type="use" value="Youth Team[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="15">
+						<translation id="text" translation_id="393622" type="use" value="Training Ground[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="16">
+						<translation id="text" translation_id="393180" type="use" value="Continental Competition[COMMENT: FR 10982, content for Finances Screen denoting a type of sponsorship]" />
+					</record>
+					<record id="17">
+						<translation id="text" translation_id="396946" type="use" value="Equity Injection[COMMENT: editor; other income type]" />
+					</record>
+					<record id="18">
+						<translation id="text" translation_id="396978" type="use" value="Total Commercial Income[COMMENT: editor; other income type]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="229400" type="use" value="Type" />
+			</record>
+		</record>
+
+		<!-- Start Date -->
+		<record>
+			<integer id="id" value="stdt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293013" type="use" value="Start Date" />
+
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_past" value="50" />
+				<integer id="years_in_future" value="50" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293013" type="use" value="Start Date" />
+			</record>
+		</record>
+
+		<!-- End Date -->
+		<record>
+			<integer id="id" value="endt" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293014" type="use" value="End Date" />
+
+			<record id="widget_info">
+				<symbol id="class" value="date_cell" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_date_cell" />
+				<string id="colour" value="text" />
+				<record id="select_event" event_id="CDBd" event_flags="2" />
+				<integer id="years_in_future" value="50" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="293014" type="use" value="End Date" />
+			</record>
+		</record>
+
+		<!-- Renew Income -->
+		<record>
+			<integer id="id" value="rnin" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293015" type="use" value="Renew Income" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+		<!-- Fixed Value-->
+		<record>
+			<integer id="id" value="fxin" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="293016" type="use" value="Fixed Value" />
+			<record id="widget_info">
+				<symbol id="class" value="check_box" />
+				<boolean id="disabled" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="check_box" />
+				<record id="click_event" event_id="CDBd" event_flags="2" />
+			</record>
+		</record>
+
+	</list>
+</record>

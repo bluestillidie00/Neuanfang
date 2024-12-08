@@ -1,0 +1,28 @@
+﻿<!-- an action button that will be used in the news response panels -->
+
+<!-- setting the 'icon' property on this should change the root folder for the appearance used to indicate checked states. icon="checkbox" would be the default -->
+<class class="position_role_duty_suitability_stars" parent="position_role_duty_star_range_based_picture">
+  <list id="value_list">
+    <record min_value="-1000" max_value="0" file="" />
+    <record value="1" file="icons/custom/role rating/stars/1" />
+    <record value="2" file="icons/custom/role rating/stars/2" />
+    <record value="3" file="icons/custom/role rating/stars/3" />
+    <record value="4" file="icons/custom/role rating/stars/4" />
+    <record value="5" file="icons/custom/role rating/stars/5" />
+    <record value="6" file="icons/custom/role rating/stars/6" />
+    <record value="7" file="icons/custom/role rating/stars/7" />
+    <record value="8" file="icons/custom/role rating/stars/8" />
+    <record value="9" file="icons/custom/role rating/stars/9" />
+    <record value="10" file="icons/custom/role rating/stars/10" />
+    <record value="11" file="icons/custom/role rating/stars/11" />
+    <record value="12" file="icons/custom/role rating/stars/12" />
+    <record value="13" file="icons/custom/role rating/stars/13" />
+    <record value="14" file="icons/custom/role rating/stars/14" />
+    <record value="15" file="icons/custom/role rating/stars/15" />
+    <record value="16" file="icons/custom/role rating/stars/16" />
+    <record value="17" file="icons/custom/role rating/stars/17" />
+    <record value="18" file="icons/custom/role rating/stars/18" />
+    <record value="19" file="icons/custom/role rating/stars/19" />
+    <record value="20" file="icons/custom/role rating/stars/20" />
+  </list>
+</class>

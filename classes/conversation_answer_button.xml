@@ -1,0 +1,5 @@
+<class class="conversation_answer_button" parent="button">
+  <flags id="auto_size" value="vertical"/>
+  <flags id="alignment" value="left,centre_y"/>
+  <boolean id="multiline" value="true" />
+</class>

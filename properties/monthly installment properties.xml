@@ -1,0 +1,139 @@
+﻿<record>
+	<list id="column_table_properties">
+
+		<!-- player -->
+		<record>
+			<integer id="id" value="play" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="227966" type="use" value="Player" />
+
+			<record id="widget_info">
+				<symbol id="class" value="person_button" />
+				<boolean id="disable_link" value="true" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_person_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="227966" type="use" value="Player" />
+			</record>
+		</record>
+
+		<!-- club -->
+		<record>
+			<integer id="id" value="club" />
+			<integer id="width" value="120" />
+			<translation id="name" translation_id="557859" type="use" value="Receiving Club[COMMENT: AREA: Transfers; SUB-AREA: Transfer Clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the money]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="club_button" />
+				<boolean id="disable_link" value="true" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="edit_club_button" />
+				<list id="attachments">
+					<record class="pick_database_record_attachment">
+						<record id="properties">
+							<integer id="event_flags" value="2" />
+						</record>
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557859" type="use" value="Receiving Club[COMMENT: AREA: Transfers; SUB-AREA: Transfer Clause; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the money]" />
+				<translation id="hint" translation_id="557879" type="use" value="Club receiving the instalments[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Club who will recieve the installment money]" />
+			</record>
+		</record>
+
+		<!-- fee -->
+		<record>
+			<integer id="id" value="cash" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="383593" type="use" value="Payable (per month)[COMMENT: FR 10982, content for Finances Screen]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="cash_edit_box" />
+				<integer id="display_format" value="4" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="383593" type="use" value="Payable (per month)[COMMENT: FR 10982, content for Finances Screen]" />
+			</record>
+		</record>
+
+		<!-- months remaining -->
+		<record>
+			<integer id="id" value="mths" />
+			<integer id="width" value="50" />
+			<translation id="name" translation_id="557880" type="use" value="Months Remaining[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Number of months remaining on installments]" />
+
+			<record id="widget_info">
+				<symbol id="class" value="label" />
+				<flags id="alignment" value="left,centre_y" />
+			</record>
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="number_edit_box" />
+				<record id="edit_event" event_id="CDBd" event_flags="2" />
+				<integer id="min_value" value="1" />
+				<integer id="max_value" value="100" />
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557880" type="use" value="Months Remaining[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Number of months remaining on installments]" />
+			</record>
+		</record>
+
+		<!-- type -->
+		<record>
+			<integer id="id" value="pyiv" />
+			<integer id="width" value="130" />
+			<integer id="minimum_width" value="60" />
+			<translation id="name" translation_id="557881" type="use" value="Payment Interval[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Interval for installment payments]" />
+
+			<record id="widget_edit_info">
+				<symbol id="class" value="popup_button" />
+				<record id="popup_updated_event" event_id="CDBd" event_flags="2" />
+				<list id="items">
+					<record id="1">
+						<translation id="name" translation_id="557882" type="use" value="Monthly[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Interval for installment payments]" />
+					</record>
+					<record id="6">
+						<translation id="name" translation_id="557883" type="use" value="6 Monthly[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Interval for installment payments]" />
+					</record>
+					<record id="12">
+						<translation id="name" translation_id="557884" type="use" value="12 Monthly[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Interval for installment payments]" />
+					</record>
+				</list>
+			</record>
+
+			<record id="column_heading">
+				<flags id="alignment" value="left,centre_y" />
+				<translation id="text" translation_id="557881" type="use" value="Payment Interval[COMMENT: AREA: Transfers; SUB-AREA: Installments; FR-BN: FM-993; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Interval for installment payments]" />
+			</record>
+		</record>
+
+	</list>
+</record>

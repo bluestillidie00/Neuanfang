@@ -1,0 +1,5 @@
+<!-- Used to display distance in game. Takes metres as input, will be converted to the correct scale based on game settings. -->
+<class class="short_distance_label" parent="game_formatted_label">
+  <string id="format" value="[%distance#1]" />
+  <integer id="forced_formats" value="vf_short_distance" />
+</class>

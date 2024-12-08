@@ -28,8 +28,8 @@
 				<record id="widget_info">
 					<symbol id="class" value="mentality_label" />
 					<flags id="appearance" value="buttons/subtle/normal/button" />
-					<record id="primary_icon_properties" red_replacement="bg" />
-					<flags id="font" value="bg" />
+					<record id="primary_icon_properties" red_replacement="text" />
+					<flags id="font" value="text" />
 				</record>
 				<record id="column_widget_properties">
 					<flags id="alignment" value="left,centre_y" />

@@ -1,0 +1,7 @@
+﻿<class class="hairstyle_toggle_button" parent="radio_button" >
+  <flags id="height" value="128"/>
+  <flags id="width" value="128"/>
+  <flags id="show_button_appearance" value="true"/>
+  <flags id="appearance" value="switches/custom/hairstyle/normal/button"/>
+  <flags id="icon_enabled" value="false"/>
+</class>
