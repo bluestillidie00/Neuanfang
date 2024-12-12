@@ -1,7 +1,7 @@
 <properties>
 	<record id="image_borders" left="6" right="6" top="6" bottom="6"/>
-	<record id="image_slices" left="14" right="14" top="12" bottom="8"/>
-	<colour id="red_replacement" name="bg"/>
+	<record id="image_slices" left="14" right="14" top="20" bottom="8"/>
+	<colour id="red_replacement" name="bg lighter"/>
 	<colour id="green_replacement" name="primary"/>
 	<colour id="blue_replacement" name="black"/>
 </properties>
