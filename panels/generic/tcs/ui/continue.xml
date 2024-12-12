@@ -1,17 +1,17 @@
 <panel>
 
 	<!-- Continue Button -->
-	<widget class="icon_button" id="GCNT" appearance="chrome/buttons/continue/button" controller_button="right_trigger" alignment="centre" secondary_icon_enabled="true" secondary_icon="icons/16px/continue FMT" secondary_icon_alignment="centre_right, centre_y" colour="text" font="extendedblack" size="xsmall" multiline="true" red_replacement="FM purple continue" blue_replacement="FM purple" green_replacement="black" offset="6">
+	<widget class="icon_button" id="GCNT" appearance="chrome/buttons/continue/button" controller_button="right_trigger" alignment="centre" secondary_icon_enabled="true" secondary_icon="icons/16px/continue FMT" secondary_icon_alignment="centre_right, centre_y" colour="primary" font="extendedblack" size="xsmall" multiline="true" red_replacement="secondary" blue_replacement="secondary" green_replacement="black" offset="6">
 		<translation id="text" translation_id="243222" type="use" value="Continue"/>
         <layout class="stick_to_sides_attachment" alignment="all" inset="0"/>
         
-        <record id="secondary_icon_properties" red_replacement="text"/>
+        <record id="secondary_icon_properties" red_replacement="primary"/>
 		<record id="click_event" event_id="CONT" event_target="glob" />
 
 		
-		<!-- We adjust the continue colour in code in some scenarios, the default colour is defined as 'continue colour' and can be adjusted in the global colour definitions -->
+		<!-- We adjust the continue colour in code in some scenarios, the default colour is defined as 'continue colour' and can be adjusted in the global colour definitions 
 		<attachment class="get_global_attachment" get_property="ctcl" set_property="colour"/>
-        <attachment class="get_global_attachment" get_property="ctcl" set_property="secondary_icon_colour"/>
+        <attachment class="get_global_attachment" get_property="ctcl" set_property="secondary_icon_colour"/> -->
 		
 		<attachment class="test_global_attachment" get_property="cont" set_property="disabled">
 			<list id="value">

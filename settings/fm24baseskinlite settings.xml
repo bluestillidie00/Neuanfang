@@ -1,212 +1,13 @@
 <properties version="1.0">
 	
-	<!--  
-	 ============================================================
-	 Default Settings Modified By This Skin
-	 
-	 The definitions below will override the defaults contained
-	 in the parent skins, or in the various global and application
-	 settings files.
-	 
-	 ============================================================
-	 -->
-
-	<!-- global settings -->
-	<set_global name="ui.main_box_gap" >
-		<integer value="12"/>
-	</set_global>
-	<set_global name="ui.main_contrast_box_gap" >
-		<integer value="8"/>
-	</set_global>
-	<set_global name="ui.inner_box_gap" >
-		<integer value="20"/>
-	</set_global>
-	<set_global name="ui.main_content_margin" >
-		<integer value="12"/>
-	</set_global>
-	<set_global name="ui.button_row_gap" >
-		<integer value="4"/>
-	</set_global>
-	<set_global name="ui.split_button_row_gap" >
-		<integer value="1"/>
-	</set_global>
-
-
-	<!-- This allows us to set a global font adjustment value for given languages this 
-	     is required because we map to a different font set for russian and greek which
-		 ends up with a larger vertical size then the base font which causes cut offs, so now we
-		 can adjust it to fit closer to the original size -->
-	<list id="language_font_scaling_list">
-		<record name="russian">
-			<coordinate id="value" x="0.9" y="0.9" />
-		</record>
-		<record name="greek">
-			<coordinate id="value" x="0.9" y="0.9" />
-		</record>
-		<record name="default">
-			<coordinate id="value" x="1.0" y="1.0" />
-		</record>
-	</list>
-
-	<!-- resolution dependant global settings -->
-	<list id="resolution_settings">
-
-		<!-- gap used between main box appearance -->
-		<record >
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1" />
-			<integer id="resolution_maximum" value="1366" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_box_gap" />
-					<integer id="value" value="12" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1367" />
-			<integer id="resolution_maximum" value="1919" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_box_gap" />
-					<integer id="value" value="18" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1920" />
-			<integer id="resolution_maximum" value="100000" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_box_gap" />
-					<integer id="value" value="24" />
-				</record>
-			</list>
-		</record>
-
-		<!-- gap used between boxes that have a visible appearance -->
-		<record >
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1" />
-			<integer id="resolution_maximum" value="1366" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_contrast_box_gap" />
-					<integer id="value" value="8" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1367" />
-			<integer id="resolution_maximum" value="1919" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_contrast_box_gap" />
-					<integer id="value" value="12" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1920" />
-			<integer id="resolution_maximum" value="100000" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_contrast_box_gap" />
-					<integer id="value" value="16" />
-				</record>
-			</list>
-		</record>
-
-		<!-- gap used between a collection of inner_box -->
-		<record >
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1" />
-			<integer id="resolution_maximum" value="1366" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.inner_box_gap" />
-					<integer id="value" value="28" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1367" />
-			<integer id="resolution_maximum" value="1919" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.inner_box_gap" />
-					<integer id="value" value="36" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1920" />
-			<integer id="resolution_maximum" value="100000" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.inner_box_gap" />
-					<integer id="value" value="48" />
-				</record>
-			</list>
-		</record>
-
-		<!-- gap used around main content area -->
-
-		<record >
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1" />
-			<integer id="resolution_maximum" value="1366" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_content_margin" />
-					<integer id="value" value="12" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1367" />
-			<integer id="resolution_maximum" value="1919" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_content_margin" />
-					<integer id="value" value="18" />
-				</record>
-			</list>
-		</record>
-		<record>
-			<flags id="resolution_orientation" value="horizontal" />
-			<integer id="resolution_minimum" value="1920" />
-			<integer id="resolution_maximum" value="100000" />
-			<list id="value">
-				<record>
-					<string id="name" value="ui.main_content_margin" />
-					<integer id="value" value="24" />
-				</record>
-			</list>
-		</record>
-	</list>
 	
-	<!-- misc properties -->
-	<real id="background_opacity" value="1.0" />
-	<integer id="dcht" value="30" comment="default control height"/>
-  	<real id="default_control_inset" value="0" />
-  	<real id="default_control_offset" value="0" />
-  	<real id="default_control_gap" value="4" />
-	<real id="default_table_column_spacing" value="4" />
-	<real id="default_table_row_spacing" value="0" />
-
-	<boolean id="disable_accent_colour" value="true" />
-	<boolean id="disable_dark_accent_colour" value="false" />
-	<boolean id="disable_primary_colour" value="false" />
-	<boolean id="disable_secondary_colour" value="false" />
-
+	<colour name="tcs accent" 																	value="rgb(0,130,234)"/> <!-- #0072ab --> 
+	<colour name="fg accent" 																		value="tcs accent"/>
+	<colour name="title" 																				value="tcs accent" /> 
+	<colour name="bg accent" 																	value="tcs accent"/>
+	
+	
+	
 	<!-- Colour Scheme -->
 	<!-- The following colours define the base colours scheme for the skin. The colours are references by other colour names in fm colours.xml -->
 
@@ -216,7 +17,6 @@
 	<colour name="fg darker" 																		value="rgb(204,197,186)"/>
 	<colour name="fg alpha" 																		value="rgba(244,244,244,0.6)"/>
 	<colour name="fg info" 																			value="rgb(118,147,219)"/>
-	<colour name="fg accent" 																		value="rgb(255,165,40)"/>
 	<colour name="fg tertiary" 																	value="rgb(244,244,244)"/>
 
 		<!-- Default FM purple colours -->
@@ -295,7 +95,6 @@
 	<colour name="bg info" 																		value="rgb(39,103,192)"/>
 	<colour name="bg positive" 																	value="rgb(16,165,68)"/>
 	<colour name="bg alert" 																	value="rgb(0,129,138)"/>
-	<colour name="bg accent" 																	value="rgb(255,165,40)"/>
 	<colour name="bg tertiary" 																	value="rgb(38,38,38)"/>
 	<colour name="bg negative" 																	value="rgb(182,40,40)"/>
 
@@ -382,7 +181,6 @@
   <colour name="faded black" 																			value="rgba(0,0,0,0.5)"/>
 	<colour name="dark text" 																			value="rgb(55,64,71)"/> 
 	<colour name="hint" 																				value="white"/>
-	<colour name="title" 																				value="rgb(255,165,40)" /> 
 	<colour name="standard_button_text" 																value="fg"/>
 	<colour name="searchbox text" 																		value="fg"/>
 	<colour name="continue text" 																		value="fg" />

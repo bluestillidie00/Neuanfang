@@ -1,0 +1,18 @@
+<panel height="42" width="140">
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+  
+  <widget class="button" appearance="tcs/buttons/interface/date/button" id="actn" click_event="opcl" height="42"  focus_appearance="chrome/buttons/date/button_controller"/>
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="middle" gap="-4"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="16" apply_to_children="true" auto_size="horizontal"/>
+
+		<widget class="text" id="dytm" auto_size="vertical" font="text" size="medium" alignment="left" colour="secondary" disabled_colour="faded text"/>
+		<widget class="text" id="dtam" auto_size="vertical" font="text" style="bold" size="medium" alignment="left" colour="secondary" disabled_colour="faded text"/>
+
+	</container>
+
+
+
+
+</panel>

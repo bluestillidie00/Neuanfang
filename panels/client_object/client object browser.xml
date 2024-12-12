@@ -186,8 +186,8 @@
 									<!-- actions and sections bar -->
 									<!-- please dont change the ID of this bar, if you really need to please notify Isaac as it will effect gamepad stuff :) -->
 									<container navigation_container="true" id="tBAR">
-										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
-										<container class="sections_menu_strip" id="acse"/>
+ <attachment_group class="horizontal_arrange" horizontal_alignment="middle" />
+									<container class="sections_menu_strip" id="acse" auto_size="horizontal"/>
 									</container>
 
 									<!--Match Options-->
