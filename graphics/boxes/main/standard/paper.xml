@@ -1,0 +1,14 @@
+<properties>
+	<record id="image_borders" left="16" right="16" top="16" bottom="16"/>
+	<record id="image_slices" left="20" right="20" top="20" bottom="20"/>
+	<record id="title_borders" left="8" right="8" top="26" bottom="8"/>
+		
+	<integer id="text_top_inset" value="8"/>
+	<integer id="text_bottom_inset" value="0"/>
+	<integer id="text_left_inset" value="8"/>
+	<integer id="text_right_inset" value="8"/>
+
+
+	<colour id="red_replacement" name="bg lighter"/>
+	<colour id="green_replacement" name="black"/>
+</properties>
