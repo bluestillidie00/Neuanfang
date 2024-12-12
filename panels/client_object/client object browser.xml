@@ -175,9 +175,9 @@
 								</attachment>
 
 								<!-- coloured actions bar image -->
-								<widget class="main_box" appearance="tcs/boxes/interface/titlebar/solid" />
+								<widget class="main_box" appearance="tcs/boxes/interface/titlebar/solid"/>
 								
-								<widget class="main_box" appearance="tcs/boxes/interface/titlebar/paper" />
+								<widget class="main_box" appearance="tcs/boxes/interface/titlebar/paper"/>
 
 								<container>
 									<layout class="arrange_horizontal_attachment" alignment="right,extend" gap="2" offset="14"/>
@@ -186,22 +186,23 @@
 									<!-- actions and sections bar -->
 									<!-- please dont change the ID of this bar, if you really need to please notify Isaac as it will effect gamepad stuff :) -->
 									<container navigation_container="true" id="tBAR">
- <attachment_group class="horizontal_arrange" horizontal_alignment="middle" />
-									<container class="sections_menu_strip" id="acse" auto_size="horizontal"/>
+										<attachment_group class="horizontal_arrange" horizontal_alignment="left"/>
+										<container class="sections_menu_strip" id="acse" auto_size="horizontal"/>
 									</container>
 
 									<!--Match Options-->
 									<widget class="match_tactics_toggle_button"/>
 
 									<!--Backroom Advice-->
-									<widget class="backroom_advice_trigger_button" id="BaC1"/>
+									<widget class="backroom_advice_trigger_button" id="BaC1">
+									</widget>
 
 									<!--Backroom Advice 'popup'-->
-									<widget class="backroom_advice_trigger_button" id="BaC2" file="club/backroom advice trigger button popup panel" disable_layout_attachments_when_embedded="true" hidden="true"/>
+									<widget class="backroom_advice_trigger_button" id="BaC2" file="club/backroom advice trigger button popup panel" disable_layout_attachments_when_embedded="true" hidden="true">
+									
+									</widget>
 								</container>
-							</container>
-							
-							
+							</container>							
 
 							<container class="inner_box_no_margin">
 								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
@@ -212,7 +213,7 @@
 									<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
 									
 									
-									<widget class="sidebar_menu_table" id="side" width="160" navigation_container="true">
+									<widget class="sidebar_menu_table" id="side" width="180" navigation_container="true">
 										<record id="object_property">
 											<integer id="get_property" value="objt"/>
 											<integer id="set_property" value="cotO"/>
@@ -227,14 +228,13 @@
 										</attachment>
 
 										<attachment class="test_setting_attachment" get_setting="force_small_sidebar" value="true" skip_if_false="true" default_value="false" set_property="widt" true_value="45"/>
-										<attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1200" set_property="widt" true_value="45" false_value="160" disable_setting_name="force_small_sidebar"/>
+										<attachment class="test_screen_size_attachment" alignment="horizontal" min_value="0" max_value="1200" set_property="widt" true_value="45" false_value="180" disable_setting_name="force_small_sidebar"/>
 									</widget>
 
 
 									<!-- screen content area -->
 									<container id="scca" auto_size="horizontal">
-										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true">
-											<global id="inset" name="ui.main_content_margin"/>
+										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="8,0,8,8">
 										</layout>
 									</container>
 								</container>
