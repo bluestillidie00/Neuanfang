@@ -12,11 +12,11 @@
 	 -->
 
 	<!-- skin name, author etc -->
-	<string id="name" value="FM 24 Base Skin" />
+	<string id="name" value="Neuanfang" />
 	<string id="author" value="Sports Interactive" />
 	<string id="description" value="Widget Set for FM2014" />
 	<string id="version" value="1.0" />
-	<string id="skin_name" value="fm24baseskin" />
+	<string id="skin_name" value="Neuanfang" />
 		<flags id="parent" value="fm" />
 
 	<!--
