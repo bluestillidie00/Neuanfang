@@ -1,0 +1,6 @@
+<properties>
+	<record id="image_borders" left="2" right="6" top="2" bottom="2"/>
+	<record id="image_slices" left="25" right="25" top="2" bottom="10"/>
+	<colour id="green_replacement" name="primary"/>
+	<colour id="blue_replacement" name="primary"/>
+</properties>
