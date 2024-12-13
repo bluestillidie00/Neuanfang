@@ -3,6 +3,10 @@
 <layout class="stick_to_sides_attachment" apply_to_children="true"/>
 
     <container navigation_container="true" class="plain_box" appearance="tcs/boxes/interface/titlebar/solid">
+<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0,32,0,32"/>
+	
+	<container>
+	
         <layout class="stick_to_sides_attachment" alignment="all" inset="0,0,0,0"/>
 
         <attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="0"/>
@@ -176,5 +180,6 @@
             <!-- continue button -->
             <container id="ctnu" file="generic/tcs/ui/continue" height="46" width="160"/>
         </container>
+    </container>
     </container>
 </panel>
