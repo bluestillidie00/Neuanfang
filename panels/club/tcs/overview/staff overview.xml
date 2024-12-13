@@ -1,0 +1,108 @@
+<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+	<container class="vertical_adaptive_container" gap="8">
+
+		<record id="default_properties" height="44"/>
+
+		<!-- TOP ROW -->
+		<container class="tcs_table" priority="1">
+			<layout class="horizontal_arrange" horizontal_layout="90,-1"/>
+
+			<!-- MANAGER LABEL -->
+			<widget class="label" font="label" auto_size="horizontal">
+				<record id="object_property" get_property="TMnR" name="true"/>
+			</widget>
+
+			<container>
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+				<widget class="person_snapshot_club_overview_panel" id="mana" player="false" file="club/tcs/overview/snapshots/manager">
+					<record id="object_property">
+						<integer id="get_property" value="TMnR"/>
+						<integer id="set_property" value="objt"/>
+					</record>
+				</widget>
+			
+				<container id="nomC">
+					<attachment_group class="horizontal_arrange" horizontal_alignment="right"/>
+
+					<widget class="object_action_button" id="oabt" action_id="TCpJ" width="140">
+						<record id="object_property">
+							<integer id="get_property" value="objt"/>
+							<integer id="set_property" value="objt"/>
+						</record>
+					</widget>
+				</container>
+			</container>
+			
+			
+		</container>
+
+		<!-- 2ND ROW -->
+		<container class="tcs_table_trans" priority="2">
+			<layout class="horizontal_arrange" horizontal_layout="90,-1"/>
+
+			<!-- CAPTAIN LABEL -->
+			<widget class="label" font="label" auto_size="horizontal">
+				<record id="object_property" get_property="TCap" name="true"/>
+			</widget>
+
+			<!-- DATE OF BIRTH -->
+			<widget class="person_snapshot_club_overview_panel" id="capt" player="true" file="club/tcs/overview/snapshots/captain">
+				<record id="object_property">
+					<integer id="get_property" value="TCap"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+		</container>
+
+		<!-- 3RD ROW -->
+		<container class="tcs_table" priority="4">
+			<layout class="horizontal_arrange" horizontal_layout="90,-1"/>
+
+			<!-- VICE CAPTAINS LOGO  -->
+			<widget class="label" font="label" auto_size="horizontal">
+				<record id="object_property" get_property="TVca" name="true"/>
+			</widget>
+
+			<!-- CITY -->
+			<widget class="person_snapshot_club_overview_panel" id="vice" player="true" file="club/tcs/overview/snapshots/captain">
+				<record id="object_property">
+					<integer id="get_property" value="TVca"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+		</container>
+
+		<!-- 4TH ROW -->
+		<container class="tcs_table_trans" priority="3">
+			<layout class="horizontal_arrange" horizontal_layout="90,-1"/>
+
+			<!-- KEY PLAYER LABEL -->
+			<widget class="label" font="label" auto_size="horizontal">
+				<translation id="text" translation_id="227396" type="use" value="Key Player"/>
+			</widget>
+
+			<widget class="person_snapshot_club_overview_panel" id="KeyP" player="true" file="club/tcs/overview/snapshots/key player">
+				<record id="object_property">
+					<integer id="get_property" value="TKpL"/>
+					<integer id="set_property" value="objt"/>
+				</record>
+			</widget>
+		</container>
+
+		<!-- 5TH ROW -->
+		<container class="tcs_table" priority="5">
+			<layout class="horizontal_arrange" horizontal_layout="90,-1"/>
+
+			<!-- HOT PROSPECT LABEL -->
+			<widget class="label" font="label" auto_size="horizontal">
+				<translation id="text" type="use" translation_id="458557"/>
+			</widget>
+
+			<!-- HOT PROSPECT -->
+			<widget class="person_snapshot_club_overview_panel" id="HotP" player="true" file="club/tcs/overview/snapshots/hot prospect"/>
+		</container>
+	</container>
+
+</panel>

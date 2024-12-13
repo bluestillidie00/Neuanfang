@@ -1,0 +1,104 @@
+<panel>
+    <attachment_group class="horizontal_arrange" horizontal_alignment="right,extend" horizontal_gap="4"/>
+
+    <boolean id="should_force_refresh" value="true"/>
+
+    <!-- PLAYER INFO -->
+    <container>
+        <attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" />
+
+        <!-- FACE -->
+        <widget class="picture" id="picM" scale_picture="true" keep_aspect_ratio="true" width="40" image_alignment="centre_x"> 
+            <attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+                <list id="value">
+                    <boolean value="false" />
+                </list>
+            </attachment>
+            <record id="object_property">
+                <list id="get_properties">
+                    <record>
+                        <integer id="get_property" value="fcgn" />
+                    </record>
+                    <record>
+                        <integer id="get_property" value="Pfke" />
+                    </record>
+                    <record>
+                        <integer id="get_property" value="prpc" />
+                        <integer id="set_property" value="valu" />
+                    </record>
+                </list>
+            </record>
+        </widget>
+
+        <!-- INFO -->
+        <container>
+            <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+            <container id="info">
+                <attachment_group class="vertical_arrange" vertical_alignment="fill" vertical_gap="-2"/>
+
+                <!-- NAME -->
+                <widget class="person_button" id="perM" style="semi_bold" alignment="left,bottom">
+                    <record id="object_property" get_property="objt" set_property="valu"/>                    
+                </widget>
+
+                <!-- NATIONALITY -->
+                <widget class="person_nationality_button" id="natM" colour="faded text" alignment="left,top" icon_enabled="false">
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                </widget>
+            </container>
+
+            <!-- NONE CURRENTLY -->
+            <widget class="label" id="nofo">
+                <translation id="text" translation_id="320493" type="use" value="None currently[COMMENT: text indicating that there is no person to view here currently (e.g. a manager, captain, vice captain etc.)]" />
+            </widget>
+        </container>
+    </container>
+
+
+    <!-- AGE -->        
+    <container class="tcs_table" width="44">
+        <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0"/>
+
+        <record id="default_properties" alignment="centre_x"/>
+
+        <widget class="label" auto_size="vertical" font="label">
+            <translation id="text" type="use" translation_id="227770" />
+        </widget>
+
+        <widget class="age_label" style="semi_bold">
+            <record id="object_property" get_property="PSag"/>
+        </widget>
+    </container>
+
+    <!-- LEADERSHIP -->
+    <container class="tcs_table" width="44">
+        <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0"/>
+
+        <record id="default_properties" alignment="centre_x"/>
+
+        <widget class="label" auto_size="vertical" font="label">
+            <translation id="text" type="use" translation_id="348973" />
+        </widget>
+
+        <widget class="attribute_label" style="semi_bold" alignment="can_scale">
+            <record id="object_property" get_property="Pinf"/>
+        </widget>
+    </container>
+
+    <!-- TEAMWORK -->
+    <container class="tcs_table" width="44">
+        <attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_gap="0"/>
+
+        <record id="default_properties" alignment="centre_x"/>
+
+        <widget class="label" auto_size="vertical" font="label">
+            <translation id="text" type="use" translation_id="227909" />
+        </widget>
+
+        <widget class="attribute_label" style="semi_bold" alignment="can_scale">
+            <record id="object_property" get_property="Ptwr"/>
+        </widget>
+    </container>
+
+</panel>
