@@ -1,0 +1,65 @@
+<!-- A panel showing various bits of information about a player -->
+<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+	<boolean id="should_force_refresh" value="true"/>
+	
+	<container class="vertical_adaptive_container" gap="4">
+	
+		<!-- PLAYER FACE -->
+		<container height="200">
+			<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			
+			<container>
+				<container>
+					<layout class="stick_to_sides_attachment" inset="left"/>
+					<layout class="stick_to_sides_attachment" inset="top"/>
+					<!-- KIT -->
+					<container height="120" width="120">
+						<layout class="stick_to_sides_attachment" alignment="left" inset="8"/>
+						<layout class="stick_to_sides_attachment" alignment="top" inset="4"/>
+						<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+						<widget class="club_overview_kits_panel" file="none" id="it2k" save_session_state="true">
+							<record id="object_property" get_property="Pclb" set_property="objt"/>
+							<layout class="stick_to_sides_attachment" apply_to_children="true" inset="0"/>
+
+							<container>
+								<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+								<record id="default_properties" scale_picture="true" keep_aspect_ratio="true" image_alignment="right" always_use_latest_object_list="true">
+									<record id="object_property">
+										<integer id="get_property" value="Tidx"/>
+										<integer id="set_property" value="indx"/>
+									</record>
+								</record>
+
+								<widget class="kit_picture" id="T_hk" kit_id="0"/>
+
+							</container>
+						</widget>
+					</container>
+							
+				</container>
+			</container>
+				
+			<!-- PROFILE PICTURE -->
+			<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="right">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="12"/>
+
+				<record id="object_property">
+					<list id="get_properties">
+						<record get_property="fcgn"/>
+						<record get_property="Pfke"/>
+						<record get_property="prpc" set_property="valu"/>
+					</list>
+				</record>
+			</widget>
+	
+		</container>
+		
+		<container height="4" class="tcs_main" appearance="tcs/boxes/player/gradient"/>
+		
+		
+	
+	</container>
+
+</panel>

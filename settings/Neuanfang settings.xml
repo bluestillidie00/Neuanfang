@@ -1,11 +1,31 @@
 <properties version="1.0">
 	
 	
-	<colour name="tcs accent" 																	value="rgb(0,130,234)"/> <!-- #0072ab --> 
+	<colour name="tcs accent" 																	value="rgb(0,130,234)"/>	 <!-- #0086ea --> 
+	<colour name="tcs accent light" 															value="rgb(87,117,139)"/> <!-- #80adce --> 
 	<colour name="fg accent" 																		value="tcs accent"/>
 	<colour name="title" 																				value="tcs accent" /> 
 	<colour name="bg accent" 																	value="tcs accent"/>
 	
+		<colour name="bg lighter" 																	value="rgb(43,43,43)"/>
+
+	
+	<!-- MUSTERMANN -->
+	<colour name="mustermann0"																	value="rgb(0,29,38)"/>
+	<colour name="mustermann1"																	value="rgb(0,49,58)"/>
+	<colour name="mustermann2"																	value="bg lighter"/>
+	<colour name="mustermann3"																	value="tcs accent light"/>
+	<colour name="mustermann4"																	value="rgb(45,109,118)"/>
+	<colour name="mustermann5"																	value="rgb(65,129,138)"/>
+	<colour name="mustermann6"																	value="rgb(85,149,158)"/>
+	<colour name="mustermanntext"																value="fg"/>
+	<colour name="mustermanntextfaded"															value="fg alpha"/>
+	
+	<colour name="gimn1"																		value="rgb(0,168,192)"/>
+	<colour name="gimn2"																		value="rgb(0,188,212)"/>
+	<colour name="gimn3"																		value="rgb(20,208,232)"/>
+	<colour name="gimntext"																		value="bg darker"/>
+	<colour name="gimntextfaded"																value="bg large alpha"/>
 	
 	
 	<!-- Colour Scheme -->
@@ -86,7 +106,6 @@
 	<colour name="fg grey darker" 															value="grey 500" />
 
 	<!-- Background colours - used for background, boxes etc -->
-	<colour name="bg lighter" 																	value="rgb(43,43,43)"/>
 	<colour name="bg" 																			value="rgb(34,34,34)"/>
 	<colour name="bg darker" 																	value="rgb(22,22,22)"/>
 	<colour name="bg alpha" 																	value="rgb(54,54,54)"/>

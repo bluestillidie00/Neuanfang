@@ -1,5 +1,5 @@
 <panel save_default_state="true">
-	<layout class="stick_to_sides_attachment" alignment="all" inset="3,0,0,0" apply_to_children="true" />
+	<layout class="stick_to_sides_attachment" alignment="all" inset="4,0,0,0" apply_to_children="true" />
 
 	<symbol id="sidebar_secondary_colour" value="title"/>
     <symbol id="alt_sidebar_secondary_colour" value="title"/>

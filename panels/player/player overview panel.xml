@@ -1,0 +1,132 @@
+<panel>
+	<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+	<container class="horizontal_adaptive_container" gap="4">
+	
+		<!-- LEFT BOX -->
+		<container class="tcs_main" width="320" priority="1">
+		<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+		
+			<widget class="player_personal_details_panel" id="ppdp" navigation_container="true" file="player/tcs/overview/widgets/personal details">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</widget>
+		</container>
+		
+		<container default_width="-40" class="vertical_adaptive_container" gap="4">
+
+			<!-- ATTRIBUTES AND POSITIONS -->
+			<container default_height="396">
+				<attachment_group class="horizontal_arrange" horizontal_alignment="right,extend"/>
+			 
+				<container class="tcs_main">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			 			 	
+					<!-- ATTRIBUTES PANEL -->
+					<container class="client_object_viewer_selector_panel" id="cos1" minimum_width="580" default_width="-2" priority="2" file="player/player overview big selector panel" save_session_state="true" dont_set_embedded_title="true">
+						<widget class="player_attributes_panel" id="patt" late_loading="true" dont_allow_custom_attribute_change_ranges="true" file="player/tcs/overview/widgets/attributes">
+							<translation id="title" translation_id="229822" type="use" value="Attributes"/>
+						</widget>
+
+						<integer id="default_for_unemployed_managers" value="pat1"/>
+						<integer id="default_for_international_managers_other_team" value="pat1"/>
+						<integer id="default_for_everyone_else" value="pat1"/>
+						<integer id="default_for_versus_mode" value="pat1"/>
+					</container>
+				</container>
+			
+				<!-- POSITIONS -->
+				<container width="360" class="tcs_main">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			
+					<widget class="player_positions_indicator_panel" id="ppi1" file="player/player positions indicator small horizontal" navigation_container="true" default_focus="true">
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</widget>
+				</container>
+						
+			</container>
+					
+			<!-- ARCHETYPES -->
+			<container default_height="60" class="tcs_main">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+		
+				<widget class="client_object_viewer_xml_panel" file="player/mustermann/archetypes">
+					<record id="object_property" get_property="objt" set_property="objt"/>
+				</widget>
+			</container>
+			
+			<!-- BUNCH OF SELECTORS -->
+			<container class="horizontal_adaptive_container" default_height="-1" gap="4">
+				<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			
+				<container class="vertical_adaptive_container" default_width="-1" gap="4">
+			
+					<!-- TWO SMALL SELECTORS -->
+					<container default_height="-30">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+					
+						<container class="horizontal_adaptive_container" gap="4">
+						
+							<container class="tcs_main" default_width="-1">
+							</container>
+						
+							<container class="tcs_main" default_width="-1">
+							</container>
+						
+						</container>
+					</container>
+			
+					<!-- SEASON STATS -->
+					<container default_height="-22" class="tcs_main">
+						<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			
+						<widget class="player_additional_stats_panel" id="pcsp" file="player/player additional stats small">
+							<record id="object_property">
+								<list id="get_properties">
+									<record id="object_property" get_property="objt" set_property="objt"/>
+									<record id="object_property" get_property="Pila" set_property="hidn"/>
+								</list>
+							</record>
+						</widget>
+						<widget class="player_stats_panel" id="pssp" file="player/player stats small">
+							<record id="object_property">
+								<list id="get_properties">
+									<record id="object_property" get_property="Pila" set_property="Shwn"/>
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</list>
+							</record>
+						</widget>
+					</container>
+			
+				</container>
+			
+				<!-- LONG BOI 
+				<container default_width="340" class="tcs_main">
+					<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+			
+					<container class="client_object_viewer_selector_panel" id="csBr" file="player/player overview big selector panel" minimum_width="310" default_width="-1" priority="1" navigation_container="true" dont_set_embedded_title="true">
+						<integer id="default_for_unemployed_managers" value="Pfor"/>
+						<integer id="default_for_international_managers_other_team" value="Pfor"/>
+						<integer id="default_for_everyone_else" value="Pfor"/>
+						<integer id="default_for_versus_mode" value="Pfor"/>
+					</container>
+				</container> -->		
+			
+			</container>
+		
+		</container>
+		
+		<container class="vertical_adaptive_container" default_width="-18" priority="1">
+		
+		<container class="tcs_main" default_height="396">
+		</container>
+		
+		<container class="tcs_main" default_height="-300">
+		</container>
+		
+		<container class="tcs_main" default_height="-180">
+		</container>
+		
+		</container>
+	</container>
+		
+</panel>
